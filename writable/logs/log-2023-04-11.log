@@ -1,0 +1,56 @@
+CRITICAL - 2023-04-11 07:59:42 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 867.
+ 1 SYSTEMPATH\BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\AdminControllers.php(2263): CodeIgniter\Model->update('43', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editapprovedtransaksi('43')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-11 07:59:57 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 867.
+ 1 SYSTEMPATH\BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\AdminControllers.php(2263): CodeIgniter\Model->update('43', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editapprovedtransaksi('43')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-11 08:01:19 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 867.
+ 1 SYSTEMPATH\BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\AdminControllers.php(2263): CodeIgniter\Model->update('55', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editapprovedtransaksi('55')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-11 08:07:03 --> Undefined variable $harga
+in APPPATH\Views\admin\layout\default.php on line 331.
+ 1 APPPATH\Views\admin\layout\default.php(331): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $harga', 'APPPATH\\Views\\admin\\layout\\default.php', 331)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\layout\\default.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/layout/default', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DataTransaksi/TransaksiCicilan/datacicilan', [], true)
+ 6 APPPATH\Controllers\AdminControllers.php(2798): view('admin/DataTransaksi/TransaksiCicilan/datacicilan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatacicilan()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-11 08:11:13 --> Undefined variable $pe_periode
+in APPPATH\Views\admin\layout\default.php on line 331.
+ 1 APPPATH\Views\admin\layout\default.php(331): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pe_periode', 'APPPATH\\Views\\admin\\layout\\default.php', 331)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\layout\\default.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/layout/default', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DataTransaksi/TransaksiCicilan/datacicilan', [], true)
+ 6 APPPATH\Controllers\AdminControllers.php(2798): view('admin/DataTransaksi/TransaksiCicilan/datacicilan', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatacicilan()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

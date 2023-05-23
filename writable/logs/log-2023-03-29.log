@@ -1,0 +1,576 @@
+ERROR - 2023-03-29 13:43:19 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_pengambilan_paket`, CONSTRAINT `tb_pengambilan_paket_ibfk_2` FOREIGN KEY (`pp_ib_id`) REFERENCES `tb_item_barang` (`ib_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(1356): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#10 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-03-29 13:43:19 --> Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_pengambilan_paket`, CONSTRAINT `tb_pengambilan_paket_ibfk_2` FOREIGN KEY (`pp_ib_id`) REFERENCES `tb_item_barang` (`ib_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_pengambilan_paket` (`pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ib_ktrg_berat_ukuran`) VALUES (25, \'18\', \'1\', \'botol\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_pengambilan_paket` (`pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ib_ktrg_berat_ukuran`) VALUES (25, \'18\', \'1\', \'botol\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_pengambilan_paket` (`pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ib_ktrg_berat_ukuran`) VALUES (25, \'18\', \'1\', \'botol\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_pengambilan_paket` (`pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ib_ktrg_berat_ukuran`) VALUES (:pp_p_id:, :pp_ib_id:, :pp_qty:, :pp_ib_ktrg_berat_ukuran:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AdminControllers.php(1356): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-03-29 13:45:32 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_pengambilan_paket`, CONSTRAINT `tb_pengambilan_paket_ibfk_2` FOREIGN KEY (`pp_ib_id`) REFERENCES `tb_item_barang` (`ib_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(1356): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#10 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-03-29 13:45:32 --> Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_pengambilan_paket`, CONSTRAINT `tb_pengambilan_paket_ibfk_2` FOREIGN KEY (`pp_ib_id`) REFERENCES `tb_item_barang` (`ib_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_pengambilan_paket` (`pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ib_ktrg_berat_ukuran`) VALUES (26, \'18\', \'1\', \'botol\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_pengambilan_paket` (`pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ib_ktrg_berat_ukuran`) VALUES (26, \'18\', \'1\', \'botol\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_pengambilan_paket` (`pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ib_ktrg_berat_ukuran`) VALUES (26, \'18\', \'1\', \'botol\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_pengambilan_paket` (`pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ib_ktrg_berat_ukuran`) VALUES (:pp_p_id:, :pp_ib_id:, :pp_qty:, :pp_ib_ktrg_berat_ukuran:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AdminControllers.php(1356): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-03-29 13:50:27 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_pengambilan_paket`, CONSTRAINT `tb_pengambilan_paket_ibfk_2` FOREIGN KEY (`pp_ib_id`) REFERENCES `tb_item_barang` (`ib_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(1356): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#10 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-03-29 13:50:27 --> Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_pengambilan_paket`, CONSTRAINT `tb_pengambilan_paket_ibfk_2` FOREIGN KEY (`pp_ib_id`) REFERENCES `tb_item_barang` (`ib_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_pengambilan_paket` (`pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ib_ktrg_berat_ukuran`) VALUES (27, \'18\', \'1\', \'botol\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_pengambilan_paket` (`pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ib_ktrg_berat_ukuran`) VALUES (27, \'18\', \'1\', \'botol\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_pengambilan_paket` (`pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ib_ktrg_berat_ukuran`) VALUES (27, \'18\', \'1\', \'botol\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_pengambilan_paket` (`pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ib_ktrg_berat_ukuran`) VALUES (:pp_p_id:, :pp_ib_id:, :pp_qty:, :pp_ib_ktrg_berat_ukuran:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AdminControllers.php(1356): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 14:01:52 --> str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated
+in APPPATH\Controllers\AdminControllers.php on line 1301.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated', 'APPPATH\\Controllers\\AdminControllers.php', 1301)
+ 2 APPPATH\Controllers\AdminControllers.php(1301): str_replace(',', 'ROOTPATH\\public', null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 17:00:54 --> Call to undefined method App\Models\PaketBarangModels::get_pengambilan_paket_by_id
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1408): CodeIgniter\Model->__call('get_pengambilan_paket_by_id', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 17:01:56 --> Call to undefined method App\Models\PaketBarangModels::get_pengambilan_paket_by_id
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1408): CodeIgniter\Model->__call('get_pengambilan_paket_by_id', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 17:03:20 --> Call to undefined method App\Models\PaketBarangModels::get_pengambilan_paket_by_id
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1408): CodeIgniter\Model->__call('get_pengambilan_paket_by_id', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 17:03:24 --> Call to undefined method App\Models\PaketBarangModels::get_pengambilan_paket_by_id
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1408): CodeIgniter\Model->__call('get_pengambilan_paket_by_id', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 17:04:07 --> Call to undefined method App\Models\PaketBarangModels::get_pengambilan_paket_by_id
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1408): CodeIgniter\Model->__call('get_pengambilan_paket_by_id', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 17:04:11 --> Call to undefined method App\Models\PaketBarangModels::get_pengambilan_paket_by_id
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1408): CodeIgniter\Model->__call('get_pengambilan_paket_by_id', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 17:05:35 --> Call to undefined method App\Models\PaketBarangModels::get_pengambilan_paket_by_id
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1408): CodeIgniter\Model->__call('get_pengambilan_paket_by_id', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 17:05:36 --> Call to undefined method App\Models\PaketBarangModels::get_pengambilan_paket_by_id
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1408): CodeIgniter\Model->__call('get_pengambilan_paket_by_id', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 17:06:50 --> Call to undefined method App\Models\PaketBarangModels::get_pengambilan_paket_by_id
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1408): CodeIgniter\Model->__call('get_pengambilan_paket_by_id', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 17:33:14 --> Call to undefined method App\Models\PaketBarangModels::get_pengambilan_paket_by_id
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1408): CodeIgniter\Model->__call('get_pengambilan_paket_by_id', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 17:34:47 --> Call to undefined method App\Models\PaketBarangModels::get_pengambilan_paket_by_id
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1339): CodeIgniter\Model->__call('get_pengambilan_paket_by_id', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 17:34:48 --> Call to undefined method App\Models\PaketBarangModels::get_pengambilan_paket_by_id
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1339): CodeIgniter\Model->__call('get_pengambilan_paket_by_id', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 17:35:11 --> Call to undefined method App\Models\PaketBarangModels::get_pengambilan_paket_by_id
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1339): CodeIgniter\Model->__call('get_pengambilan_paket_by_id', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 17:35:12 --> Call to undefined method App\Models\PaketBarangModels::get_pengambilan_paket_by_id
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1339): CodeIgniter\Model->__call('get_pengambilan_paket_by_id', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('28')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 17:43:55 --> Undefined array key "pa_harga"
+in APPPATH\Views\admin\DatabaseBarang\PaketBarang\datapaketbarang.php on line 69.
+ 1 APPPATH\Views\admin\DatabaseBarang\PaketBarang\datapaketbarang.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pa_harga"', 'APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\datapaketbarang.php', 69)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\datapaketbarang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/PaketBarang/datapaketbarang', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1328): view('admin/DatabaseBarang/PaketBarang/datapaketbarang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatapaketbarang()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 17:47:51 --> Undefined variable $packaging
+in APPPATH\Views\admin\DatabaseBarang\PaketBarang\datapaketbarang.php on line 78.
+ 1 APPPATH\Views\admin\DatabaseBarang\PaketBarang\datapaketbarang.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $packaging', 'APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\datapaketbarang.php', 78)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\datapaketbarang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/PaketBarang/datapaketbarang', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1328): view('admin/DatabaseBarang/PaketBarang/datapaketbarang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatapaketbarang()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 17:55:01 --> Call to undefined method App\Models\PaketBarangModels::datakategoripaket
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1813): CodeIgniter\Model->__call('datakategoripaket', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatatransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 18:04:08 --> Undefined variable $pengambilanpaket
+in APPPATH\Views\admin\DatabaseBarang\PaketBarang\datapaketbarang.php on line 91.
+ 1 APPPATH\Views\admin\DatabaseBarang\PaketBarang\datapaketbarang.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengambilanpaket', 'APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\datapaketbarang.php', 91)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\datapaketbarang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/PaketBarang/datapaketbarang', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1328): view('admin/DatabaseBarang/PaketBarang/datapaketbarang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatapaketbarang()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 18:04:58 --> Undefined variable $pengambilanpaket
+in APPPATH\Views\admin\DatabaseBarang\PaketBarang\datapaketbarang.php on line 91.
+ 1 APPPATH\Views\admin\DatabaseBarang\PaketBarang\datapaketbarang.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengambilanpaket', 'APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\datapaketbarang.php', 91)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\datapaketbarang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/PaketBarang/datapaketbarang', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1328): view('admin/DatabaseBarang/PaketBarang/datapaketbarang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatapaketbarang()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 18:13:40 --> Undefined variable $tb_supplier
+in APPPATH\Views\admin\DatabaseBarang\PaketBarang\datapaketbarang.php on line 96.
+ 1 APPPATH\Views\admin\DatabaseBarang\PaketBarang\datapaketbarang.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_supplier', 'APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\datapaketbarang.php', 96)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\datapaketbarang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/PaketBarang/datapaketbarang', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1329): view('admin/DatabaseBarang/PaketBarang/datapaketbarang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatapaketbarang()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 18:19:56 --> Undefined array key "ib_foto"
+in APPPATH\Views\admin\DatabaseBarang\PaketBarang\datapaketbarang.php on line 90.
+ 1 APPPATH\Views\admin\DatabaseBarang\PaketBarang\datapaketbarang.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ib_foto"', 'APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\datapaketbarang.php', 90)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\datapaketbarang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/PaketBarang/datapaketbarang', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1329): view('admin/DatabaseBarang/PaketBarang/datapaketbarang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatapaketbarang()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 18:20:19 --> unlink(foto-packaging/1680073541_6e1e5ee4431bcd9eba01.jpg): No such file or directory
+in APPPATH\Controllers\AdminControllers.php on line 1439.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(foto-packaging/1680073541_6e1e5ee4431bcd9eba01.jpg): No such file or directory', 'APPPATH\\Controllers\\AdminControllers.php', 1439)
+ 2 APPPATH\Controllers\AdminControllers.php(1439): unlink('foto-packaging/1680073541_6e1e5ee4431bcd9eba01.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletepaketbarang('28')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 18:20:33 --> The route for "admin/databarang/datapaketbarang" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/databarang/datapaketbarang')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\AdminControllers.php(1443): redirect('admin/databarang/datapaketbarang')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletepaketbarang('28')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 18:27:46 --> The route for "admin/databarang/datapaketbarang" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/databarang/datapaketbarang')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\AdminControllers.php(1443): redirect('admin/databarang/datapaketbarang')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletepaketbarang('29')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 18:29:09 --> The route for "admin/databarang/datapaketbarang" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/databarang/datapaketbarang')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\AdminControllers.php(1443): redirect('admin/databarang/datapaketbarang')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletepaketbarang('30')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 18:30:48 --> Call to undefined method App\Models\PaketBarangModels::datakategoripaket
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1819): CodeIgniter\Model->__call('datakategoripaket', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatatransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 18:32:55 --> Call to undefined method App\Models\PaketBarangModels::datakategoripaket
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1819): CodeIgniter\Model->__call('datakategoripaket', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatatransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 18:36:49 --> Invalid file: admin/DataTransaksi/TransaksiPembayaran/transaksi.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DataTransaksi/TransaksiPembayaran/transaksi.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DataTransaksi/TransaksiPembayaran/transaksi', [], true)
+ 3 APPPATH\Controllers\AdminControllers.php(1768): view('admin/DataTransaksi/TransaksiPembayaran/transaksi', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->transaksi()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 18:37:42 --> Invalid file: admin/DataTransaksi/TransaksiPembayaran/transaksi.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DataTransaksi/TransaksiPembayaran/transaksi.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DataTransaksi/TransaksiPembayaran/transaksi', [], true)
+ 3 APPPATH\Controllers\AdminControllers.php(1768): view('admin/DataTransaksi/TransaksiPembayaran/transaksi', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->transaksi()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 18:38:03 --> Invalid file: admin/DataTransaksi/TransaksiPembayaran/transaksi.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DataTransaksi/TransaksiPembayaran/transaksi.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DataTransaksi/TransaksiPembayaran/transaksi', [], true)
+ 3 APPPATH\Controllers\AdminControllers.php(1768): view('admin/DataTransaksi/TransaksiPembayaran/transaksi', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->transaksi()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 19:02:26 --> Call to undefined method App\Models\PaketBarangModels::datakategoripaket
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(2168): CodeIgniter\Model->__call('datakategoripaket', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatacicilan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 19:02:34 --> Call to undefined method App\Models\PaketBarangModels::datakategoripaket
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1918): CodeIgniter\Model->__call('datakategoripaket', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->edittransaksi('16')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 19:04:23 --> Undefined variable $kategoripaket
+in APPPATH\Views\admin\DataTransaksi\TransaksiPaket\transaksiedit.php on line 51.
+ 1 APPPATH\Views\admin\DataTransaksi\TransaksiPaket\transaksiedit.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kategoripaket', 'APPPATH\\Views\\admin\\DataTransaksi\\TransaksiPaket\\transaksiedit.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DataTransaksi\\TransaksiPaket\\transaksiedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DataTransaksi/TransaksiPaket/transaksiedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1948): view('admin/DataTransaksi/TransaksiPaket/transaksiedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->edittransaksi('16')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 20:40:50 --> Undefined array key "p_hargajual"
+in APPPATH\Views\admin\DataTransaksi\TransaksiPaket\transaksiedit.php on line 77.
+ 1 APPPATH\Views\admin\DataTransaksi\TransaksiPaket\transaksiedit.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "p_hargajual"', 'APPPATH\\Views\\admin\\DataTransaksi\\TransaksiPaket\\transaksiedit.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DataTransaksi\\TransaksiPaket\\transaksiedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DataTransaksi/TransaksiPaket/transaksiedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1949): view('admin/DataTransaksi/TransaksiPaket/transaksiedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->edittransaksi('16')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 20:48:20 --> Call to undefined method App\Models\PaketBarangModels::datakategoripaket
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(2174): CodeIgniter\Model->__call('datakategoripaket', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatacicilan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 20:50:34 --> Call to undefined method App\Models\PaketBarangModels::datakategoripaket
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(2174): CodeIgniter\Model->__call('datakategoripaket', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatacicilan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 20:51:50 --> Call to undefined method App\Models\PaketBarangModels::datakategoripaket
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(2173): CodeIgniter\Model->__call('datakategoripaket', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatacicilan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 20:52:12 --> Undefined variable $kategoripaket
+in APPPATH\Views\admin\DataTransaksi\TransaksiCicilan\cicilan.php on line 55.
+ 1 APPPATH\Views\admin\DataTransaksi\TransaksiCicilan\cicilan.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kategoripaket', 'APPPATH\\Views\\admin\\DataTransaksi\\TransaksiCicilan\\cicilan.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DataTransaksi\\TransaksiCicilan\\cicilan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DataTransaksi/TransaksiCicilan/cicilan', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(2102): view('admin/DataTransaksi/TransaksiCicilan/cicilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->cicilan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-03-29 20:55:03 --> mysqli_sql_exception: Table 'arisya.tb_sup_barang' doesn't exist in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\app\Models\PengambilanPaketBarangModels.php(55): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(68): App\Models\PengambilanPaketBarangModels->get_all_barang_supplier()
+#6 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->PaketCicilan()
+#7 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-29 20:55:03 --> Table 'arisya.tb_sup_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_sup_barang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_sup_barang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_sup_barang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_sup_barang`', [], false)
+ 5 APPPATH\Models\PengambilanPaketBarangModels.php(55): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminControllers.php(68): App\Models\PengambilanPaketBarangModels->get_all_barang_supplier()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->PaketCicilan()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-03-29 20:55:07 --> mysqli_sql_exception: Table 'arisya.tb_sup_barang' doesn't exist in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\app\Models\PengambilanPaketBarangModels.php(55): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(68): App\Models\PengambilanPaketBarangModels->get_all_barang_supplier()
+#6 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->PaketCicilan()
+#7 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-29 20:55:07 --> Table 'arisya.tb_sup_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_sup_barang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_sup_barang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_sup_barang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_sup_barang`', [], false)
+ 5 APPPATH\Models\PengambilanPaketBarangModels.php(55): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminControllers.php(68): App\Models\PengambilanPaketBarangModels->get_all_barang_supplier()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->PaketCicilan()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-03-29 20:55:13 --> mysqli_sql_exception: Table 'arisya.tb_sup_barang' doesn't exist in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\app\Models\PengambilanPaketBarangModels.php(55): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(68): App\Models\PengambilanPaketBarangModels->get_all_barang_supplier()
+#6 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->PaketCicilan()
+#7 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-29 20:55:13 --> Table 'arisya.tb_sup_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_sup_barang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_sup_barang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_sup_barang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_sup_barang`', [], false)
+ 5 APPPATH\Models\PengambilanPaketBarangModels.php(55): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminControllers.php(68): App\Models\PengambilanPaketBarangModels->get_all_barang_supplier()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->PaketCicilan()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 21:07:03 --> Undefined array key "p_sb_id"
+in APPPATH\Controllers\AdminControllers.php on line 75.
+ 1 APPPATH\Controllers\AdminControllers.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "p_sb_id"', 'APPPATH\\Controllers\\AdminControllers.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->PaketCicilan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 21:10:49 --> Undefined array key "p_sb_id"
+in APPPATH\Controllers\AdminControllers.php on line 75.
+ 1 APPPATH\Controllers\AdminControllers.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "p_sb_id"', 'APPPATH\\Controllers\\AdminControllers.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->PaketCicilan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-29 21:47:55 --> Undefined variable $payperiode
+in APPPATH\Views\admin\DataTransaksi\TransaksiPaket\transaksi.php on line 63.
+ 1 APPPATH\Views\admin\DataTransaksi\TransaksiPaket\transaksi.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $payperiode', 'APPPATH\\Views\\admin\\DataTransaksi\\TransaksiPaket\\transaksi.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DataTransaksi\\TransaksiPaket\\transaksi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DataTransaksi/TransaksiPaket/transaksi', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1758): view('admin/DataTransaksi/TransaksiPaket/transaksi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->transaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

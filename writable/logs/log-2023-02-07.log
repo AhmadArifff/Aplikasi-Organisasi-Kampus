@@ -1,0 +1,240 @@
+CRITICAL - 2023-02-07 00:09:13 --> Call to a member function getError() on null
+in APPPATH\Controllers\AdminControllers.php on line 1273.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editbarangsupplier('15')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 00:12:13 --> Call to a member function getError() on null
+in APPPATH\Controllers\AdminControllers.php on line 1274.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editbarangsupplier('15')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-07 00:12:51 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_sup_barang`, CONSTRAINT `tb_sup_barang_ibfk_4` FOREIGN KEY (`s_id`) REFERENCES `tb_supplier` (`s_id`)) in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tb_sup_...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_sup_...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_sup_...')
+#3 C:\xampp\htdocs\ProjectPaket\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_sup_...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaket\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProjectPaket\system\BaseModel.php(886): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ProjectPaket\system\Model.php(693): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1289): CodeIgniter\Model->update('15', Array)
+#8 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editbarangsupplier('15')
+#9 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#10 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-02-07 00:12:51 --> Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_sup_barang`, CONSTRAINT `tb_sup_barang_ibfk_4` FOREIGN KEY (`s_id`) REFERENCES `tb_supplier` (`s_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tb_sup_barang` SET `s_id` = NULL, `b_id` = NULL, `sb_hargaasli` = NULL, `sb_hargajual` = NULL, `sb_qty` = NULL, `sb_berat/ukuran` = NULL, `sb_ktrg_berat/ukuran` = NULL, `sb_foto` = NULL, `u_id` = \'1\'
+WHERE `tb_sup_barang`.`sb_id` IN (\'15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_sup_barang` SET `s_id` = NULL, `b_id` = NULL, `sb_hargaasli` = NULL, `sb_hargajual` = NULL, `sb_qty` = NULL, `sb_berat/ukuran` = NULL, `sb_ktrg_berat/ukuran` = NULL, `sb_foto` = NULL, `u_id` = \'1\'
+WHERE `tb_sup_barang`.`sb_id` IN (\'15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_sup_barang` SET `s_id` = NULL, `b_id` = NULL, `sb_hargaasli` = NULL, `sb_hargajual` = NULL, `sb_qty` = NULL, `sb_berat/ukuran` = NULL, `sb_ktrg_berat/ukuran` = NULL, `sb_foto` = NULL, `u_id` = \'1\'
+WHERE `tb_sup_barang`.`sb_id` IN (\'15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_sup_barang` SET `s_id` = :s_id:, `b_id` = :b_id:, `sb_hargaasli` = :sb_hargaasli:, `sb_hargajual` = :sb_hargajual:, `sb_qty` = :sb_qty:, `sb_berat/ukuran` = :sb_berat/ukuran:, `sb_ktrg_berat/ukuran` = :sb_ktrg_berat/ukuran:, `sb_foto` = :sb_foto:, `u_id` = :u_id:
+WHERE `tb_sup_barang`.`sb_id` IN :tb_sup_barang.sb_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(886): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AdminControllers.php(1289): CodeIgniter\Model->update('15', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editbarangsupplier('15')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-07 00:13:31 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_sup_barang`, CONSTRAINT `tb_sup_barang_ibfk_4` FOREIGN KEY (`s_id`) REFERENCES `tb_supplier` (`s_id`)) in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tb_sup_...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_sup_...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_sup_...')
+#3 C:\xampp\htdocs\ProjectPaket\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_sup_...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaket\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProjectPaket\system\BaseModel.php(886): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ProjectPaket\system\Model.php(693): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1310): CodeIgniter\Model->update('15', Array)
+#8 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editbarangsupplier('15')
+#9 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#10 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-02-07 00:13:31 --> Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_sup_barang`, CONSTRAINT `tb_sup_barang_ibfk_4` FOREIGN KEY (`s_id`) REFERENCES `tb_supplier` (`s_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tb_sup_barang` SET `s_id` = NULL, `b_id` = NULL, `sb_hargaasli` = NULL, `sb_hargajual` = NULL, `sb_qty` = NULL, `sb_berat/ukuran` = NULL, `sb_ktrg_berat/ukuran` = NULL, `sb_foto` = NULL, `u_id` = \'1\'
+WHERE `tb_sup_barang`.`sb_id` IN (\'15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_sup_barang` SET `s_id` = NULL, `b_id` = NULL, `sb_hargaasli` = NULL, `sb_hargajual` = NULL, `sb_qty` = NULL, `sb_berat/ukuran` = NULL, `sb_ktrg_berat/ukuran` = NULL, `sb_foto` = NULL, `u_id` = \'1\'
+WHERE `tb_sup_barang`.`sb_id` IN (\'15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_sup_barang` SET `s_id` = NULL, `b_id` = NULL, `sb_hargaasli` = NULL, `sb_hargajual` = NULL, `sb_qty` = NULL, `sb_berat/ukuran` = NULL, `sb_ktrg_berat/ukuran` = NULL, `sb_foto` = NULL, `u_id` = \'1\'
+WHERE `tb_sup_barang`.`sb_id` IN (\'15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_sup_barang` SET `s_id` = :s_id:, `b_id` = :b_id:, `sb_hargaasli` = :sb_hargaasli:, `sb_hargajual` = :sb_hargajual:, `sb_qty` = :sb_qty:, `sb_berat/ukuran` = :sb_berat/ukuran:, `sb_ktrg_berat/ukuran` = :sb_ktrg_berat/ukuran:, `sb_foto` = :sb_foto:, `u_id` = :u_id:
+WHERE `tb_sup_barang`.`sb_id` IN :tb_sup_barang.sb_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(886): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AdminControllers.php(1310): CodeIgniter\Model->update('15', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editbarangsupplier('15')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-07 00:14:14 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_sup_barang`, CONSTRAINT `tb_sup_barang_ibfk_4` FOREIGN KEY (`s_id`) REFERENCES `tb_supplier` (`s_id`)) in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tb_sup_...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_sup_...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_sup_...')
+#3 C:\xampp\htdocs\ProjectPaket\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_sup_...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaket\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProjectPaket\system\BaseModel.php(886): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ProjectPaket\system\Model.php(693): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1289): CodeIgniter\Model->update('15', Array)
+#8 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editbarangsupplier('15')
+#9 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#10 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-02-07 00:14:14 --> Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_sup_barang`, CONSTRAINT `tb_sup_barang_ibfk_4` FOREIGN KEY (`s_id`) REFERENCES `tb_supplier` (`s_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tb_sup_barang` SET `s_id` = NULL, `b_id` = NULL, `sb_hargaasli` = NULL, `sb_hargajual` = NULL, `sb_qty` = NULL, `sb_berat/ukuran` = NULL, `sb_ktrg_berat/ukuran` = NULL, `sb_foto` = NULL, `u_id` = \'1\'
+WHERE `tb_sup_barang`.`sb_id` IN (\'15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_sup_barang` SET `s_id` = NULL, `b_id` = NULL, `sb_hargaasli` = NULL, `sb_hargajual` = NULL, `sb_qty` = NULL, `sb_berat/ukuran` = NULL, `sb_ktrg_berat/ukuran` = NULL, `sb_foto` = NULL, `u_id` = \'1\'
+WHERE `tb_sup_barang`.`sb_id` IN (\'15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_sup_barang` SET `s_id` = NULL, `b_id` = NULL, `sb_hargaasli` = NULL, `sb_hargajual` = NULL, `sb_qty` = NULL, `sb_berat/ukuran` = NULL, `sb_ktrg_berat/ukuran` = NULL, `sb_foto` = NULL, `u_id` = \'1\'
+WHERE `tb_sup_barang`.`sb_id` IN (\'15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_sup_barang` SET `s_id` = :s_id:, `b_id` = :b_id:, `sb_hargaasli` = :sb_hargaasli:, `sb_hargajual` = :sb_hargajual:, `sb_qty` = :sb_qty:, `sb_berat/ukuran` = :sb_berat/ukuran:, `sb_ktrg_berat/ukuran` = :sb_ktrg_berat/ukuran:, `sb_foto` = :sb_foto:, `u_id` = :u_id:
+WHERE `tb_sup_barang`.`sb_id` IN :tb_sup_barang.sb_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(886): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AdminControllers.php(1289): CodeIgniter\Model->update('15', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editbarangsupplier('15')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-07 00:14:48 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_sup_barang`, CONSTRAINT `tb_sup_barang_ibfk_4` FOREIGN KEY (`s_id`) REFERENCES `tb_supplier` (`s_id`)) in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tb_sup_...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_sup_...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_sup_...')
+#3 C:\xampp\htdocs\ProjectPaket\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_sup_...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaket\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProjectPaket\system\BaseModel.php(886): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ProjectPaket\system\Model.php(693): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1289): CodeIgniter\Model->update('15', Array)
+#8 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editbarangsupplier('15')
+#9 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#10 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-02-07 00:14:48 --> Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_sup_barang`, CONSTRAINT `tb_sup_barang_ibfk_4` FOREIGN KEY (`s_id`) REFERENCES `tb_supplier` (`s_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `tb_sup_barang` SET `s_id` = NULL, `b_id` = NULL, `sb_hargaasli` = NULL, `sb_hargajual` = NULL, `sb_qty` = NULL, `sb_berat/ukuran` = NULL, `sb_ktrg_berat/ukuran` = NULL, `sb_foto` = NULL, `u_id` = \'1\'
+WHERE `tb_sup_barang`.`sb_id` IN (\'15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_sup_barang` SET `s_id` = NULL, `b_id` = NULL, `sb_hargaasli` = NULL, `sb_hargajual` = NULL, `sb_qty` = NULL, `sb_berat/ukuran` = NULL, `sb_ktrg_berat/ukuran` = NULL, `sb_foto` = NULL, `u_id` = \'1\'
+WHERE `tb_sup_barang`.`sb_id` IN (\'15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_sup_barang` SET `s_id` = NULL, `b_id` = NULL, `sb_hargaasli` = NULL, `sb_hargajual` = NULL, `sb_qty` = NULL, `sb_berat/ukuran` = NULL, `sb_ktrg_berat/ukuran` = NULL, `sb_foto` = NULL, `u_id` = \'1\'
+WHERE `tb_sup_barang`.`sb_id` IN (\'15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_sup_barang` SET `s_id` = :s_id:, `b_id` = :b_id:, `sb_hargaasli` = :sb_hargaasli:, `sb_hargajual` = :sb_hargajual:, `sb_qty` = :sb_qty:, `sb_berat/ukuran` = :sb_berat/ukuran:, `sb_ktrg_berat/ukuran` = :sb_ktrg_berat/ukuran:, `sb_foto` = :sb_foto:, `u_id` = :u_id:
+WHERE `tb_sup_barang`.`sb_id` IN :tb_sup_barang.sb_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(886): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\AdminControllers.php(1289): CodeIgniter\Model->update('15', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editbarangsupplier('15')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 15:11:08 --> Array to string conversion
+in APPPATH\Views\admin\barangsupplieredit.php on line 30.
+ 1 APPPATH\Views\admin\barangsupplieredit.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\admin\\barangsupplieredit.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\barangsupplieredit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/barangsupplieredit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1290): view('admin/barangsupplieredit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editbarangsupplier('15')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 15:17:38 --> Undefined variable $nama_file
+in APPPATH\Controllers\AdminControllers.php on line 1285.
+ 1 APPPATH\Controllers\AdminControllers.php(1285): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_file', 'APPPATH\\Controllers\\AdminControllers.php', 1285)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editbarangsupplier('15')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 15:18:01 --> Undefined variable $nama_file
+in APPPATH\Controllers\AdminControllers.php on line 1285.
+ 1 APPPATH\Controllers\AdminControllers.php(1285): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_file', 'APPPATH\\Controllers\\AdminControllers.php', 1285)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editbarangsupplier('15')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 15:35:10 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\AdminControllers.php(1272): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\foto-barang', '1675758910_e5737a6ebd28da048185')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editbarangsupplier('15')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 15:39:08 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\AdminControllers.php(1272): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\foto-barang', '1675759148_df513833088e4b0f9878')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editbarangsupplier('15')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 16:31:15 --> Undefined variable $sp
+in APPPATH\Controllers\AdminControllers.php on line 1366.
+ 1 APPPATH\Controllers\AdminControllers.php(1366): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sp', 'APPPATH\\Controllers\\AdminControllers.php', 1366)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ImportFileExcelbarangsupplier()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 16:32:52 --> Undefined variable $sp
+in APPPATH\Controllers\AdminControllers.php on line 1366.
+ 1 APPPATH\Controllers\AdminControllers.php(1366): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sp', 'APPPATH\\Controllers\\AdminControllers.php', 1366)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ImportFileExcelbarangsupplier()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 16:34:03 --> Undefined variable $sp
+in APPPATH\Controllers\AdminControllers.php on line 1366.
+ 1 APPPATH\Controllers\AdminControllers.php(1366): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sp', 'APPPATH\\Controllers\\AdminControllers.php', 1366)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ImportFileExcelbarangsupplier()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 16:34:42 --> Array to string conversion
+in APPPATH\Controllers\AdminControllers.php on line 1369.
+ 1 APPPATH\Controllers\AdminControllers.php(1369): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AdminControllers.php', 1369)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ImportFileExcelbarangsupplier()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-07 16:36:08 --> Undefined variable $sp
+in APPPATH\Controllers\AdminControllers.php on line 1366.
+ 1 APPPATH\Controllers\AdminControllers.php(1366): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sp', 'APPPATH\\Controllers\\AdminControllers.php', 1366)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ImportFileExcelbarangsupplier()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

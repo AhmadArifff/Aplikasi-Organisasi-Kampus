@@ -1,0 +1,17 @@
+CRITICAL - 2023-04-20 16:47:35 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\AdminControllers.php on line 1757.
+ 1 APPPATH\Controllers\AdminControllers.php(1757): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('50')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-20 16:50:00 --> unlink(foto-paket/1681893277_b138047771941e0545b4.png): No such file or directory
+in APPPATH\Controllers\AdminControllers.php on line 1738.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(foto-paket/1681893277_b138047771941e0545b4.png): No such file or directory', 'APPPATH\\Controllers\\AdminControllers.php', 1738)
+ 2 APPPATH\Controllers\AdminControllers.php(1738): unlink('foto-paket/1681893277_b138047771941e0545b4.png')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('50')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

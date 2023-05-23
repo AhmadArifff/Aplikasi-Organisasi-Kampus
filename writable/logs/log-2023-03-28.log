@@ -1,0 +1,489 @@
+CRITICAL - 2023-03-28 08:15:22 --> Invalid file: admin/DatabaseBarang/DataItemBarang/databarangsupplier.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DatabaseBarang/DataItemBarang/databarangsupplier.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/DataItemBarang/databarangsupplier', [], true)
+ 3 APPPATH\Controllers\AdminControllers.php(719): view('admin/DatabaseBarang/DataItemBarang/databarangsupplier', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdataitembarang()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 08:15:32 --> Invalid file: admin/DatabaseBarang/DataItemBarang/databarangsupplier.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DatabaseBarang/DataItemBarang/databarangsupplier.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/DataItemBarang/databarangsupplier', [], true)
+ 3 APPPATH\Controllers\AdminControllers.php(719): view('admin/DatabaseBarang/DataItemBarang/databarangsupplier', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdataitembarang()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 08:15:49 --> Invalid file: admin/DatabaseBarang/DataItemBarang/databarangsupplier.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DatabaseBarang/DataItemBarang/databarangsupplier.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/DataItemBarang/databarangsupplier', [], true)
+ 3 APPPATH\Controllers\AdminControllers.php(719): view('admin/DatabaseBarang/DataItemBarang/databarangsupplier', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdataitembarang()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 08:40:51 --> Invalid file: admin/DatabaseBarang/DataItemBarang/barangitem.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DatabaseBarang/DataItemBarang/barangitem.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/DataItemBarang/barangitem', [], true)
+ 3 APPPATH\Controllers\AdminControllers.php(645): view('admin/DatabaseBarang/DataItemBarang/barangitem', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->itembarang()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 08:41:36 --> Invalid file: admin/DataBarang/BarangSupplier/importexcelitembarang.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DataBarang/BarangSupplier/importexcelitembarang.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('admin/DataBarang/BarangSupplier/importexcelitembarang', null, true)
+ 3 APPPATH\Views\admin\DatabaseBarang\DataItemBarang\itembarang.php(37): CodeIgniter\View\View->include('admin/DataBarang/BarangSupplier/importexcelitembarang')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\DataItemBarang\\itembarang.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/DataItemBarang/itembarang', [], true)
+ 7 APPPATH\Controllers\AdminControllers.php(645): view('admin/DatabaseBarang/DataItemBarang/itembarang', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->itembarang()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 08:41:40 --> Invalid file: admin/DataBarang/BarangSupplier/importexcelitembarang.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DataBarang/BarangSupplier/importexcelitembarang.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('admin/DataBarang/BarangSupplier/importexcelitembarang', null, true)
+ 3 APPPATH\Views\admin\DatabaseBarang\DataItemBarang\itembarang.php(37): CodeIgniter\View\View->include('admin/DataBarang/BarangSupplier/importexcelitembarang')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\DataItemBarang\\itembarang.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/DataItemBarang/itembarang', [], true)
+ 7 APPPATH\Controllers\AdminControllers.php(645): view('admin/DatabaseBarang/DataItemBarang/itembarang', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->itembarang()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 08:42:19 --> Undefined variable $supplier
+in APPPATH\Views\admin\DatabaseBarang\DataItemBarang\itembarang.php on line 45.
+ 1 APPPATH\Views\admin\DatabaseBarang\DataItemBarang\itembarang.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $supplier', 'APPPATH\\Views\\admin\\DatabaseBarang\\DataItemBarang\\itembarang.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\DataItemBarang\\itembarang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/DataItemBarang/itembarang', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(645): view('admin/DatabaseBarang/DataItemBarang/itembarang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->itembarang()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 08:42:20 --> Undefined variable $supplier
+in APPPATH\Views\admin\DatabaseBarang\DataItemBarang\itembarang.php on line 45.
+ 1 APPPATH\Views\admin\DatabaseBarang\DataItemBarang\itembarang.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $supplier', 'APPPATH\\Views\\admin\\DatabaseBarang\\DataItemBarang\\itembarang.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\DataItemBarang\\itembarang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/DataItemBarang/itembarang', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(645): view('admin/DatabaseBarang/DataItemBarang/itembarang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->itembarang()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 16:55:49 --> Undefined variable $supplier
+in APPPATH\Views\admin\DatabaseBarang\DataItemBarang\dataitembarang.php on line 52.
+ 1 APPPATH\Views\admin\DatabaseBarang\DataItemBarang\dataitembarang.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $supplier', 'APPPATH\\Views\\admin\\DatabaseBarang\\DataItemBarang\\dataitembarang.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\DataItemBarang\\dataitembarang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/DataItemBarang/dataitembarang', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(717): view('admin/DatabaseBarang/DataItemBarang/dataitembarang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdataitembarang()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 17:20:58 --> Invalid file: admin/DatabaseBarang/DataItemBarang/barangitemedit.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DatabaseBarang/DataItemBarang/barangitemedit.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/DataItemBarang/barangitemedit', [], true)
+ 3 APPPATH\Controllers\AdminControllers.php(799): view('admin/DatabaseBarang/DataItemBarang/barangitemedit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->edititembarang('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 17:28:41 --> Invalid file: admin/DatabaseBarang/DataItemBarang/barangitemedit.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DatabaseBarang/DataItemBarang/barangitemedit.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/DataItemBarang/barangitemedit', [], true)
+ 3 APPPATH\Controllers\AdminControllers.php(799): view('admin/DatabaseBarang/DataItemBarang/barangitemedit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->edititembarang('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 17:38:00 --> Call to a member function listErrors() on null
+in APPPATH\Controllers\AdminControllers.php on line 780.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->edititembarang('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 17:38:24 --> Invalid file: admin/DatabaseBarang/DataItemBarang/barangitemedit.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DatabaseBarang/DataItemBarang/barangitemedit.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/DataItemBarang/barangitemedit', [], true)
+ 3 APPPATH\Controllers\AdminControllers.php(782): view('admin/DatabaseBarang/DataItemBarang/barangitemedit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->edititembarang('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 17:55:22 --> Invalid file: admin/DataBarang/PaketBarang/importexcelpaketbarang.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DataBarang/PaketBarang/importexcelpaketbarang.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('admin/DataBarang/PaketBarang/importexcelpaketbarang', null, true)
+ 3 APPPATH\Views\admin\DatabaseBarang\PaketBarang\paketbarang.php(37): CodeIgniter\View\View->include('admin/DataBarang/PaketBarang/importexcelpaketbarang')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\paketbarang.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/PaketBarang/paketbarang', [], true)
+ 7 APPPATH\Controllers\AdminControllers.php(1247): view('admin/DatabaseBarang/PaketBarang/paketbarang', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarang()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 17:58:30 --> Invalid file: admin/DataBarang/PaketBarang/importexcelpaketbarang.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DataBarang/PaketBarang/importexcelpaketbarang.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('admin/DataBarang/PaketBarang/importexcelpaketbarang', null, true)
+ 3 APPPATH\Views\admin\DatabaseBarang\PaketBarang\paketbarang.php(37): CodeIgniter\View\View->include('admin/DataBarang/PaketBarang/importexcelpaketbarang')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\paketbarang.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/PaketBarang/paketbarang', [], true)
+ 7 APPPATH\Controllers\AdminControllers.php(1247): view('admin/DatabaseBarang/PaketBarang/paketbarang', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarang()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 18:00:20 --> Invalid file: admin/DataBarang/PackagingBarang/datapackingbarang.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DataBarang/PackagingBarang/datapackingbarang.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DataBarang/PackagingBarang/datapackingbarang', [], true)
+ 3 APPPATH\Controllers\AdminControllers.php(985): view('admin/DataBarang/PackagingBarang/datapackingbarang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatapackingbarang()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 18:48:57 --> Invalid file: admin/DataBarang/PackagingBarang/datapackingbarang.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DataBarang/PackagingBarang/datapackingbarang.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DataBarang/PackagingBarang/datapackingbarang', [], true)
+ 3 APPPATH\Controllers\AdminControllers.php(985): view('admin/DataBarang/PackagingBarang/datapackingbarang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatapackingbarang()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 18:51:34 --> Invalid file: admin/DataBarang/PackagingBarang/packingbarang.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DataBarang/PackagingBarang/packingbarang.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DataBarang/PackagingBarang/packingbarang', [], true)
+ 3 APPPATH\Controllers\AdminControllers.php(925): view('admin/DataBarang/PackagingBarang/packingbarang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->packingbarang()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 18:51:55 --> Invalid file: admin/DataBarang/PackagingBarang/importexcelpackingbarang.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DataBarang/PackagingBarang/importexcelpackingbarang.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('admin/DataBarang/PackagingBarang/importexcelpackingbarang', null, true)
+ 3 APPPATH\Views\admin\DatabaseBarang\PackagingBarang\packingbarang.php(37): CodeIgniter\View\View->include('admin/DataBarang/PackagingBarang/importexcelpackingbarang')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\PackagingBarang\\packingbarang.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/PackagingBarang/packingbarang', [], true)
+ 7 APPPATH\Controllers\AdminControllers.php(925): view('admin/DatabaseBarang/PackagingBarang/packingbarang', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->packingbarang()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 18:52:06 --> Invalid file: admin/DataBarang/PackagingBarang/importexcelpackingbarang.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DataBarang/PackagingBarang/importexcelpackingbarang.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('admin/DataBarang/PackagingBarang/importexcelpackingbarang', null, true)
+ 3 APPPATH\Views\admin\DatabaseBarang\PackagingBarang\packingbarang.php(37): CodeIgniter\View\View->include('admin/DataBarang/PackagingBarang/importexcelpackingbarang')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\PackagingBarang\\packingbarang.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/PackagingBarang/packingbarang', [], true)
+ 7 APPPATH\Controllers\AdminControllers.php(925): view('admin/DatabaseBarang/PackagingBarang/packingbarang', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->packingbarang()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 18:53:51 --> Invalid file: admin/DataBarang/PackagingBarang/packingbarangedit.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DataBarang/PackagingBarang/packingbarangedit.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DataBarang/PackagingBarang/packingbarangedit', [], true)
+ 3 APPPATH\Controllers\AdminControllers.php(1059): view('admin/DataBarang/PackagingBarang/packingbarangedit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpackingbarang('25')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 18:54:31 --> The route for "admin/databarang/datapackagingbarang" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/databarang/datapackagingbarang')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\AdminControllers.php(1055): redirect('admin/databarang/datapackagingbarang')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpackingbarang('25')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 18:55:05 --> The route for "admin/databarang/datapackagingbarang" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/databarang/datapackagingbarang')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\AdminControllers.php(1055): redirect('admin/databarang/datapackagingbarang')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpackingbarang('25')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 18:55:49 --> The route for "admin/databarang/datapackagingbarang" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/databarang/datapackagingbarang')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\AdminControllers.php(1071): redirect('admin/databarang/datapackagingbarang')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletepackingbarang('25')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 18:55:58 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminControllers.php on line 1065.
+ 1 APPPATH\Controllers\AdminControllers.php(1065): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminControllers.php', 1065)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletepackingbarang('25')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 18:59:47 --> Invalid file: admin/DataBarang/PaketBarang/importexcelpaketbarang.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DataBarang/PaketBarang/importexcelpaketbarang.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('admin/DataBarang/PaketBarang/importexcelpaketbarang', null, true)
+ 3 APPPATH\Views\admin\DatabaseBarang\PaketBarang\paketbarang.php(37): CodeIgniter\View\View->include('admin/DataBarang/PaketBarang/importexcelpaketbarang')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\paketbarang.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/PaketBarang/paketbarang', [], true)
+ 7 APPPATH\Controllers\AdminControllers.php(1244): view('admin/DatabaseBarang/PaketBarang/paketbarang', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarang()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 19:21:34 --> Call to undefined method App\Models\PaketBarangModels::datakategoripaket
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1820): CodeIgniter\Model->__call('datakategoripaket', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatatransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 19:37:23 --> Call to undefined method App\Models\PaketBarangModels::datakategoripaket
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1820): CodeIgniter\Model->__call('datakategoripaket', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatatransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 19:37:25 --> Call to undefined method App\Models\PaketBarangModels::databarang
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1236): CodeIgniter\Model->__call('databarang', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarang()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 19:37:28 --> Call to undefined method App\Models\PaketBarangModels::databarangsupplier
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1316): CodeIgniter\Model->__call('databarangsupplier', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatapaketbarang()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 19:37:29 --> Call to undefined method App\Models\PaketBarangModels::databarang
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1236): CodeIgniter\Model->__call('databarang', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarang()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 19:37:30 --> Call to undefined method App\Models\PaketBarangModels::databarangsupplier
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1316): CodeIgniter\Model->__call('databarangsupplier', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatapaketbarang()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 19:37:33 --> Call to undefined method App\Models\PaketBarangModels::databarangsupplier
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1316): CodeIgniter\Model->__call('databarangsupplier', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatapaketbarang()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 19:38:58 --> Call to undefined method App\Models\PaketBarangModels::databarangsupplier
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1313): CodeIgniter\Model->__call('databarangsupplier', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatapaketbarang()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 19:39:52 --> Undefined variable $payperiode
+in APPPATH\Views\admin\DatabaseBarang\PaketBarang\paketbarang.php on line 49.
+ 1 APPPATH\Views\admin\DatabaseBarang\PaketBarang\paketbarang.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $payperiode', 'APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\paketbarang.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\paketbarang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/PaketBarang/paketbarang', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1237): view('admin/DatabaseBarang/PaketBarang/paketbarang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarang()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 19:40:38 --> Call to undefined method App\Models\PaketBarangModels::databarang
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1316): CodeIgniter\Model->__call('databarang', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatapaketbarang()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 19:40:53 --> Call to undefined method App\Models\PaketBarangModels::databarang
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1236): CodeIgniter\Model->__call('databarang', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarang()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 19:41:00 --> Call to undefined method App\Models\PaketBarangModels::databarang
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1316): CodeIgniter\Model->__call('databarang', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatapaketbarang()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 19:41:58 --> Undefined variable $barangsupplier
+in APPPATH\Views\admin\DatabaseBarang\PaketBarang\paketbarang.php on line 100.
+ 1 APPPATH\Views\admin\DatabaseBarang\PaketBarang\paketbarang.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barangsupplier', 'APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\paketbarang.php', 100)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\paketbarang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/PaketBarang/paketbarang', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1239): view('admin/DatabaseBarang/PaketBarang/paketbarang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarang()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 20:36:10 --> Call to undefined method App\Models\PaketBarangModels::datakategoripaket
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1814): CodeIgniter\Model->__call('datakategoripaket', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatatransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 20:47:24 --> Undefined variable $paket
+in APPPATH\Views\admin\DatabaseBarang\PaketBarang\paketbarang.php on line 117.
+ 1 APPPATH\Views\admin\DatabaseBarang\PaketBarang\paketbarang.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paket', 'APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\paketbarang.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\paketbarang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/PaketBarang/paketbarang', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1240): view('admin/DatabaseBarang/PaketBarang/paketbarang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarang()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 21:03:58 --> str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated
+in APPPATH\Controllers\AdminControllers.php on line 1259.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated', 'APPPATH\\Controllers\\AdminControllers.php', 1259)
+ 2 APPPATH\Controllers\AdminControllers.php(1259): str_replace(',', 'ROOTPATH\\public', null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 21:04:38 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\AdminControllers.php on line 1270.
+ 1 APPPATH\Controllers\AdminControllers.php(1270): count('4')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 21:10:30 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\AdminControllers.php on line 1270.
+ 1 APPPATH\Controllers\AdminControllers.php(1270): count('4')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 21:18:43 --> str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated
+in APPPATH\Controllers\AdminControllers.php on line 1259.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated', 'APPPATH\\Controllers\\AdminControllers.php', 1259)
+ 2 APPPATH\Controllers\AdminControllers.php(1259): str_replace(',', 'ROOTPATH\\public', null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 21:19:39 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\AdminControllers.php on line 1270.
+ 1 APPPATH\Controllers\AdminControllers.php(1270): count('1')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 21:23:27 --> explode(): Passing null to parameter #2 ($string) of type string is deprecated
+in APPPATH\Controllers\AdminControllers.php on line 1284.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'explode(): Passing null to parameter #2 ($string) of type string is deprecated', 'APPPATH\\Controllers\\AdminControllers.php', 1284)
+ 2 APPPATH\Controllers\AdminControllers.php(1284): explode(',', null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 21:27:20 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\AdminControllers.php on line 1286.
+ 1 APPPATH\Controllers\AdminControllers.php(1286): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-28 21:32:22 --> explode(): Passing null to parameter #2 ($string) of type string is deprecated
+in APPPATH\Controllers\AdminControllers.php on line 1284.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'explode(): Passing null to parameter #2 ($string) of type string is deprecated', 'APPPATH\\Controllers\\AdminControllers.php', 1284)
+ 2 APPPATH\Controllers\AdminControllers.php(1284): explode(',', null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

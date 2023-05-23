@@ -1,0 +1,98 @@
+ERROR - 2023-05-08 09:32:00 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_cicilan`, CONSTRAINT `tb_cicilan_ibfk_5` FOREIGN KEY (`u_id`) REFERENCES `tb_user` (`u_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\RestApiCoordinator.php(363): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\RestApiCoordinator->deleteuser('172')
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestApiCoordinator))
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2023-05-08 09:33:51 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_cicilan`, CONSTRAINT `tb_cicilan_ibfk_5` FOREIGN KEY (`u_id`) REFERENCES `tb_user` (`u_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\RestApiCoordinator.php(363): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\RestApiCoordinator->deleteuser('172')
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestApiCoordinator))
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2023-05-08 09:34:59 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_cicilan`, CONSTRAINT `tb_cicilan_ibfk_5` FOREIGN KEY (`u_id`) REFERENCES `tb_user` (`u_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\RestApiCoordinator.php(363): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\RestApiCoordinator->deleteuser('172')
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestApiCoordinator))
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2023-05-08 13:10:11 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_cicilan`, CONSTRAINT `tb_cicilan_ibfk_3` FOREIGN KEY (`t_id`) REFERENCES `tb_transaksi` (`t_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\RestApiCoordinator.php(473): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\RestApiCoordinator->deletetransaksi('115')
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestApiCoordinator))
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2023-05-08 13:22:10 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_log_cicilan`, CONSTRAINT `tb_log_cicilan_ibfk_3` FOREIGN KEY (`c_id`) REFERENCES `tb_cicilan` (`c_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\RestApiCoordinator.php(498): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\RestApiCoordinator->deletecicilan('424')
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestApiCoordinator))
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-08 13:22:10 --> Undefined variable $respond
+in APPPATH\Controllers\RestApiCoordinator.php on line 517.
+ 1 APPPATH\Controllers\RestApiCoordinator.php(517): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $respond', 'APPPATH\\Controllers\\RestApiCoordinator.php', 517)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\RestApiCoordinator->deletecicilan('424')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestApiCoordinator))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-08 13:23:20 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_log_cicilan`, CONSTRAINT `tb_log_cicilan_ibfk_3` FOREIGN KEY (`c_id`) REFERENCES `tb_cicilan` (`c_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\RestApiCoordinator.php(498): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\RestApiCoordinator->deletecicilan('424')
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RestApiCoordinator))
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}

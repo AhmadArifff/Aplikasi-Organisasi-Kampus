@@ -1,0 +1,580 @@
+CRITICAL - 2023-04-19 08:58:35 --> unlink(foto-paket/1681800227_9743f9310d49b387136f.jpeg): No such file or directory
+in APPPATH\Controllers\AdminControllers.php on line 1737.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(foto-paket/1681800227_9743f9310d49b387136f.jpeg): No such file or directory', 'APPPATH\\Controllers\\AdminControllers.php', 1737)
+ 2 APPPATH\Controllers\AdminControllers.php(1737): unlink('foto-paket/1681800227_9743f9310d49b387136f.jpeg')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('48')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 08:59:16 --> unlink(foto-paket/1681800227_9743f9310d49b387136f.jpeg): No such file or directory
+in APPPATH\Controllers\AdminControllers.php on line 1821.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(foto-paket/1681800227_9743f9310d49b387136f.jpeg): No such file or directory', 'APPPATH\\Controllers\\AdminControllers.php', 1821)
+ 2 APPPATH\Controllers\AdminControllers.php(1821): unlink('foto-paket/1681800227_9743f9310d49b387136f.jpeg')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletepaketbarang('48')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-19 09:43:37 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_log_cicilan_sementara`, CONSTRAINT `tb_log_cicilan_sementara_ibfk_3` FOREIGN KEY (`c_id`) REFERENCES `tb_cicilan` (`c_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(3026): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('238')
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-04-19 09:43:37 --> Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_log_cicilan_sementara`, CONSTRAINT `tb_log_cicilan_sementara_ibfk_3` FOREIGN KEY (`c_id`) REFERENCES `tb_cicilan` (`c_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb_cicilan`
+WHERE `c_id` IN (\'238\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_cicilan`
+WHERE `c_id` IN (\'238\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_cicilan`
+WHERE `c_id` IN (\'238\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_cicilan`
+WHERE `c_id` IN :c_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\AdminControllers.php(3026): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('238')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 09:45:48 --> Undefined variable $databy_c_id
+in APPPATH\Controllers\AdminControllers.php on line 3022.
+ 1 APPPATH\Controllers\AdminControllers.php(3022): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $databy_c_id', 'APPPATH\\Controllers\\AdminControllers.php', 3022)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('240')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-19 09:46:07 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_log_cicilan`, CONSTRAINT `tb_log_cicilan_ibfk_3` FOREIGN KEY (`c_id`) REFERENCES `tb_cicilan` (`c_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(3026): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('238')
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-04-19 09:46:07 --> Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_log_cicilan`, CONSTRAINT `tb_log_cicilan_ibfk_3` FOREIGN KEY (`c_id`) REFERENCES `tb_cicilan` (`c_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb_cicilan`
+WHERE `c_id` IN (\'238\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_cicilan`
+WHERE `c_id` IN (\'238\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_cicilan`
+WHERE `c_id` IN (\'238\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_cicilan`
+WHERE `c_id` IN :c_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\AdminControllers.php(3026): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('238')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-19 09:46:14 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_log_cicilan`, CONSTRAINT `tb_log_cicilan_ibfk_3` FOREIGN KEY (`c_id`) REFERENCES `tb_cicilan` (`c_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(3026): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('238')
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-04-19 09:46:14 --> Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_log_cicilan`, CONSTRAINT `tb_log_cicilan_ibfk_3` FOREIGN KEY (`c_id`) REFERENCES `tb_cicilan` (`c_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb_cicilan`
+WHERE `c_id` IN (\'238\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_cicilan`
+WHERE `c_id` IN (\'238\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_cicilan`
+WHERE `c_id` IN (\'238\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_cicilan`
+WHERE `c_id` IN :c_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\AdminControllers.php(3026): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('238')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-19 09:48:10 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_cicilan`, CONSTRAINT `tb_cicilan_ibfk_6` FOREIGN KEY (`p_id`) REFERENCES `tb_paket` (`p_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(1823): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->deletepaketbarang('49')
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-04-19 09:48:10 --> Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_cicilan`, CONSTRAINT `tb_cicilan_ibfk_6` FOREIGN KEY (`p_id`) REFERENCES `tb_paket` (`p_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb_paket`
+WHERE `p_id` IN (\'49\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_paket`
+WHERE `p_id` IN (\'49\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_paket`
+WHERE `p_id` IN (\'49\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_paket`
+WHERE `p_id` IN :p_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\AdminControllers.php(1823): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletepaketbarang('49')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-19 09:48:28 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_cicilan`, CONSTRAINT `tb_cicilan_ibfk_3` FOREIGN KEY (`t_id`) REFERENCES `tb_transaksi` (`t_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(2597): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->deletetransaksi('79')
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-04-19 09:48:28 --> Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_cicilan`, CONSTRAINT `tb_cicilan_ibfk_3` FOREIGN KEY (`t_id`) REFERENCES `tb_transaksi` (`t_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb_transaksi`
+WHERE `t_id` IN (\'79\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_transaksi`
+WHERE `t_id` IN (\'79\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_transaksi`
+WHERE `t_id` IN (\'79\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_transaksi`
+WHERE `t_id` IN :t_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\AdminControllers.php(2597): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletetransaksi('79')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 09:49:02 --> unlink(foto-paket/1681870027_e6f36f0fe50097c0c8ed.jpg): No such file or directory
+in APPPATH\Controllers\AdminControllers.php on line 1821.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(foto-paket/1681870027_e6f36f0fe50097c0c8ed.jpg): No such file or directory', 'APPPATH\\Controllers\\AdminControllers.php', 1821)
+ 2 APPPATH\Controllers\AdminControllers.php(1821): unlink('foto-paket/1681870027_e6f36f0fe50097c0c8ed.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletepaketbarang('49')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 10:22:37 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\AdminControllers.php on line 2989.
+ 1 APPPATH\Controllers\AdminControllers.php(2989): count('81')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('262')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 10:32:55 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\AdminControllers.php on line 2986.
+ 1 APPPATH\Controllers\AdminControllers.php(2986): count('81')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('262')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 10:35:36 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 907.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(789): CodeIgniter\Database\BaseBuilder->_whereIn('t_id', '81', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->whereIn('t_id', '81')
+ 3 APPPATH\Controllers\AdminControllers.php(2988): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('262')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 10:35:50 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 907.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(789): CodeIgniter\Database\BaseBuilder->_whereIn('t_id', '81', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->whereIn('t_id', '81')
+ 3 APPPATH\Controllers\AdminControllers.php(2988): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('263')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 10:39:33 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\AdminControllers.php on line 2989.
+ 1 APPPATH\Controllers\AdminControllers.php(2989): count('81')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('264')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 10:40:23 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\AdminControllers.php on line 2989.
+ 1 APPPATH\Controllers\AdminControllers.php(2989): count('81')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('265')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 10:44:56 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\AdminControllers.php on line 2989.
+ 1 APPPATH\Controllers\AdminControllers.php(2989): count('81')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('266')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 10:58:48 --> count(): Argument #1 ($value) must be of type Countable|array, int given
+in APPPATH\Controllers\AdminControllers.php on line 2994.
+ 1 APPPATH\Controllers\AdminControllers.php(2994): count(1)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('271')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 11:05:10 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\AdminControllers.php on line 2993.
+ 1 APPPATH\Controllers\AdminControllers.php(2993): count('277')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('276')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 12:05:25 --> Undefined variable $approved
+in APPPATH\Views\admin\layout\default.php on line 221.
+ 1 APPPATH\Views\admin\layout\default.php(221): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $approved', 'APPPATH\\Views\\admin\\layout\\default.php', 221)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\layout\\default.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/layout/default', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DataTransaksi/TransaksiPaket/datatransaksi', [], true)
+ 6 APPPATH\Controllers\AdminControllers.php(2326): view('admin/DataTransaksi/TransaksiPaket/datatransaksi', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatatransaksi()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 12:15:54 --> Undefined variable $jumlahby_t_id
+in APPPATH\Controllers\AdminControllers.php on line 2993.
+ 1 APPPATH\Controllers\AdminControllers.php(2993): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jumlahby_t_id', 'APPPATH\\Controllers\\AdminControllers.php', 2993)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('308')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 12:26:06 --> Undefined variable $databy_t_id
+in APPPATH\Controllers\AdminControllers.php on line 2993.
+ 1 APPPATH\Controllers\AdminControllers.php(2993): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $databy_t_id', 'APPPATH\\Controllers\\AdminControllers.php', 2993)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('309')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 12:31:47 --> Undefined variable $jumlahby_t_id
+in APPPATH\Controllers\AdminControllers.php on line 2998.
+ 1 APPPATH\Controllers\AdminControllers.php(2998): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jumlahby_t_id', 'APPPATH\\Controllers\\AdminControllers.php', 2998)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('315')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 12:32:53 --> Undefined variable $jumlahby_t_id
+in APPPATH\Controllers\AdminControllers.php on line 2998.
+ 1 APPPATH\Controllers\AdminControllers.php(2998): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jumlahby_t_id', 'APPPATH\\Controllers\\AdminControllers.php', 2998)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('321')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 12:39:38 --> Undefined variable $jumlahby_t_id
+in APPPATH\Controllers\AdminControllers.php on line 2998.
+ 1 APPPATH\Controllers\AdminControllers.php(2998): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jumlahby_t_id', 'APPPATH\\Controllers\\AdminControllers.php', 2998)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletecicilan('332')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 13:20:56 --> Undefined variable $pp_p_id
+in APPPATH\Controllers\AdminControllers.php on line 2261.
+ 1 APPPATH\Controllers\AdminControllers.php(2261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pp_p_id', 'APPPATH\\Controllers\\AdminControllers.php', 2261)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->transaksiprocess()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 13:21:32 --> Undefined variable $pp_p_id
+in APPPATH\Controllers\AdminControllers.php on line 2261.
+ 1 APPPATH\Controllers\AdminControllers.php(2261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pp_p_id', 'APPPATH\\Controllers\\AdminControllers.php', 2261)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->transaksiprocess()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 13:28:45 --> Undefined variable $pp_p_id
+in APPPATH\Controllers\AdminControllers.php on line 2261.
+ 1 APPPATH\Controllers\AdminControllers.php(2261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pp_p_id', 'APPPATH\\Controllers\\AdminControllers.php', 2261)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->transaksiprocess()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 14:41:33 --> Call to undefined method App\Models\CicilanModels::deletecdeletetransaksi_pengambilanpaketicilan
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\CoordinatorControllers.php(1015): CodeIgniter\Model->__call('deletecdeletetransaksi_pengambilanpaketicilan', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CoordinatorControllers->edittransaksi('98')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoordinatorControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-19 14:42:27 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_transaksi_pengambilan_paket`, CONSTRAINT `tb_transaksi_pengambilan_paket_ibfk_3` FOREIGN KEY (`pp_t_id`) REFERENCES `tb_transaksi` (`t_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\CoordinatorControllers.php(1029): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\CoordinatorControllers->edittransaksi('98')
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoordinatorControllers))
+#10 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-19 14:42:27 --> Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_transaksi_pengambilan_paket`, CONSTRAINT `tb_transaksi_pengambilan_paket_ibfk_3` FOREIGN KEY (`pp_t_id`) REFERENCES `tb_transaksi` (`t_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (0, \'52\', \'23\', \'1\', \'botol\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (0, \'52\', \'23\', \'1\', \'botol\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (0, \'52\', \'23\', \'1\', \'botol\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (:pp_t_id:, :pp_p_id:, :pp_ib_id:, :pp_qty:, :pp_ktrg_berat_ukuran:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\CoordinatorControllers.php(1029): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CoordinatorControllers->edittransaksi('98')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoordinatorControllers))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-19 14:50:28 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_transaksi_pengambilan_paket`, CONSTRAINT `tb_transaksi_pengambilan_paket_ibfk_3` FOREIGN KEY (`pp_t_id`) REFERENCES `tb_transaksi` (`t_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(2549): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->edittransaksi('98')
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#10 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-19 14:50:28 --> Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_transaksi_pengambilan_paket`, CONSTRAINT `tb_transaksi_pengambilan_paket_ibfk_3` FOREIGN KEY (`pp_t_id`) REFERENCES `tb_transaksi` (`t_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (0, \'52\', \'23\', \'1\', \'botol\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (0, \'52\', \'23\', \'1\', \'botol\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (0, \'52\', \'23\', \'1\', \'botol\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (:pp_t_id:, :pp_p_id:, :pp_ib_id:, :pp_qty:, :pp_ktrg_berat_ukuran:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AdminControllers.php(2549): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->edittransaksi('98')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-19 14:51:51 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_transaksi_pengambilan_paket`, CONSTRAINT `tb_transaksi_pengambilan_paket_ibfk_3` FOREIGN KEY (`pp_t_id`) REFERENCES `tb_transaksi` (`t_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(2549): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->edittransaksi('98')
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#10 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-19 14:51:51 --> Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_transaksi_pengambilan_paket`, CONSTRAINT `tb_transaksi_pengambilan_paket_ibfk_3` FOREIGN KEY (`pp_t_id`) REFERENCES `tb_transaksi` (`t_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (0, \'52\', \'23\', \'1\', \'botol\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (0, \'52\', \'23\', \'1\', \'botol\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (0, \'52\', \'23\', \'1\', \'botol\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (:pp_t_id:, :pp_p_id:, :pp_ib_id:, :pp_qty:, :pp_ktrg_berat_ukuran:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AdminControllers.php(2549): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->edittransaksi('98')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-19 14:51:56 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_transaksi_pengambilan_paket`, CONSTRAINT `tb_transaksi_pengambilan_paket_ibfk_3` FOREIGN KEY (`pp_t_id`) REFERENCES `tb_transaksi` (`t_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(2549): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->edittransaksi('98')
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#10 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-19 14:51:56 --> Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_transaksi_pengambilan_paket`, CONSTRAINT `tb_transaksi_pengambilan_paket_ibfk_3` FOREIGN KEY (`pp_t_id`) REFERENCES `tb_transaksi` (`t_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (0, \'52\', \'23\', \'1\', \'botol\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (0, \'52\', \'23\', \'1\', \'botol\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (0, \'52\', \'23\', \'1\', \'botol\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (:pp_t_id:, :pp_p_id:, :pp_ib_id:, :pp_qty:, :pp_ktrg_berat_ukuran:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AdminControllers.php(2549): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->edittransaksi('98')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-19 15:04:15 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\CoordinatorControllers.php on line 1825.
+ 1 APPPATH\Controllers\CoordinatorControllers.php(1825): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\CoordinatorControllers.php', 1825)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CoordinatorControllers->deletelogcicilan('21')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoordinatorControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-19 15:12:10 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_log_cicilan`, CONSTRAINT `tb_log_cicilan_ibfk_3` FOREIGN KEY (`c_id`) REFERENCES `tb_cicilan` (`c_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM tb_...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM tb_...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM tb_...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\app\Models\TransaksiModels.php(120): CodeIgniter\Database\BaseConnection->query('DELETE FROM tb_...', Array)
+#4 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(2590): App\Models\TransaksiModels->deletetransaksicicilan('99')
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->deletetransaksi('99')
+#6 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#7 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-04-19 15:12:10 --> Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_log_cicilan`, CONSTRAINT `tb_log_cicilan_ibfk_3` FOREIGN KEY (`c_id`) REFERENCES `tb_cicilan` (`c_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM tb_cicilan WHERE t_id = \'99\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM tb_cicilan WHERE t_id = \'99\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM tb_cicilan WHERE t_id = \'99\'')
+ 4 APPPATH\Models\TransaksiModels.php(120): CodeIgniter\Database\BaseConnection->query('DELETE FROM tb_cicilan WHERE t_id = ?', [...])
+ 5 APPPATH\Controllers\AdminControllers.php(2590): App\Models\TransaksiModels->deletetransaksicicilan('99')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletetransaksi('99')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-19 15:29:43 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_transaksi_pengambilan_paket`, CONSTRAINT `tb_transaksi_pengambilan_paket_ibfk_3` FOREIGN KEY (`pp_t_id`) REFERENCES `tb_transaksi` (`t_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\CoordinatorControllers.php(1029): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\CoordinatorControllers->edittransaksi('100')
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoordinatorControllers))
+#10 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-19 15:29:43 --> Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_transaksi_pengambilan_paket`, CONSTRAINT `tb_transaksi_pengambilan_paket_ibfk_3` FOREIGN KEY (`pp_t_id`) REFERENCES `tb_transaksi` (`t_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (0, \'52\', \'23\', \'1\', \'botol\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (0, \'52\', \'23\', \'1\', \'botol\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (0, \'52\', \'23\', \'1\', \'botol\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (:pp_t_id:, :pp_p_id:, :pp_ib_id:, :pp_qty:, :pp_ktrg_berat_ukuran:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\CoordinatorControllers.php(1029): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CoordinatorControllers->edittransaksi('100')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoordinatorControllers))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-19 15:30:51 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_transaksi_pengambilan_paket`, CONSTRAINT `tb_transaksi_pengambilan_paket_ibfk_3` FOREIGN KEY (`pp_t_id`) REFERENCES `tb_transaksi` (`t_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\CoordinatorControllers.php(1029): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\CoordinatorControllers->edittransaksi('100')
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoordinatorControllers))
+#10 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-19 15:30:51 --> Cannot add or update a child row: a foreign key constraint fails (`arisya`.`tb_transaksi_pengambilan_paket`, CONSTRAINT `tb_transaksi_pengambilan_paket_ibfk_3` FOREIGN KEY (`pp_t_id`) REFERENCES `tb_transaksi` (`t_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (0, \'52\', \'23\', \'1\', \'botol\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (0, \'52\', \'23\', \'1\', \'botol\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (0, \'52\', \'23\', \'1\', \'botol\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_transaksi_pengambilan_paket` (`pp_t_id`, `pp_p_id`, `pp_ib_id`, `pp_qty`, `pp_ktrg_berat_ukuran`) VALUES (:pp_t_id:, :pp_p_id:, :pp_ib_id:, :pp_qty:, :pp_ktrg_berat_ukuran:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\CoordinatorControllers.php(1029): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CoordinatorControllers->edittransaksi('100')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoordinatorControllers))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

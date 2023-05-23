@@ -1,0 +1,262 @@
+CRITICAL - 2023-02-10 17:23:51 --> Undefined variable $DataTransaksiLogCicilan
+in APPPATH\Views\admin\layout\menu.php on line 29.
+ 1 APPPATH\Views\admin\layout\menu.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $DataTransaksiLogCicilan', 'APPPATH\\Views\\admin\\layout\\menu.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\layout\\menu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('admin/layout/menu', null, true)
+ 5 APPPATH\Views\admin\layout\default.php(287): CodeIgniter\View\View->include('admin/layout/menu')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\layout\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/layout/default', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/datacicilan', [], true)
+10 APPPATH\Controllers\AdminControllers.php(2468): view('admin/datacicilan', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatacicilan()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 17:37:57 --> Undefined variable $tb_sup_barang
+in APPPATH\Views\admin\datalogcicilan.php on line 44.
+ 1 APPPATH\Views\admin\datalogcicilan.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_sup_barang', 'APPPATH\\Views\\admin\\datalogcicilan.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\datalogcicilan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/datalogcicilan', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(2783): view('admin/datalogcicilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatalogcicilan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 17:44:14 --> Undefined variable $DataTransaksiLogCicilan
+in APPPATH\Views\admin\layout\menu.php on line 29.
+ 1 APPPATH\Views\admin\layout\menu.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $DataTransaksiLogCicilan', 'APPPATH\\Views\\admin\\layout\\menu.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\layout\\menu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('admin/layout/menu', null, true)
+ 5 APPPATH\Views\admin\layout\default.php(287): CodeIgniter\View\View->include('admin/layout/menu')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\layout\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/layout/default', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/cicilan', [], true)
+10 APPPATH\Controllers\AdminControllers.php(2408): view('admin/cicilan', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->cicilan()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 17:44:34 --> Undefined variable $supplier
+in APPPATH\Views\admin\logcicilan.php on line 45.
+ 1 APPPATH\Views\admin\logcicilan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $supplier', 'APPPATH\\Views\\admin\\logcicilan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\logcicilan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/logcicilan', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(2719): view('admin/logcicilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->logcicilan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 17:48:15 --> Undefined variable $DataTransaksiLogCicilan
+in APPPATH\Views\admin\layout\menu.php on line 29.
+ 1 APPPATH\Views\admin\layout\menu.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $DataTransaksiLogCicilan', 'APPPATH\\Views\\admin\\layout\\menu.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\layout\\menu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('admin/layout/menu', null, true)
+ 5 APPPATH\Views\admin\layout\default.php(287): CodeIgniter\View\View->include('admin/layout/menu')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\layout\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/layout/default', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/logcicilan', [], true)
+10 APPPATH\Controllers\AdminControllers.php(2719): view('admin/logcicilan', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->logcicilan()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 17:59:48 --> `App\Models\LogCicilanModels` model class does not have a valid dateFormat.
+in SYSTEMPATH\BaseModel.php on line 1218.
+ 1 SYSTEMPATH\BaseModel.php(1218): CodeIgniter\Exceptions\ModelException::forNoDateFormat('App\\Models\\LogCicilanModels')
+ 2 SYSTEMPATH\BaseModel.php(1185): CodeIgniter\BaseModel->intToDate(1676026787)
+ 3 SYSTEMPATH\BaseModel.php(733): CodeIgniter\BaseModel->setDate()
+ 4 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AdminControllers.php(2747): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->logcicilanprocess()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 18:02:19 --> Undefined variable $sup_barang
+in APPPATH\Views\admin\datalogcicilan.php on line 54.
+ 1 APPPATH\Views\admin\datalogcicilan.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sup_barang', 'APPPATH\\Views\\admin\\datalogcicilan.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\datalogcicilan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/datalogcicilan', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(2775): view('admin/datalogcicilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatalogcicilan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-10 18:18:29 --> mysqli_sql_exception: Unknown column 'sb_id' in 'where clause' in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ProjectPaket\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaket\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProjectPaket\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(2804): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editlogcicilan('1')
+#8 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#9 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-02-10 18:18:29 --> Unknown column 'sb_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_log_cicilan`
+WHERE `sb_id` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_log_cicilan`
+WHERE `sb_id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_log_cicilan`
+WHERE `sb_id` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_log_cicilan`
+WHERE `sb_id` = :sb_id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\AdminControllers.php(2804): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editlogcicilan('1')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-10 18:18:48 --> mysqli_sql_exception: Unknown column 'sb_id' in 'where clause' in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ProjectPaket\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaket\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProjectPaket\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(2804): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editlogcicilan('1')
+#8 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#9 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-02-10 18:18:48 --> Unknown column 'sb_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_log_cicilan`
+WHERE `sb_id` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_log_cicilan`
+WHERE `sb_id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_log_cicilan`
+WHERE `sb_id` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_log_cicilan`
+WHERE `sb_id` = :sb_id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\AdminControllers.php(2804): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editlogcicilan('1')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 18:19:08 --> Undefined variable $tb_sup_barang
+in APPPATH\Views\admin\logcicilanedit.php on line 36.
+ 1 APPPATH\Views\admin\logcicilanedit.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_sup_barang', 'APPPATH\\Views\\admin\\logcicilanedit.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\logcicilanedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/logcicilanedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(2840): view('admin/logcicilanedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editlogcicilan('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 18:21:14 --> Undefined variable $tb_supplier
+in APPPATH\Views\admin\logcicilanedit.php on line 42.
+ 1 APPPATH\Views\admin\logcicilanedit.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_supplier', 'APPPATH\\Views\\admin\\logcicilanedit.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\logcicilanedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/logcicilanedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(2840): view('admin/logcicilanedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editlogcicilan('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 18:21:36 --> Undefined variable $tb_sup_barang
+in APPPATH\Views\admin\logcicilanedit.php on line 63.
+ 1 APPPATH\Views\admin\logcicilanedit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_sup_barang', 'APPPATH\\Views\\admin\\logcicilanedit.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\logcicilanedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/logcicilanedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(2840): view('admin/logcicilanedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editlogcicilan('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 18:34:37 --> Undefined array key "l_approval_by "
+in APPPATH\Views\admin\datalogcicilan.php on line 57.
+ 1 APPPATH\Views\admin\datalogcicilan.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "l_approval_by "', 'APPPATH\\Views\\admin\\datalogcicilan.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\datalogcicilan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/datalogcicilan', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(2775): view('admin/datalogcicilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatalogcicilan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-10 22:26:13 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_cicilan`, CONSTRAINT `tb_cicilan_ibfk_6` FOREIGN KEY (`p_id`) REFERENCES `tb_paket` (`p_id`)) in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\ProjectPaket\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaket\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ProjectPaket\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1865): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->deletepaketbarang('4')
+#8 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#9 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-02-10 22:26:13 --> Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_cicilan`, CONSTRAINT `tb_cicilan_ibfk_6` FOREIGN KEY (`p_id`) REFERENCES `tb_paket` (`p_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb_paket`
+WHERE `p_id` IN (\'4\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_paket`
+WHERE `p_id` IN (\'4\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_paket`
+WHERE `p_id` IN (\'4\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_paket`
+WHERE `p_id` IN :p_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\AdminControllers.php(1865): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletepaketbarang('4')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

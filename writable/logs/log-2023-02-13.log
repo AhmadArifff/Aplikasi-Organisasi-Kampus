@@ -1,0 +1,47 @@
+CRITICAL - 2023-02-13 19:59:05 --> Too few arguments to function App\Models\UsersModels::countdatauser(), 0 passed in C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php on line 82 and exactly 1 expected
+in APPPATH\Models\UsersModels.php on line 99.
+ 1 APPPATH\Controllers\AdminControllers.php(82): App\Models\UsersModels->countdatauser()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-13 21:13:43 --> mysqli_sql_exception: Table 'arisya.tb_users' doesn't exist in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\ProjectPaket\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaket\app\Helpers\login_helper.php(10): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\ProjectPaket\app\Views\admin\dashboard.php(28): countdatauser('tb_users')
+#6 C:\xampp\htdocs\ProjectPaket\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\ProjectPaket\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\ProjectPaket\system\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', Array, true)
+#9 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(84): view('admin/dashboard', Array)
+#10 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->index()
+#11 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#12 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-02-13 21:13:43 --> Table 'arisya.tb_users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_users`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_users`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_users`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_users`', [], false)
+ 5 APPPATH\Helpers\login_helper.php(10): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Views\admin\dashboard.php(28): countdatauser('tb_users')
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+10 APPPATH\Controllers\AdminControllers.php(84): view('admin/dashboard', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->index()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

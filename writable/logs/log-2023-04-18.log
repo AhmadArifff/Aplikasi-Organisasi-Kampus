@@ -1,0 +1,173 @@
+ERROR - 2023-04-18 10:46:01 --> mysqli_sql_exception: Unknown column 'pp_t_id' in 'where clause' in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM tb_...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM tb_...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM tb_...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\app\Models\TransaksiModels.php(115): CodeIgniter\Database\BaseConnection->query('DELETE FROM tb_...', Array)
+#4 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(2537): App\Models\TransaksiModels->deletetransaksipengambilanpeket('74')
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->deletetransaksi('74')
+#6 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#7 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-04-18 10:46:01 --> Unknown column 'pp_t_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM tb_transaksi_pengambilan_paket WHERE pp_t_id = \'74\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM tb_transaksi_pengambilan_paket WHERE pp_t_id = \'74\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM tb_transaksi_pengambilan_paket WHERE pp_t_id = \'74\'')
+ 4 APPPATH\Models\TransaksiModels.php(115): CodeIgniter\Database\BaseConnection->query('DELETE FROM tb_transaksi_pengambilan_paket WHERE pp_t_id = ?', [...])
+ 5 APPPATH\Controllers\AdminControllers.php(2537): App\Models\TransaksiModels->deletetransaksipengambilanpeket('74')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletetransaksi('74')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-18 10:46:59 --> unlink(foto-paket/1681702048_87089e076143b31e3e0a.jpeg): No such file or directory
+in APPPATH\Controllers\AdminControllers.php on line 1764.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(foto-paket/1681702048_87089e076143b31e3e0a.jpeg): No such file or directory', 'APPPATH\\Controllers\\AdminControllers.php', 1764)
+ 2 APPPATH\Controllers\AdminControllers.php(1764): unlink('foto-paket/1681702048_87089e076143b31e3e0a.jpeg')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletepaketbarang('47')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-18 11:15:33 --> Undefined array key "ib_qty_sisa_beli"
+in APPPATH\Views\admin\DatabaseBarang\DataItemBarang\dataitembarang.php on line 54.
+ 1 APPPATH\Views\admin\DatabaseBarang\DataItemBarang\dataitembarang.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ib_qty_sisa_beli"', 'APPPATH\\Views\\admin\\DatabaseBarang\\DataItemBarang\\dataitembarang.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\DataItemBarang\\dataitembarang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/DataItemBarang/dataitembarang', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(916): view('admin/DatabaseBarang/DataItemBarang/dataitembarang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdataitembarang()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-18 12:28:15 --> Undefined variable $pengambilanpaket
+in APPPATH\Views\admin\DatabaseBarang\PaketBarang\paketbarangedit.php on line 111.
+ 1 APPPATH\Views\admin\DatabaseBarang\PaketBarang\paketbarangedit.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengambilanpaket', 'APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\paketbarangedit.php', 111)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/PaketBarang/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1764): view('admin/DatabaseBarang/PaketBarang/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('48')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-18 12:33:18 --> Undefined array key "ib_id"
+in APPPATH\Views\admin\DatabaseBarang\PaketBarang\paketbarangedit.php on line 110.
+ 1 APPPATH\Views\admin\DatabaseBarang\PaketBarang\paketbarangedit.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ib_id"', 'APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\paketbarangedit.php', 110)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\PaketBarang\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/PaketBarang/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1764): view('admin/DatabaseBarang/PaketBarang/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('48')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-18 13:25:49 --> Call to a member function getError() on null
+in APPPATH\Controllers\AdminControllers.php on line 1730.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('48')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-18 13:31:13 --> Call to a member function getError() on null
+in APPPATH\Controllers\AdminControllers.php on line 1730.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('48')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-18 23:05:03 --> Undefined variable $p_id
+in APPPATH\Controllers\AdminControllers.php on line 2649.
+ 1 APPPATH\Controllers\AdminControllers.php(2649): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $p_id', 'APPPATH\\Controllers\\AdminControllers.php', 2649)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ImportFileExceltransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-18 23:11:15 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_log_cicilan`, CONSTRAINT `tb_log_cicilan_ibfk_4` FOREIGN KEY (`l_id_sementara`) REFERENCES `tb_log_cicilan_sementara` (`l_id`)) in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(3528): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->deletelogcicilan('16')
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-04-18 23:11:15 --> Cannot delete or update a parent row: a foreign key constraint fails (`arisya`.`tb_log_cicilan`, CONSTRAINT `tb_log_cicilan_ibfk_4` FOREIGN KEY (`l_id_sementara`) REFERENCES `tb_log_cicilan_sementara` (`l_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb_log_cicilan_sementara`
+WHERE `l_id` IN (\'16\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb_log_cicilan_sementara`
+WHERE `l_id` IN (\'16\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb_log_cicilan_sementara`
+WHERE `l_id` IN (\'16\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb_log_cicilan_sementara`
+WHERE `l_id` IN :l_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\AdminControllers.php(3528): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletelogcicilan('16')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-18 23:16:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminControllers.php on line 3526.
+ 1 APPPATH\Controllers\AdminControllers.php(3526): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminControllers.php', 3526)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletelogcicilan('16')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-18 23:18:17 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminControllers.php on line 3526.
+ 1 APPPATH\Controllers\AdminControllers.php(3526): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminControllers.php', 3526)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletelogcicilan('16')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-18 23:21:14 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminControllers.php on line 3526.
+ 1 APPPATH\Controllers\AdminControllers.php(3526): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminControllers.php', 3526)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletelogcicilan('17')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-18 23:22:23 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminControllers.php on line 3526.
+ 1 APPPATH\Controllers\AdminControllers.php(3526): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminControllers.php', 3526)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletelogcicilan('17')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-18 23:22:33 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\AdminControllers.php on line 3526.
+ 1 APPPATH\Controllers\AdminControllers.php(3526): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\AdminControllers.php', 3526)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletelogcicilan('17')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-18 23:24:51 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\AdminControllers.php on line 3525.
+ 1 APPPATH\Controllers\AdminControllers.php(3525): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Controllers\\AdminControllers.php', 3525)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->deletelogcicilan('17')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

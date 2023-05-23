@@ -1,0 +1,1139 @@
+ERROR - 2023-02-19 08:21:24 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'arisya', 3306, '', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ProjectPaket\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaket\app\Controllers\LoginControllers.php(73): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+#6 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ProjectPaket\app\Controllers\LoginControllers.php(73): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+#5 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+#6 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-02-19 08:21:24 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+WHERE `u_username` = :u_username:', [...], false)
+ 3 APPPATH\Controllers\LoginControllers.php(73): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 09:13:34 --> Call to undefined method App\Models\UsersModels::datakabupaten
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(106): CodeIgniter\Model->__call('datakabupaten', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->registeruser()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 09:13:47 --> Call to undefined method App\Models\UsersModels::datakabupaten
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(106): CodeIgniter\Model->__call('datakabupaten', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->registeruser()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 09:14:56 --> Call to undefined method App\Models\UsersModels::datakabupaten
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(106): CodeIgniter\Model->__call('datakabupaten', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->registeruser()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 09:20:44 --> Undefined array key "p_barang"
+in APPPATH\Views\admin\paketbarangedit.php on line 184.
+ 1 APPPATH\Views\admin\paketbarangedit.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "p_barang"', 'APPPATH\\Views\\admin\\paketbarangedit.php', 184)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1870): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 09:21:34 --> Undefined array key "p_barang"
+in APPPATH\Views\admin\paketbarangedit.php on line 184.
+ 1 APPPATH\Views\admin\paketbarangedit.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "p_barang"', 'APPPATH\\Views\\admin\\paketbarangedit.php', 184)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1870): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 09:27:21 --> Unclosed '{' on line 128
+in APPPATH\Views\admin\paketbarangedit.php on line 193.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 3 APPPATH\Controllers\AdminControllers.php(1870): view('admin/paketbarangedit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 09:27:32 --> Undefined variable $tampil
+in APPPATH\Views\admin\paketbarangedit.php on line 142.
+ 1 APPPATH\Views\admin\paketbarangedit.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tampil', 'APPPATH\\Views\\admin\\paketbarangedit.php', 142)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1870): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 09:50:11 --> Array to string conversion
+in APPPATH\Controllers\AdminControllers.php on line 60.
+ 1 APPPATH\Controllers\AdminControllers.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AdminControllers.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->Kabupaten()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 09:57:04 --> Unsupported operand types: string + null
+in APPPATH\Controllers\AdminControllers.php on line 60.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->Kabupaten()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 10:27:34 --> Undefined variable $kabupaten
+in APPPATH\Views\admin\registeruser.php on line 167.
+ 1 APPPATH\Views\admin\registeruser.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kabupaten', 'APPPATH\\Views\\admin\\registeruser.php', 167)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\registeruser.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/registeruser', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(113): view('admin/registeruser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->registeruser()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 10:41:59 --> Unclosed '{' on line 128
+in APPPATH\Views\admin\paketbarangedit.php on line 206.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 3 APPPATH\Controllers\AdminControllers.php(1870): view('admin/paketbarangedit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 10:42:39 --> Unclosed '{' on line 128
+in APPPATH\Views\admin\paketbarangedit.php on line 206.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 3 APPPATH\Controllers\AdminControllers.php(1870): view('admin/paketbarangedit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 10:47:22 --> Unclosed '{' on line 128
+in APPPATH\Views\admin\paketbarangedit.php on line 205.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 3 APPPATH\Controllers\AdminControllers.php(1870): view('admin/paketbarangedit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 10:58:39 --> Undefined variable $tb_sup_barang
+in APPPATH\Views\admin\paketbarangedit.php on line 130.
+ 1 APPPATH\Views\admin\paketbarangedit.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_sup_barang', 'APPPATH\\Views\\admin\\paketbarangedit.php', 130)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1870): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 10:59:29 --> Undefined variable $tampil
+in APPPATH\Views\admin\paketbarangedit.php on line 133.
+ 1 APPPATH\Views\admin\paketbarangedit.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tampil', 'APPPATH\\Views\\admin\\paketbarangedit.php', 133)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1870): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 11:00:06 --> Undefined variable $tampil
+in APPPATH\Views\admin\paketbarangedit.php on line 141.
+ 1 APPPATH\Views\admin\paketbarangedit.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tampil', 'APPPATH\\Views\\admin\\paketbarangedit.php', 141)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1870): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 11:13:08 --> Undefined array key 13
+in APPPATH\Views\admin\paketbarangedit.php on line 136.
+ 1 APPPATH\Views\admin\paketbarangedit.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 13', 'APPPATH\\Views\\admin\\paketbarangedit.php', 136)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1870): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 11:20:42 --> Call to a member function findAll() on string
+in APPPATH\Views\admin\paketbarangedit.php on line 136.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 4 APPPATH\Controllers\AdminControllers.php(1870): view('admin/paketbarangedit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 11:33:27 --> Call to a member function index() on string
+in APPPATH\Views\admin\paketbarangedit.php on line 138.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 4 APPPATH\Controllers\AdminControllers.php(1870): view('admin/paketbarangedit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 11:34:18 --> Undefined array key "pp_id[0]"
+in APPPATH\Views\admin\paketbarangedit.php on line 138.
+ 1 APPPATH\Views\admin\paketbarangedit.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pp_id[0]"', 'APPPATH\\Views\\admin\\paketbarangedit.php', 138)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1870): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 20:21:42 --> Cannot use object of type CodeIgniter\Database\MySQLi\Builder as array
+in APPPATH\Views\admin\paketbarangedit.php on line 36.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 4 APPPATH\Controllers\AdminControllers.php(1870): view('admin/paketbarangedit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 20:22:43 --> mysqli_sql_exception: Not unique table/alias: 'tb_pengambilan_paket' in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ProjectPaket\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaket\app\Models\PaketBarangModels.php(88): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1833): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('13')
+#6 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#8 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-19 20:22:43 --> Not unique table/alias: 'tb_pengambilan_paket'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_pengambilan_paket`
+JOIN `tb_pengambilan_paket` ON `tb_paket`.`p_id` = `tb_pengambilan_paket`.`p_id`
+JOIN `tb_sup_barang` ON `tb_pengambilan_paket`.`sb_id` = `tb_sup_barang`.`sb_id`
+WHERE `tb_paket`.`p_id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_pengambilan_paket`
+JOIN `tb_pengambilan_paket` ON `tb_paket`.`p_id` = `tb_pengambilan_paket`.`p_id`
+JOIN `tb_sup_barang` ON `tb_pengambilan_paket`.`sb_id` = `tb_sup_barang`.`sb_id`
+WHERE `tb_paket`.`p_id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_pengambilan_paket`
+JOIN `tb_pengambilan_paket` ON `tb_paket`.`p_id` = `tb_pengambilan_paket`.`p_id`
+JOIN `tb_sup_barang` ON `tb_pengambilan_paket`.`sb_id` = `tb_sup_barang`.`sb_id`
+WHERE `tb_paket`.`p_id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_pengambilan_paket`
+JOIN `tb_pengambilan_paket` ON `tb_paket`.`p_id` = `tb_pengambilan_paket`.`p_id`
+JOIN `tb_sup_barang` ON `tb_pengambilan_paket`.`sb_id` = `tb_sup_barang`.`sb_id`
+WHERE `tb_paket`.`p_id` = :tb_paket.p_id:', [...], false)
+ 5 APPPATH\Models\PaketBarangModels.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminControllers.php(1833): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('13')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 20:23:23 --> mysqli_sql_exception: Not unique table/alias: 'tb_pengambilan_paket' in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ProjectPaket\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaket\app\Models\PaketBarangModels.php(88): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1833): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('13')
+#6 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#8 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-19 20:23:23 --> Not unique table/alias: 'tb_pengambilan_paket'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_pengambilan_paket`
+JOIN `tb_pengambilan_paket` ON `tb_paket`.`p_id` = `tb_pengambilan_paket`.`p_id`
+JOIN `tb_sup_barang` ON `tb_pengambilan_paket`.`sb_id` = `tb_sup_barang`.`sb_id`
+WHERE `tb_paket`.`p_id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_pengambilan_paket`
+JOIN `tb_pengambilan_paket` ON `tb_paket`.`p_id` = `tb_pengambilan_paket`.`p_id`
+JOIN `tb_sup_barang` ON `tb_pengambilan_paket`.`sb_id` = `tb_sup_barang`.`sb_id`
+WHERE `tb_paket`.`p_id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_pengambilan_paket`
+JOIN `tb_pengambilan_paket` ON `tb_paket`.`p_id` = `tb_pengambilan_paket`.`p_id`
+JOIN `tb_sup_barang` ON `tb_pengambilan_paket`.`sb_id` = `tb_sup_barang`.`sb_id`
+WHERE `tb_paket`.`p_id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_pengambilan_paket`
+JOIN `tb_pengambilan_paket` ON `tb_paket`.`p_id` = `tb_pengambilan_paket`.`p_id`
+JOIN `tb_sup_barang` ON `tb_pengambilan_paket`.`sb_id` = `tb_sup_barang`.`sb_id`
+WHERE `tb_paket`.`p_id` = :tb_paket.p_id:', [...], false)
+ 5 APPPATH\Models\PaketBarangModels.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminControllers.php(1833): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('13')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 20:23:25 --> mysqli_sql_exception: Not unique table/alias: 'tb_pengambilan_paket' in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ProjectPaket\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaket\app\Models\PaketBarangModels.php(88): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1833): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('13')
+#6 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#8 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-02-19 20:23:25 --> Not unique table/alias: 'tb_pengambilan_paket'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_pengambilan_paket`
+JOIN `tb_pengambilan_paket` ON `tb_paket`.`p_id` = `tb_pengambilan_paket`.`p_id`
+JOIN `tb_sup_barang` ON `tb_pengambilan_paket`.`sb_id` = `tb_sup_barang`.`sb_id`
+WHERE `tb_paket`.`p_id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_pengambilan_paket`
+JOIN `tb_pengambilan_paket` ON `tb_paket`.`p_id` = `tb_pengambilan_paket`.`p_id`
+JOIN `tb_sup_barang` ON `tb_pengambilan_paket`.`sb_id` = `tb_sup_barang`.`sb_id`
+WHERE `tb_paket`.`p_id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_pengambilan_paket`
+JOIN `tb_pengambilan_paket` ON `tb_paket`.`p_id` = `tb_pengambilan_paket`.`p_id`
+JOIN `tb_sup_barang` ON `tb_pengambilan_paket`.`sb_id` = `tb_sup_barang`.`sb_id`
+WHERE `tb_paket`.`p_id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_pengambilan_paket`
+JOIN `tb_pengambilan_paket` ON `tb_paket`.`p_id` = `tb_pengambilan_paket`.`p_id`
+JOIN `tb_sup_barang` ON `tb_pengambilan_paket`.`sb_id` = `tb_sup_barang`.`sb_id`
+WHERE `tb_paket`.`p_id` = :tb_paket.p_id:', [...], false)
+ 5 APPPATH\Models\PaketBarangModels.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminControllers.php(1833): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('13')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 20:28:35 --> Undefined array key "p_id"
+in APPPATH\Views\admin\paketbarangedit.php on line 36.
+ 1 APPPATH\Views\admin\paketbarangedit.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "p_id"', 'APPPATH\\Views\\admin\\paketbarangedit.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1870): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 20:29:11 --> Undefined array key "p_id"
+in APPPATH\Views\admin\paketbarangedit.php on line 36.
+ 1 APPPATH\Views\admin\paketbarangedit.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "p_id"', 'APPPATH\\Views\\admin\\paketbarangedit.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1870): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 20:29:18 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+in APPPATH\Models\PaketBarangModels.php on line 93.
+ 1 APPPATH\Controllers\AdminControllers.php(1833): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('13')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 20:33:59 --> Object of class App\Models\PaketBarangModels could not be converted to string
+in APPPATH\Controllers\AdminControllers.php on line 1825.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 20:38:40 --> mysqli_sql_exception: Column 'p_id' in where clause is ambiguous in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\ProjectPaket\app\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1825): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+#5 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+#6 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-19 20:38:40 --> Column 'p_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 4 APPPATH\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 5 APPPATH\Controllers\AdminControllers.php(1825): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 20:39:20 --> mysqli_sql_exception: Column 'p_id' in where clause is ambiguous in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\ProjectPaket\app\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+#5 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+#6 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-19 20:39:20 --> Column 'p_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 4 APPPATH\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 5 APPPATH\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 20:39:23 --> mysqli_sql_exception: Column 'p_id' in where clause is ambiguous in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\ProjectPaket\app\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+#5 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+#6 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-19 20:39:23 --> Column 'p_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 4 APPPATH\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 5 APPPATH\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 20:40:52 --> mysqli_sql_exception: Column 'p_id' in where clause is ambiguous in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\ProjectPaket\app\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+#5 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+#6 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-19 20:40:52 --> Column 'p_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 4 APPPATH\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 5 APPPATH\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 20:40:54 --> mysqli_sql_exception: Column 'p_id' in where clause is ambiguous in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\ProjectPaket\app\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+#5 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+#6 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-19 20:40:54 --> Column 'p_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 4 APPPATH\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 5 APPPATH\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 20:42:07 --> mysqli_sql_exception: Column 'p_id' in where clause is ambiguous in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\ProjectPaket\app\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+#5 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+#6 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-19 20:42:07 --> Column 'p_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 4 APPPATH\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 5 APPPATH\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 20:46:59 --> mysqli_sql_exception: Column 'p_id' in where clause is ambiguous in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\ProjectPaket\app\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+#5 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+#6 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-19 20:46:59 --> Column 'p_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 4 APPPATH\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 5 APPPATH\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 20:47:54 --> mysqli_sql_exception: Column 'p_id' in where clause is ambiguous in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\ProjectPaket\app\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+#5 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+#6 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-19 20:47:54 --> Column 'p_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 4 APPPATH\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 5 APPPATH\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 20:48:25 --> mysqli_sql_exception: Column 'p_id' in where clause is ambiguous in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\ProjectPaket\app\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+#5 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+#6 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-19 20:48:25 --> Column 'p_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 4 APPPATH\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 5 APPPATH\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 20:48:26 --> mysqli_sql_exception: Column 'p_id' in where clause is ambiguous in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\ProjectPaket\app\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+#5 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+#6 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-19 20:48:26 --> Column 'p_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 4 APPPATH\Models\PaketBarangModels.php(91): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_paket
+    INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id
+    INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id
+    WHERE tb_paket.p_id IN (p_id)')
+ 5 APPPATH\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 20:48:52 --> mysqli_sql_exception: Column 'p_id' in where clause is ambiguous in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\ProjectPaket\app\Models\PaketBarangModels.php(88): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+#5 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+#6 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-19 20:48:52 --> Column 'p_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM tb_paket INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id WHERE tb_paket.p_id IN (p_id)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tb_paket INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id WHERE tb_paket.p_id IN (p_id)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tb_paket INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id WHERE tb_paket.p_id IN (p_id)')
+ 4 APPPATH\Models\PaketBarangModels.php(88): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_paket INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id WHERE tb_paket.p_id IN (p_id)')
+ 5 APPPATH\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('p_id', '13')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 20:49:29 --> Undefined array key "p_id"
+in APPPATH\Views\admin\paketbarangedit.php on line 36.
+ 1 APPPATH\Views\admin\paketbarangedit.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "p_id"', 'APPPATH\\Views\\admin\\paketbarangedit.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1871): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 20:49:44 --> Undefined variable $tb_pengambilan_paket
+in APPPATH\Views\admin\paketbarangedit.php on line 36.
+ 1 APPPATH\Views\admin\paketbarangedit.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_pengambilan_paket', 'APPPATH\\Views\\admin\\paketbarangedit.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1871): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 20:49:46 --> Undefined variable $tb_pengambilan_paket
+in APPPATH\Views\admin\paketbarangedit.php on line 36.
+ 1 APPPATH\Views\admin\paketbarangedit.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_pengambilan_paket', 'APPPATH\\Views\\admin\\paketbarangedit.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1871): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 20:49:48 --> Undefined variable $tb_pengambilan_paket
+in APPPATH\Views\admin\paketbarangedit.php on line 36.
+ 1 APPPATH\Views\admin\paketbarangedit.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_pengambilan_paket', 'APPPATH\\Views\\admin\\paketbarangedit.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1871): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 20:50:09 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\paketbarangedit.php on line 37.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 4 APPPATH\Controllers\AdminControllers.php(1871): view('admin/paketbarangedit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 20:53:26 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\paketbarangedit.php on line 130.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 4 APPPATH\Controllers\AdminControllers.php(1871): view('admin/paketbarangedit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 20:53:57 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\paketbarangedit.php on line 133.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 4 APPPATH\Controllers\AdminControllers.php(1871): view('admin/paketbarangedit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 20:59:31 --> mysqli_sql_exception: Unknown column 'tb_pengambilan_paket.p_id' in 'on clause' in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\ProjectPaket\app\Models\PaketBarangModels.php(88): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('13')
+#5 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+#6 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-19 20:59:31 --> Unknown column 'tb_pengambilan_paket.p_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM tb_paket INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id WHERE tb_paket.p_id IN (13)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tb_paket INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id WHERE tb_paket.p_id IN (13)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tb_paket INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id WHERE tb_paket.p_id IN (13)')
+ 4 APPPATH\Models\PaketBarangModels.php(88): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_paket INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id WHERE tb_paket.p_id IN (13)')
+ 5 APPPATH\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('13')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 21:00:48 --> mysqli_sql_exception: Unknown column 'tb_pengambilan_paket.p_id' in 'on clause' in C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaket\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\ProjectPaket\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\ProjectPaket\app\Models\PaketBarangModels.php(88): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\ProjectPaket\app\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('13')
+#5 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+#6 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#7 C:\xampp\htdocs\ProjectPaket\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ProjectPaket\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\ProjectPaket\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-02-19 21:00:48 --> Unknown column 'tb_pengambilan_paket.p_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM tb_paket INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id WHERE tb_paket.p_id IN (13)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tb_paket INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id WHERE tb_paket.p_id IN (13)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tb_paket INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id WHERE tb_paket.p_id IN (13)')
+ 4 APPPATH\Models\PaketBarangModels.php(88): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_paket INNER JOIN tb_pengambilan_paket ON tb_paket.p_id = tb_pengambilan_paket.p_id INNER JOIN tb_sup_barang ON tb_pengambilan_paket.sb_id = tb_sup_barang.sb_id WHERE tb_paket.p_id IN (13)')
+ 5 APPPATH\Controllers\AdminControllers.php(1834): App\Models\PaketBarangModels->get_pengambilan_paket_by_id('13')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 21:01:35 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\paketbarangedit.php on line 130.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 4 APPPATH\Controllers\AdminControllers.php(1871): view('admin/paketbarangedit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 21:01:55 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\paketbarangedit.php on line 133.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 4 APPPATH\Controllers\AdminControllers.php(1871): view('admin/paketbarangedit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 21:03:19 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\paketbarangedit.php on line 133.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 4 APPPATH\Controllers\AdminControllers.php(1871): view('admin/paketbarangedit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 21:04:54 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\paketbarangedit.php on line 132.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 4 APPPATH\Controllers\AdminControllers.php(1871): view('admin/paketbarangedit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 21:06:10 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\paketbarangedit.php on line 131.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 4 APPPATH\Controllers\AdminControllers.php(1871): view('admin/paketbarangedit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 21:06:36 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\paketbarangedit.php on line 131.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 4 APPPATH\Controllers\AdminControllers.php(1871): view('admin/paketbarangedit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 21:10:43 --> Undefined array key "p_id"
+in APPPATH\Views\admin\paketbarangedit.php on line 138.
+ 1 APPPATH\Views\admin\paketbarangedit.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "p_id"', 'APPPATH\\Views\\admin\\paketbarangedit.php', 138)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1871): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 21:16:59 --> Undefined variable $paketbarang
+in APPPATH\Views\admin\paketbarangedit.php on line 129.
+ 1 APPPATH\Views\admin\paketbarangedit.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paketbarang', 'APPPATH\\Views\\admin\\paketbarangedit.php', 129)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1871): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 21:17:06 --> Undefined variable $paketbarang
+in APPPATH\Views\admin\paketbarangedit.php on line 129.
+ 1 APPPATH\Views\admin\paketbarangedit.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paketbarang', 'APPPATH\\Views\\admin\\paketbarangedit.php', 129)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1871): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 21:17:08 --> Undefined variable $paketbarang
+in APPPATH\Views\admin\paketbarangedit.php on line 129.
+ 1 APPPATH\Views\admin\paketbarangedit.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paketbarang', 'APPPATH\\Views\\admin\\paketbarangedit.php', 129)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1871): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 21:21:51 --> Undefined variable $p_id
+in APPPATH\Views\admin\paketbarangedit.php on line 130.
+ 1 APPPATH\Views\admin\paketbarangedit.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $p_id', 'APPPATH\\Views\\admin\\paketbarangedit.php', 130)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1871): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 21:47:43 --> Undefined array key "p_id"
+in APPPATH\Views\admin\paketbarangedit.php on line 142.
+ 1 APPPATH\Views\admin\paketbarangedit.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "p_id"', 'APPPATH\\Views\\admin\\paketbarangedit.php', 142)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1871): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('13')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 22:13:35 --> Undefined array key "p_id"
+in APPPATH\Views\admin\datapaketbarang.php on line 77.
+ 1 APPPATH\Views\admin\datapaketbarang.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "p_id"', 'APPPATH\\Views\\admin\\datapaketbarang.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\datapaketbarang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/datapaketbarang', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1797): view('admin/datapaketbarang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatapaketbarang()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 23:14:53 --> Undefined variable $tb_pengambilan_paket
+in APPPATH\Views\admin\paketbarangedit.php on line 131.
+ 1 APPPATH\Views\admin\paketbarangedit.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_pengambilan_paket', 'APPPATH\\Views\\admin\\paketbarangedit.php', 131)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1881): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('14')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 23:15:17 --> Undefined variable $tb_su_barang
+in APPPATH\Views\admin\paketbarangedit.php on line 139.
+ 1 APPPATH\Views\admin\paketbarangedit.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_su_barang', 'APPPATH\\Views\\admin\\paketbarangedit.php', 139)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1881): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('14')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-19 23:15:31 --> Undefined variable $tb_su_barang
+in APPPATH\Views\admin\paketbarangedit.php on line 139.
+ 1 APPPATH\Views\admin\paketbarangedit.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_su_barang', 'APPPATH\\Views\\admin\\paketbarangedit.php', 139)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1881): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editpaketbarang('14')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

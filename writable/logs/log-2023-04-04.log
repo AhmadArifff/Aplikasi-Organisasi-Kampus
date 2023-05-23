@@ -1,0 +1,40 @@
+CRITICAL - 2023-04-04 07:51:34 --> Undefined array key 18
+in APPPATH\Controllers\AdminControllers.php on line 538.
+ 1 APPPATH\Controllers\AdminControllers.php(538): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 18', 'APPPATH\\Controllers\\AdminControllers.php', 538)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ImportFileExcelUser()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-04 07:54:28 --> Undefined array key 18
+in APPPATH\Controllers\AdminControllers.php on line 538.
+ 1 APPPATH\Controllers\AdminControllers.php(538): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 18', 'APPPATH\\Controllers\\AdminControllers.php', 538)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ImportFileExcelUser()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-04 08:32:15 --> Undefined array key "ib_qty_stok"
+in APPPATH\Views\admin\DatabaseBarang\DataItemBarang\dataitembarang.php on line 52.
+ 1 APPPATH\Views\admin\DatabaseBarang\DataItemBarang\dataitembarang.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ib_qty_stok"', 'APPPATH\\Views\\admin\\DatabaseBarang\\DataItemBarang\\dataitembarang.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\DataItemBarang\\dataitembarang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/DataItemBarang/dataitembarang', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(735): view('admin/DatabaseBarang/DataItemBarang/dataitembarang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdataitembarang()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-04 08:33:15 --> Undefined array key "ib_qty_stok"
+in APPPATH\Views\admin\DatabaseBarang\DataItemBarang\itembarangedit.php on line 54.
+ 1 APPPATH\Views\admin\DatabaseBarang\DataItemBarang\itembarangedit.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ib_qty_stok"', 'APPPATH\\Views\\admin\\DatabaseBarang\\DataItemBarang\\itembarangedit.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DatabaseBarang\\DataItemBarang\\itembarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DatabaseBarang/DataItemBarang/itembarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(802): view('admin/DatabaseBarang/DataItemBarang/itembarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->edititembarang('5')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

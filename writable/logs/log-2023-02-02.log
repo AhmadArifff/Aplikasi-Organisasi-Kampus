@@ -1,0 +1,118 @@
+CRITICAL - 2023-02-02 13:00:31 --> Undefined array key "u_id"
+in APPPATH\Views\admin\datauser.php on line 62.
+ 1 APPPATH\Views\admin\datauser.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "u_id"', 'APPPATH\\Views\\admin\\datauser.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\datauser.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/datauser', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(259): view('admin/datauser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatauser()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 13:03:57 --> Undefined variable $data
+in APPPATH\Views\admin\datauser.php on line 63.
+ 1 APPPATH\Views\admin\datauser.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\admin\\datauser.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\datauser.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/datauser', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(259): view('admin/datauser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatauser()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 13:06:12 --> Undefined variable $data
+in APPPATH\Views\admin\datauser.php on line 63.
+ 1 APPPATH\Views\admin\datauser.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\admin\\datauser.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\datauser.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/datauser', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(259): view('admin/datauser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatauser()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 19:44:55 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\LoginControllers.php on line 92.
+ 1 APPPATH\Controllers\LoginControllers.php(69): App\Controllers\LoginControllers->setUserSession(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 19:49:49 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\LoginControllers.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 20:20:23 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\LoginControllers.php on line 92.
+ 1 APPPATH\Controllers\LoginControllers.php(69): App\Controllers\LoginControllers->setUserSession(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 20:20:50 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\LoginControllers.php on line 92.
+ 1 APPPATH\Controllers\LoginControllers.php(69): App\Controllers\LoginControllers->setUserSession(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 20:21:20 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Controllers\LoginControllers.php on line 92.
+ 1 APPPATH\Controllers\LoginControllers.php(69): App\Controllers\LoginControllers->setUserSession(Object(CodeIgniter\Database\MySQLi\Result))
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 20:24:37 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\LoginControllers.php on line 96.
+ 1 APPPATH\Controllers\LoginControllers.php(73): App\Controllers\LoginControllers->setUserSession(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 20:24:59 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\LoginControllers.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 20:25:47 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\LoginControllers.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 20:26:52 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\LoginControllers.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 20:38:34 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\LoginControllers.php on line 75.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 20:41:09 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\LoginControllers.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

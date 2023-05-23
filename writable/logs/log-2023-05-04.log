@@ -1,0 +1,84 @@
+CRITICAL - 2023-05-04 07:41:35 --> Undefined variable $j
+in APPPATH\Views\admin\DataTransaksi\TransaksiCicilan\datacicilan.php on line 73.
+ 1 APPPATH\Views\admin\DataTransaksi\TransaksiCicilan\datacicilan.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $j', 'APPPATH\\Views\\admin\\DataTransaksi\\TransaksiCicilan\\datacicilan.php', 73)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DataTransaksi\\TransaksiCicilan\\datacicilan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DataTransaksi/TransaksiCicilan/datacicilan', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(2984): view('admin/DataTransaksi/TransaksiCicilan/datacicilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatacicilan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 07:41:50 --> Undefined variable $j
+in APPPATH\Views\admin\DataTransaksi\TransaksiCicilan\datacicilan.php on line 74.
+ 1 APPPATH\Views\admin\DataTransaksi\TransaksiCicilan\datacicilan.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $j', 'APPPATH\\Views\\admin\\DataTransaksi\\TransaksiCicilan\\datacicilan.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DataTransaksi\\TransaksiCicilan\\datacicilan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DataTransaksi/TransaksiCicilan/datacicilan', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(2984): view('admin/DataTransaksi/TransaksiCicilan/datacicilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatacicilan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 07:41:59 --> Undefined variable $j
+in APPPATH\Views\admin\DataTransaksi\TransaksiCicilan\datacicilan.php on line 74.
+ 1 APPPATH\Views\admin\DataTransaksi\TransaksiCicilan\datacicilan.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $j', 'APPPATH\\Views\\admin\\DataTransaksi\\TransaksiCicilan\\datacicilan.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DataTransaksi\\TransaksiCicilan\\datacicilan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DataTransaksi/TransaksiCicilan/datacicilan', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(2984): view('admin/DataTransaksi/TransaksiCicilan/datacicilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatacicilan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 08:20:48 --> Undefined variable $tampil
+in APPPATH\Views\admin\DataTransaksi\TransaksiLogCicilan\datalogcicilan.php on line 82.
+ 1 APPPATH\Views\admin\DataTransaksi\TransaksiLogCicilan\datalogcicilan.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tampil', 'APPPATH\\Views\\admin\\DataTransaksi\\TransaksiLogCicilan\\datalogcicilan.php', 82)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DataTransaksi\\TransaksiLogCicilan\\datalogcicilan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/DataTransaksi/TransaksiLogCicilan/datalogcicilan', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(3401): view('admin/DataTransaksi/TransaksiLogCicilan/datalogcicilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatalogcicilan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 11:24:58 --> Undefined array key "c_id"
+in APPPATH\Controllers\AdminControllers.php on line 120.
+ 1 APPPATH\Controllers\AdminControllers.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "c_id"', 'APPPATH\\Controllers\\AdminControllers.php', 120)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->PaketLogCicilan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 11:25:08 --> Undefined array key "c_id"
+in APPPATH\Controllers\AdminControllers.php on line 120.
+ 1 APPPATH\Controllers\AdminControllers.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "c_id"', 'APPPATH\\Controllers\\AdminControllers.php', 120)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->PaketLogCicilan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 11:26:16 --> Undefined array key "c_id"
+in APPPATH\Controllers\AdminControllers.php on line 120.
+ 1 APPPATH\Controllers\AdminControllers.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "c_id"', 'APPPATH\\Controllers\\AdminControllers.php', 120)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->PaketLogCicilan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-04 12:42:06 --> Undefined variable $NotipDatacicilan
+in APPPATH\Views\coordinator\DataTransaksi\TransaksiLogCicilan\datalogcicilan.php on line 70.
+ 1 APPPATH\Views\coordinator\DataTransaksi\TransaksiLogCicilan\datalogcicilan.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $NotipDatacicilan', 'APPPATH\\Views\\coordinator\\DataTransaksi\\TransaksiLogCicilan\\datalogcicilan.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\coordinator\\DataTransaksi\\TransaksiLogCicilan\\datalogcicilan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('coordinator/DataTransaksi/TransaksiLogCicilan/datalogcicilan', [], true)
+ 5 APPPATH\Controllers\CoordinatorControllers.php(1782): view('coordinator/DataTransaksi/TransaksiLogCicilan/datalogcicilan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CoordinatorControllers->listdatalogcicilan()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoordinatorControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -1,0 +1,290 @@
+CRITICAL - 2023-04-05 07:51:24 --> strtoupper(): Passing null to parameter #1 ($string) of type string is deprecated
+in APPPATH\Controllers\AdminControllers.php on line 1102.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtoupper(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH\\Controllers\\AdminControllers.php', 1102)
+ 2 APPPATH\Controllers\AdminControllers.php(1102): strtoupper(null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ImportFileExcelpackingbarang()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 07:52:59 --> The route for "admin/databarang/datapackagingbarang" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/databarang/datapackagingbarang')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\AdminControllers.php(1110): redirect('admin/databarang/datapackagingbarang')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ImportFileExcelpackingbarang()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 08:31:24 --> Undefined variable $referensi
+in APPPATH\Controllers\AdminControllers.php on line 2255.
+ 1 APPPATH\Controllers\AdminControllers.php(2255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $referensi', 'APPPATH\\Controllers\\AdminControllers.php', 2255)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ExportDataExceltransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 08:32:38 --> Undefined variable $referensi
+in APPPATH\Controllers\AdminControllers.php on line 2255.
+ 1 APPPATH\Controllers\AdminControllers.php(2255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $referensi', 'APPPATH\\Controllers\\AdminControllers.php', 2255)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ExportDataExceltransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 08:36:29 --> Undefined variable $referensi
+in APPPATH\Controllers\AdminControllers.php on line 2255.
+ 1 APPPATH\Controllers\AdminControllers.php(2255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $referensi', 'APPPATH\\Controllers\\AdminControllers.php', 2255)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ExportDataExceltransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 08:42:18 --> Undefined variable $referensi
+in APPPATH\Controllers\AdminControllers.php on line 2255.
+ 1 APPPATH\Controllers\AdminControllers.php(2255): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $referensi', 'APPPATH\\Controllers\\AdminControllers.php', 2255)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ExportDataExceltransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 12:40:54 --> Undefined variable $setusersbyid
+in APPPATH\Controllers\AdminControllers.php on line 2259.
+ 1 APPPATH\Controllers\AdminControllers.php(2259): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $setusersbyid', 'APPPATH\\Controllers\\AdminControllers.php', 2259)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ExportDataExceltransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 14:23:17 --> Undefined variable $namareferensi
+in APPPATH\Controllers\AdminControllers.php on line 2266.
+ 1 APPPATH\Controllers\AdminControllers.php(2266): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namareferensi', 'APPPATH\\Controllers\\AdminControllers.php', 2266)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ExportDataExceltransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 14:30:34 --> Undefined variable $namareferensi
+in APPPATH\Controllers\AdminControllers.php on line 2285.
+ 1 APPPATH\Controllers\AdminControllers.php(2285): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $namareferensi', 'APPPATH\\Controllers\\AdminControllers.php', 2285)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ExportDataExceltransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 14:41:58 --> Undefined variable $nama_userby_id
+in APPPATH\Controllers\AdminControllers.php on line 2271.
+ 1 APPPATH\Controllers\AdminControllers.php(2271): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_userby_id', 'APPPATH\\Controllers\\AdminControllers.php', 2271)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ExportDataExceltransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 14:42:27 --> Undefined variable $nama_userby_id
+in APPPATH\Controllers\AdminControllers.php on line 2271.
+ 1 APPPATH\Controllers\AdminControllers.php(2271): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_userby_id', 'APPPATH\\Controllers\\AdminControllers.php', 2271)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ExportDataExceltransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 14:42:39 --> Undefined variable $nama_userby_id
+in APPPATH\Controllers\AdminControllers.php on line 2271.
+ 1 APPPATH\Controllers\AdminControllers.php(2271): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_userby_id', 'APPPATH\\Controllers\\AdminControllers.php', 2271)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ExportDataExceltransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 15:20:06 --> Undefined variable $referensi
+in APPPATH\Controllers\AdminControllers.php on line 2245.
+ 1 APPPATH\Controllers\AdminControllers.php(2245): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $referensi', 'APPPATH\\Controllers\\AdminControllers.php', 2245)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ExportDataExceltransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 15:23:43 --> Undefined variable $nama_userby_id
+in APPPATH\Controllers\AdminControllers.php on line 2249.
+ 1 APPPATH\Controllers\AdminControllers.php(2249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_userby_id', 'APPPATH\\Controllers\\AdminControllers.php', 2249)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ExportDataExceltransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 15:24:35 --> Undefined variable $nama_userby_id
+in APPPATH\Controllers\AdminControllers.php on line 2249.
+ 1 APPPATH\Controllers\AdminControllers.php(2249): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama_userby_id', 'APPPATH\\Controllers\\AdminControllers.php', 2249)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ExportDataExceltransaksi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 15:51:29 --> mysqli_sql_exception: Unknown column 'create_at' in 'field list' in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(2815): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->logcicilanprocess()
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#10 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-05 15:51:29 --> Unknown column 'create_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_log_cicilan` (`u_id`, `c_id`, `l_jumlah_bayar`, `l_jumlah_pembayaran_cicilan`, `l_foto`, `create_at`, `l_approval_date`) VALUES (\'73\', \'198\', 125000, 12.307692307692, \'1680684689_4115ade328534b0b45b4.jpg\', \'2023-04-05 15:51:29\', \'2023-04-05 15:51:29\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_log_cicilan` (`u_id`, `c_id`, `l_jumlah_bayar`, `l_jumlah_pembayaran_cicilan`, `l_foto`, `create_at`, `l_approval_date`) VALUES (\'73\', \'198\', 125000, 12.307692307692, \'1680684689_4115ade328534b0b45b4.jpg\', \'2023-04-05 15:51:29\', \'2023-04-05 15:51:29\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_log_cicilan` (`u_id`, `c_id`, `l_jumlah_bayar`, `l_jumlah_pembayaran_cicilan`, `l_foto`, `create_at`, `l_approval_date`) VALUES (\'73\', \'198\', 125000, 12.307692307692, \'1680684689_4115ade328534b0b45b4.jpg\', \'2023-04-05 15:51:29\', \'2023-04-05 15:51:29\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_log_cicilan` (`u_id`, `c_id`, `l_jumlah_bayar`, `l_jumlah_pembayaran_cicilan`, `l_foto`, `create_at`, `l_approval_date`) VALUES (:u_id:, :c_id:, :l_jumlah_bayar:, :l_jumlah_pembayaran_cicilan:, :l_foto:, :create_at:, :l_approval_date:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AdminControllers.php(2815): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->logcicilanprocess()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 15:54:12 --> mysqli_sql_exception: Unknown column 'create_at' in 'field list' in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(2815): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->logcicilanprocess()
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#10 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-05 15:54:12 --> Unknown column 'create_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_log_cicilan` (`u_id`, `c_id`, `l_jumlah_bayar`, `l_jumlah_pembayaran_cicilan`, `l_foto`, `create_at`, `due_date`) VALUES (\'73\', \'198\', 125000, 12.307692307692, \'1680684852_1e05a262562f41a16617.jpg\', \'2023-04-05 15:54:12\', \'2023-04-05 15:54:12\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_log_cicilan` (`u_id`, `c_id`, `l_jumlah_bayar`, `l_jumlah_pembayaran_cicilan`, `l_foto`, `create_at`, `due_date`) VALUES (\'73\', \'198\', 125000, 12.307692307692, \'1680684852_1e05a262562f41a16617.jpg\', \'2023-04-05 15:54:12\', \'2023-04-05 15:54:12\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_log_cicilan` (`u_id`, `c_id`, `l_jumlah_bayar`, `l_jumlah_pembayaran_cicilan`, `l_foto`, `create_at`, `due_date`) VALUES (\'73\', \'198\', 125000, 12.307692307692, \'1680684852_1e05a262562f41a16617.jpg\', \'2023-04-05 15:54:12\', \'2023-04-05 15:54:12\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_log_cicilan` (`u_id`, `c_id`, `l_jumlah_bayar`, `l_jumlah_pembayaran_cicilan`, `l_foto`, `create_at`, `due_date`) VALUES (:u_id:, :c_id:, :l_jumlah_bayar:, :l_jumlah_pembayaran_cicilan:, :l_foto:, :create_at:, :due_date:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AdminControllers.php(2815): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->logcicilanprocess()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 15:55:04 --> mysqli_sql_exception: Unknown column 'create_at' in 'field list' in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(2815): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->logcicilanprocess()
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#10 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-04-05 15:55:04 --> Unknown column 'create_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_log_cicilan` (`u_id`, `c_id`, `l_jumlah_bayar`, `l_jumlah_pembayaran_cicilan`, `l_foto`, `create_at`, `due_date`) VALUES (\'73\', \'198\', 125000, 12.307692307692, \'1680684904_0fe19c213195069dd1b1.jpg\', \'2023-04-05 15:55:04\', \'2023-04-05 15:55:04\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_log_cicilan` (`u_id`, `c_id`, `l_jumlah_bayar`, `l_jumlah_pembayaran_cicilan`, `l_foto`, `create_at`, `due_date`) VALUES (\'73\', \'198\', 125000, 12.307692307692, \'1680684904_0fe19c213195069dd1b1.jpg\', \'2023-04-05 15:55:04\', \'2023-04-05 15:55:04\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_log_cicilan` (`u_id`, `c_id`, `l_jumlah_bayar`, `l_jumlah_pembayaran_cicilan`, `l_foto`, `create_at`, `due_date`) VALUES (\'73\', \'198\', 125000, 12.307692307692, \'1680684904_0fe19c213195069dd1b1.jpg\', \'2023-04-05 15:55:04\', \'2023-04-05 15:55:04\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_log_cicilan` (`u_id`, `c_id`, `l_jumlah_bayar`, `l_jumlah_pembayaran_cicilan`, `l_foto`, `create_at`, `due_date`) VALUES (:u_id:, :c_id:, :l_jumlah_bayar:, :l_jumlah_pembayaran_cicilan:, :l_foto:, :create_at:, :due_date:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AdminControllers.php(2815): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->logcicilanprocess()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 16:06:31 --> mysqli_sql_exception: Table 'arisya.tb_barang' doesn't exist in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(1545): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->ExportDataExcelpaketbarang()
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-04-05 16:06:31 --> Table 'arisya.tb_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_barang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_barang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_barang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_barang`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminControllers.php(1545): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ExportDataExcelpaketbarang()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-05 16:06:50 --> mysqli_sql_exception: Table 'arisya.tb_barang' doesn't exist in C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProjectPaketFinally\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ProjectPaketFinally\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProjectPaketFinally\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProjectPaketFinally\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ProjectPaketFinally\app\Controllers\AdminControllers.php(1545): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(927): App\Controllers\AdminControllers->ExportDataExcelpaketbarang()
+#8 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+#9 C:\xampp\htdocs\ProjectPaketFinally\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProjectPaketFinally\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ProjectPaketFinally\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-04-05 16:06:50 --> Table 'arisya.tb_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_barang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_barang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_barang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_barang`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\AdminControllers.php(1545): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ExportDataExcelpaketbarang()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-05 16:31:22 --> Undefined variable $referensi
+in APPPATH\Controllers\AdminControllers.php on line 3005.
+ 1 APPPATH\Controllers\AdminControllers.php(3005): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $referensi', 'APPPATH\\Controllers\\AdminControllers.php', 3005)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->ExportDataExcellogcicilan()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

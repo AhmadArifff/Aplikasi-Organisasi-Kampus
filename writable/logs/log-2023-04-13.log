@@ -1,0 +1,33 @@
+CRITICAL - 2023-04-13 08:25:38 --> unlink(foto-bukti-pembayaran/1681174950_0805d00baee7cab798e9.jpeg): No such file or directory
+in APPPATH\Controllers\CoordinatorControllers.php on line 1791.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(foto-bukti-pembayaran/1681174950_0805d00baee7cab798e9.jpeg): No such file or directory', 'APPPATH\\Controllers\\CoordinatorControllers.php', 1791)
+ 2 APPPATH\Controllers\CoordinatorControllers.php(1791): unlink('foto-bukti-pembayaran/1681174950_0805d00baee7cab798e9.jpeg')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CoordinatorControllers->deletelogcicilan('17')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoordinatorControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-13 08:32:36 --> Undefined variable $l_id1
+in APPPATH\Controllers\AdminControllers.php on line 3304.
+ 1 APPPATH\Controllers\AdminControllers.php(3304): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $l_id1', 'APPPATH\\Controllers\\AdminControllers.php', 3304)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editnoapprovedlogcicilan('10')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-13 08:34:20 --> Undefined variable $l_id1
+in APPPATH\Controllers\AdminControllers.php on line 3304.
+ 1 APPPATH\Controllers\AdminControllers.php(3304): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $l_id1', 'APPPATH\\Controllers\\AdminControllers.php', 3304)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editnoapprovedlogcicilan('221')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-13 08:35:13 --> Undefined variable $l_id1
+in APPPATH\Controllers\AdminControllers.php on line 3302.
+ 1 APPPATH\Controllers\AdminControllers.php(3302): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $l_id1', 'APPPATH\\Controllers\\AdminControllers.php', 3302)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editnoapprovedlogcicilan('221')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

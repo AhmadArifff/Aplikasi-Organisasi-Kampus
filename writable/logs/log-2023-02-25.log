@@ -1,0 +1,34 @@
+CRITICAL - 2023-02-25 16:00:54 --> number_format(): Argument #1 ($num) must be of type float, string given
+in APPPATH\Views\admin\datapaketbarang.php on line 77.
+ 1 APPPATH\Views\admin\datapaketbarang.php(77): number_format('50,000', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\datapaketbarang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/datapaketbarang', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1875): view('admin/datapaketbarang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatapaketbarang()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-25 17:24:47 --> Undefined array key "p_hargajual"
+in APPPATH\Views\admin\datatransaksi.php on line 58.
+ 1 APPPATH\Views\admin\datatransaksi.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "p_hargajual"', 'APPPATH\\Views\\admin\\datatransaksi.php', 58)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\datatransaksi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/datatransaksi', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(2347): view('admin/datatransaksi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatatransaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-25 17:53:47 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Views\admin\datatransaksi.php on line 71.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/datatransaksi', [], true)
+ 3 APPPATH\Controllers\AdminControllers.php(2347): view('admin/datatransaksi', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatatransaksi()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

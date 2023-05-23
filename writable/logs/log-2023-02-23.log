@@ -1,0 +1,132 @@
+CRITICAL - 2023-02-23 11:43:37 --> Undefined variable $selectitembarang
+in APPPATH\Views\admin\paketbarangedit.php on line 149.
+ 1 APPPATH\Views\admin\paketbarangedit.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectitembarang', 'APPPATH\\Views\\admin\\paketbarangedit.php', 149)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1777): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->myFunction()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 11:49:22 --> Undefined variable $tb_paket
+in APPPATH\Views\admin\paketbarangedit.php on line 36.
+ 1 APPPATH\Views\admin\paketbarangedit.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_paket', 'APPPATH\\Views\\admin\\paketbarangedit.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\paketbarangedit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/paketbarangedit', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(1737): view('admin/paketbarangedit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->myFunction()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 14:11:51 --> Call to undefined method App\Models\PackingBarangModels::datakabupaten1
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1690): CodeIgniter\Model->__call('datakabupaten1', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->HargaPackaging()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 14:14:31 --> Call to undefined method App\Models\PackingBarangModels::datakabupaten1
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1690): CodeIgniter\Model->__call('datakabupaten1', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->HargaPackaging()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 14:16:47 --> Call to undefined method App\Models\PackingBarangModels::datakabupaten1
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1690): CodeIgniter\Model->__call('datakabupaten1', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->HargaPackaging()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 14:17:56 --> Call to undefined method App\Models\PackingBarangModels::datakabupaten1
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\AdminControllers.php(1690): CodeIgniter\Model->__call('datakabupaten1', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->HargaPackaging()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 16:01:30 --> A non-numeric value encountered
+in APPPATH\Controllers\AdminControllers.php on line 1803.
+ 1 APPPATH\Controllers\AdminControllers.php(1803): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Controllers\\AdminControllers.php', 1803)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 16:06:24 --> A non-numeric value encountered
+in APPPATH\Controllers\AdminControllers.php on line 1803.
+ 1 APPPATH\Controllers\AdminControllers.php(1803): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Controllers\\AdminControllers.php', 1803)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 16:18:37 --> str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated
+in APPPATH\Controllers\AdminControllers.php on line 1805.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated', 'APPPATH\\Controllers\\AdminControllers.php', 1805)
+ 2 APPPATH\Controllers\AdminControllers.php(1805): str_replace(',', 'ROOTPATH\\public', null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 16:20:58 --> str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated
+in APPPATH\Controllers\AdminControllers.php on line 1805.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated', 'APPPATH\\Controllers\\AdminControllers.php', 1805)
+ 2 APPPATH\Controllers\AdminControllers.php(1805): str_replace(',', 'ROOTPATH\\public', null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 16:22:50 --> str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated
+in APPPATH\Controllers\AdminControllers.php on line 1805.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated', 'APPPATH\\Controllers\\AdminControllers.php', 1805)
+ 2 APPPATH\Controllers\AdminControllers.php(1805): str_replace(',', 'ROOTPATH\\public', null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 16:22:52 --> str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated
+in APPPATH\Controllers\AdminControllers.php on line 1805.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated', 'APPPATH\\Controllers\\AdminControllers.php', 1805)
+ 2 APPPATH\Controllers\AdminControllers.php(1805): str_replace(',', 'ROOTPATH\\public', null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 16:24:28 --> str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated
+in APPPATH\Controllers\AdminControllers.php on line 1805.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated', 'APPPATH\\Controllers\\AdminControllers.php', 1805)
+ 2 APPPATH\Controllers\AdminControllers.php(1805): str_replace(',', 'ROOTPATH\\public', null)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 16:56:01 --> Unsupported operand types: string + float
+in APPPATH\Controllers\AdminControllers.php on line 1816.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 16:56:46 --> print_r() expects at most 2 arguments, 3 given
+in APPPATH\Controllers\AdminControllers.php on line 1817.
+ 1 APPPATH\Controllers\AdminControllers.php(1817): print_r(17000.0, 'laba kotor', -51000.0)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->paketbarangprocess()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
