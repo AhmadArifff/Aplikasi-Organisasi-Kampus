@@ -32,17 +32,18 @@ class LoginControllers extends BaseController
                 $this->setUserSession($user);
 
                 // Redirecting to dashboard after login
-                if ($user['u_role'] == "admin") {
-                    $data['AdminDashboard'  ] = 'dashboard';
-                    return redirect()->to(base_url('admin/dashboard'));
-                } else if ($user['u_role'] == "mahasiswa") {
-                    return redirect()->to(base_url('mahasiswa/dashboard'));
+                if ($user['u_role'] == "SuperAdmin") {
+                    return redirect()->to(base_url('SuperAdmin/dashboard'));
+                } else if ($user['u_role'] == "AdminLK/OK") {
+                    return redirect()->to(base_url('AdminLK/OK/dashboard'));
+                } else if ($user['u_role'] == "Mahasiswa") {
+                    return redirect()->to(base_url('Mahasiswa/dashboard'));
                 }
             } else {
                 return redirect()->back()->with('error', 'Password tidak ditemukan!');
             }
         } else {
-            return redirect()->back()->with('error', 'Email tidak ditemukan!');
+            return redirect()->back()->with('error', 'NPM tidak ditemukan!');
         }
     }
     private function setUserSession($user)

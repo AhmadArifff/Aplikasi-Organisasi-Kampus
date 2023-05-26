@@ -293,7 +293,7 @@
                                 <i class="fas fa-cog"></i> Settings
                             </a> -->
                             <div class="dropdown-divider"></div>
-                            <a href="<?= base_url(); ?>/coordinator/logout" class="dropdown-item has-icon text-danger">
+                            <a href="<?= base_url(); ?>/mahasiswa/logout" class="dropdown-item has-icon text-danger">
                                 <i class="fas fa-sign-out-alt"></i> Logout
                             </a>
                         </div>
@@ -303,14 +303,14 @@
             <div class="main-sidebar sidebar-style-2">
                 <aside id="sidebar-wrapper">
                     <div class="sidebar-brand">
-                        <img src="<?= base_url(); ?>/assets/img/logo/logo-removebg-preview.png" class="" alt="" style="margin-top: 10px; height: 80px;width: 40%; "><br>
+                        <img src="<?= base_url(); ?>/assets/img/logo/logo.png" class="" alt="" style="margin-top: 10px; height: 80px;width: 40%; "><br>
                         <a href="index.html">Arisya</a>
                     </div>
                     <div class="sidebar-brand sidebar-brand-sm">
                         <a href="index.html">ar</a>
                     </div>
                     <ul class="sidebar-menu">
-                        <?= $this->include('coordinator/layout/menu') ?>
+                        <?= $this->include('mahasiswa/layout/menu') ?>
                     </ul>
                 </aside>
             </div>
@@ -383,31 +383,6 @@
     <script src="<?= base_url() ?>/assets/js/phone.js"></script>
     <script src="<?= base_url() ?>/assets/js/numberRP.js"></script>
     <script type="text/javascript">
-        // function dataprovinsi() {
-        //     $('#provinsi').select2({
-        //         minimumInputLength: 3,
-        //         allowClear: true,
-        //         placeholder: 'Masukan Upline',
-        //         ajax: {
-        //             dataType: 'json',
-        //             url: "<?= site_url('CoordinatorControllers/provinsi') ?>",
-        //             delay: 500,
-        //             data: function(params) {
-        //                 return {
-        //                     search: params.tern
-        //                 }
-        //             },
-        //             processResults: function(data, page) {
-        //                 return {
-        //                     results: data
-        //                 }
-        //             }
-        //         }
-        //     });
-        // }
-        // $(document).ready(function() {
-        //     dataprovinsi();
-        // });
         $(document).ready(function() {
             $('.js-example-basic-single').select2();
             $('.js-example-basic-multiple').select2();
@@ -549,19 +524,6 @@
                 });
             });
         });
-        //load foto barang supplier
-        // function tampilgambar(input) {
-        //     if (input.files && input.files[0]) {
-        //         var reader = new FileReader();
-        //         reader.onload = function(e) {
-        //             $('#gambar_load').attr('src', e.target.result);
-        //         }
-        //         reader.readAsDataURL(input.files[0]);
-        //     }
-        // }
-        // $('$preview_gambar').change(function() {
-        //     tampilgambar(this);
-        // });
     </script>
     <script>
         $(document).ready(function() {
@@ -599,32 +561,6 @@
                 });
             });
         });
-        //AJAX REQUEST TO GET SELECTED PRODUCT
-        // $('.update-record').on('click', function() {
-        //     var p_id = $(this).data('p_id');
-        //     //AJAX REQUEST TO GET SELECTED PRODUCT
-        //     $.ajax({
-        //         url: "<?php echo site_url('CoordinatorControllers/getpaket'); ?>",
-        //         method: "POST",
-        //         data: {
-        //             p_id: pp_p_id
-        //         },
-        //         cache: false,
-        //         success: function(data) {
-        //             var item = data;
-        //             var val1 = item.replace("[", "");
-        //             var val2 = val1.replace("]", "");
-        //             var values = val2;
-        //             $.each(values.split(","), function(i, e) {
-        //                 $(".strings option[value='" + e + "']").prop("selected", true).trigger('change');
-        //                 $(".strings").selectpicker('refresh');
-
-        //             });
-        //         }
-
-        //     });
-        //     return false;
-        // });
     </script>
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 </body>

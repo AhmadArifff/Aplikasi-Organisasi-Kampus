@@ -1,0 +1,531 @@
+CRITICAL - 2023-05-25 07:46:20 --> Undefined array key "u_npm"
+in APPPATH\Controllers\LoginControllers.php on line 24.
+ 1 APPPATH\Controllers\LoginControllers.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "u_npm"', 'APPPATH\\Controllers\\LoginControllers.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:55:01 --> Invalid file: coordinator/layout/default.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('coordinator/layout/default.php')
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('coordinator/layout/default', [], true)
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('mahasiswa/dashboard', [], true)
+ 4 APPPATH\Controllers\MahasiswaControllers.php(33): view('mahasiswa/dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\MahasiswaControllers->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:55:44 --> Invalid file: coordinator/layout/menu.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('coordinator/layout/menu.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('coordinator/layout/menu', null, true)
+ 3 APPPATH\Views\mahasiswa\layout\default.php(313): CodeIgniter\View\View->include('coordinator/layout/menu')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\mahasiswa\\layout\\default.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('mahasiswa/layout/default', [], true)
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('mahasiswa/dashboard', [], true)
+ 8 APPPATH\Controllers\MahasiswaControllers.php(33): view('mahasiswa/dashboard')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\MahasiswaControllers->dashboard()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaControllers))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:56:17 --> Invalid file: coordinator/layout/menu.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('coordinator/layout/menu.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('coordinator/layout/menu', null, true)
+ 3 APPPATH\Views\mahasiswa\layout\default.php(313): CodeIgniter\View\View->include('coordinator/layout/menu')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\mahasiswa\\layout\\default.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('mahasiswa/layout/default', [], true)
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('mahasiswa/dashboard', [], true)
+ 8 APPPATH\Controllers\MahasiswaControllers.php(33): view('mahasiswa/dashboard')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\MahasiswaControllers->dashboard()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaControllers))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:56:18 --> Invalid file: coordinator/layout/menu.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('coordinator/layout/menu.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('coordinator/layout/menu', null, true)
+ 3 APPPATH\Views\mahasiswa\layout\default.php(313): CodeIgniter\View\View->include('coordinator/layout/menu')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\mahasiswa\\layout\\default.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('mahasiswa/layout/default', [], true)
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('mahasiswa/dashboard', [], true)
+ 8 APPPATH\Controllers\MahasiswaControllers.php(33): view('mahasiswa/dashboard')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\MahasiswaControllers->dashboard()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaControllers))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 07:58:08 --> Undefined variable $AdminDashboard
+in APPPATH\Views\mahasiswa\layout\menu.php on line 2.
+ 1 APPPATH\Views\mahasiswa\layout\menu.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $AdminDashboard', 'APPPATH\\Views\\mahasiswa\\layout\\menu.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\mahasiswa\\layout\\menu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('mahasiswa/layout/menu', null, true)
+ 5 APPPATH\Views\mahasiswa\layout\default.php(313): CodeIgniter\View\View->include('mahasiswa/layout/menu')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\mahasiswa\\layout\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('mahasiswa/layout/default', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('mahasiswa/dashboard', [], true)
+10 APPPATH\Controllers\MahasiswaControllers.php(33): view('mahasiswa/dashboard')
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\MahasiswaControllers->dashboard()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaControllers))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 09:05:15 --> Undefined variable $AlertLogCicilan
+in APPPATH\Views\admin\layout\default.php on line 220.
+ 1 APPPATH\Views\admin\layout\default.php(220): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $AlertLogCicilan', 'APPPATH\\Views\\admin\\layout\\default.php', 220)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\layout\\default.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/layout/default', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 6 APPPATH\Controllers\AdminControllers.php(61): view('admin/dashboard', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 09:40:57 --> Undefined variable $tb_user
+in APPPATH\Views\admin\DataUser\datauser.php on line 64.
+ 1 APPPATH\Views\admin\DataUser\datauser.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_user', 'APPPATH\\Views\\admin\\DataUser\\datauser.php', 64)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DataUser\\datauser.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Datauser/datauser', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(62): view('admin/Datauser/datauser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatauser()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 09:45:13 --> Undefined array key "u_username"
+in APPPATH\Views\admin\DataUser\datauser.php on line 67.
+ 1 APPPATH\Views\admin\DataUser\datauser.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "u_username"', 'APPPATH\\Views\\admin\\DataUser\\datauser.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DataUser\\datauser.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Datauser/datauser', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(64): view('admin/Datauser/datauser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatauser()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 09:57:58 --> Call to a member function findAll() on null
+in APPPATH\Controllers\AdminControllers.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatauser()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 09:57:59 --> Call to a member function findAll() on null
+in APPPATH\Controllers\AdminControllers.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatauser()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 09:58:30 --> Call to a member function findAll() on null
+in APPPATH\Controllers\AdminControllers.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatauser()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 09:58:52 --> Undefined variable $AdminDashboard
+in APPPATH\Views\admin\layout\menu.php on line 2.
+ 1 APPPATH\Views\admin\layout\menu.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $AdminDashboard', 'APPPATH\\Views\\admin\\layout\\menu.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\layout\\menu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('admin/layout/menu', null, true)
+ 5 APPPATH\Views\admin\layout\default.php(313): CodeIgniter\View\View->include('admin/layout/menu')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\layout\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/layout/default', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Datauser/datauser', [], true)
+10 APPPATH\Controllers\AdminControllers.php(69): view('admin/Datauser/datauser', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdatauser()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 10:04:46 --> Invalid file: admin/DatabaseUser/importexceluser.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DatabaseUser/importexceluser.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('admin/DatabaseUser/importexceluser', null, true)
+ 3 APPPATH\Views\admin\DataUser\registeruser.php(37): CodeIgniter\View\View->include('admin/DatabaseUser/importexceluser')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DataUser\\registeruser.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Datauser/registeruser', [], true)
+ 7 APPPATH\Controllers\AdminControllers.php(80): view('admin/Datauser/registeruser', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->registeruser()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 10:05:31 --> Invalid file: admin/DatabaseUser/importexceluser.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DatabaseUser/importexceluser.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('admin/DatabaseUser/importexceluser', null, true)
+ 3 APPPATH\Views\admin\DataUser\registeruser.php(37): CodeIgniter\View\View->include('admin/DatabaseUser/importexceluser')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DataUser\\registeruser.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Datauser/registeruser', [], true)
+ 7 APPPATH\Controllers\AdminControllers.php(80): view('admin/Datauser/registeruser', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->registeruser()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 10:05:32 --> Invalid file: admin/DatabaseUser/importexceluser.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/DatabaseUser/importexceluser.php')
+ 2 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('admin/DatabaseUser/importexceluser', null, true)
+ 3 APPPATH\Views\admin\DataUser\registeruser.php(37): CodeIgniter\View\View->include('admin/DatabaseUser/importexceluser')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DataUser\\registeruser.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Datauser/registeruser', [], true)
+ 7 APPPATH\Controllers\AdminControllers.php(80): view('admin/Datauser/registeruser', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->registeruser()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 10:05:40 --> Undefined variable $nameuser
+in APPPATH\Views\admin\DataUser\registeruser.php on line 102.
+ 1 APPPATH\Views\admin\DataUser\registeruser.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nameuser', 'APPPATH\\Views\\admin\\DataUser\\registeruser.php', 102)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\DataUser\\registeruser.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Datauser/registeruser', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(80): view('admin/Datauser/registeruser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->registeruser()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-25 10:23:39 --> mysqli_sql_exception: Duplicate entry '2' for key 'u_prodi' in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseBuilder.php(1778): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', NULL, false)
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Database\Seeds\Users.php(58): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\Seeder.php(146): App\Database\Seeds\Users->run()
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#11 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#12 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+CRITICAL - 2023-05-25 10:55:02 --> Attempt to read property "p_id" on array
+in APPPATH\Views\superadmin\DataUser\registeruser.php on line 120.
+ 1 APPPATH\Views\superadmin\DataUser\registeruser.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "p_id" on array', 'APPPATH\\Views\\superadmin\\DataUser\\registeruser.php', 120)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\DataUser\\registeruser.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Datauser/registeruser', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(81): view('superadmin/Datauser/registeruser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->registeruser()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 10:56:54 --> Attempt to read property "p_id" on array
+in APPPATH\Views\superadmin\DataUser\registeruser.php on line 120.
+ 1 APPPATH\Views\superadmin\DataUser\registeruser.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "p_id" on array', 'APPPATH\\Views\\superadmin\\DataUser\\registeruser.php', 120)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\DataUser\\registeruser.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Datauser/registeruser', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(81): view('superadmin/Datauser/registeruser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->registeruser()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 11:46:33 --> Undefined variable $tb_user
+in APPPATH\Views\superadmin\DataFakultas\datafakultas.php on line 56.
+ 1 APPPATH\Views\superadmin\DataFakultas\datafakultas.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_user', 'APPPATH\\Views\\superadmin\\DataFakultas\\datafakultas.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\DataFakultas\\datafakultas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/DataFakultas/datafakultas', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(106): view('superadmin/DataFakultas/datafakultas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->listdatafakultas()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 11:47:01 --> Undefined variable $tb_user
+in APPPATH\Views\superadmin\DataFakultas\datafakultas.php on line 56.
+ 1 APPPATH\Views\superadmin\DataFakultas\datafakultas.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_user', 'APPPATH\\Views\\superadmin\\DataFakultas\\datafakultas.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\DataFakultas\\datafakultas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/DataFakultas/datafakultas', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(106): view('superadmin/DataFakultas/datafakultas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->listdatafakultas()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 11:49:53 --> Undefined array key "u_npm"
+in APPPATH\Views\superadmin\DataFakultas\datafakultas.php on line 59.
+ 1 APPPATH\Views\superadmin\DataFakultas\datafakultas.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "u_npm"', 'APPPATH\\Views\\superadmin\\DataFakultas\\datafakultas.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\DataFakultas\\datafakultas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/DataFakultas/datafakultas', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(106): view('superadmin/DataFakultas/datafakultas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->listdatafakultas()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-25 11:52:51 --> mysqli_sql_exception: Unknown column 'p_id' in 'where clause' in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php(128): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->editfakultas('1')
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-25 11:52:51 --> Unknown column 'p_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+WHERE `p_id` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+WHERE `p_id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+WHERE `p_id` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+WHERE `p_id` = :p_id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\SuperAdminControllers.php(128): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->editfakultas('1')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-25 11:58:28 --> mysqli_sql_exception: Unknown column 'p_id' in 'where clause' in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php(128): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->editfakultas('1')
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-05-25 11:58:28 --> Unknown column 'p_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_user`
+WHERE `p_id` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_user`
+WHERE `p_id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_user`
+WHERE `p_id` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+WHERE `p_id` = :p_id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\SuperAdminControllers.php(128): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->editfakultas('1')
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 13:08:56 --> Undefined variable $DataBarangSupplier
+in APPPATH\Views\superadmin\layout\menu.php on line 17.
+ 1 APPPATH\Views\superadmin\layout\menu.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $DataBarangSupplier', 'APPPATH\\Views\\superadmin\\layout\\menu.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\layout\\menu.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('superadmin/layout/menu', null, true)
+ 5 APPPATH\Views\superadmin\layout\default.php(313): CodeIgniter\View\View->include('superadmin/layout/menu')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\layout\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('superadmin/layout/default', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/DataFakultas/registereditfakultas', [], true)
+10 APPPATH\Controllers\SuperAdminControllers.php(130): view('superadmin/DataFakultas/registereditfakultas', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->editfakultas('1')
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 14:02:10 --> Undefined variable $tb_user
+in APPPATH\Views\superadmin\LKOK\DataLKOK\datalkok.php on line 56.
+ 1 APPPATH\Views\superadmin\LKOK\DataLKOK\datalkok.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_user', 'APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\datalkok.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\datalkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/LKOK/DataLKOK/datalkok', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(154): view('superadmin/LKOK/DataLKOK/datalkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->listdataLKOK()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 14:06:36 --> Undefined variable $tb_user
+in APPPATH\Views\superadmin\LKOK\DataLKOK\datalkok.php on line 56.
+ 1 APPPATH\Views\superadmin\LKOK\DataLKOK\datalkok.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_user', 'APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\datalkok.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\datalkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/LKOK/DataLKOK/datalkok', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(154): view('superadmin/LKOK/DataLKOK/datalkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->listdataLKOK()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 14:06:38 --> Undefined variable $tb_user
+in APPPATH\Views\superadmin\LKOK\DataLKOK\datalkok.php on line 56.
+ 1 APPPATH\Views\superadmin\LKOK\DataLKOK\datalkok.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_user', 'APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\datalkok.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\datalkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/LKOK/DataLKOK/datalkok', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(154): view('superadmin/LKOK/DataLKOK/datalkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->listdataLKOK()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 14:11:45 --> Undefined variable $tb_prodi
+in APPPATH\Views\superadmin\LKOK\DataLKOK\registerlkok.php on line 118.
+ 1 APPPATH\Views\superadmin\LKOK\DataLKOK\registerlkok.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_prodi', 'APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\registerlkok.php', 118)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\registerlkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/LKOK/DataLKOK/registerlkok', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(168): view('superadmin/LKOK/DataLKOK/registerlkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->registerLKOK()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 14:14:10 --> Undefined array key "0_nama"
+in APPPATH\Views\superadmin\LKOK\DataLKOK\datalkok.php on line 53.
+ 1 APPPATH\Views\superadmin\LKOK\DataLKOK\datalkok.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "0_nama"', 'APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\datalkok.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\datalkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/LKOK/DataLKOK/datalkok', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(154): view('superadmin/LKOK/DataLKOK/datalkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->listdataLKOK()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 14:14:27 --> Undefined array key "O_id"
+in APPPATH\Views\superadmin\LKOK\DataLKOK\datalkok.php on line 55.
+ 1 APPPATH\Views\superadmin\LKOK\DataLKOK\datalkok.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "O_id"', 'APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\datalkok.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\datalkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/LKOK/DataLKOK/datalkok', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(154): view('superadmin/LKOK/DataLKOK/datalkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->listdataLKOK()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 14:14:48 --> Undefined variable $tb_prodi
+in APPPATH\Views\superadmin\LKOK\DataLKOK\registereditlkok.php on line 118.
+ 1 APPPATH\Views\superadmin\LKOK\DataLKOK\registereditlkok.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_prodi', 'APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\registereditlkok.php', 118)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\registereditlkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/LKOK/DataLKOK/registereditlkok', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(182): view('superadmin/LKOK/DataLKOK/registereditlkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->editLKOK('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 14:40:38 --> Undefined array key "0_nama"
+in APPPATH\Views\superadmin\LKOK\DataAnggotaLKOK\dataanggotalkok.php on line 59.
+ 1 APPPATH\Views\superadmin\LKOK\DataAnggotaLKOK\dataanggotalkok.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "0_nama"', 'APPPATH\\Views\\superadmin\\LKOK\\DataAnggotaLKOK\\dataanggotalkok.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\LKOK\\DataAnggotaLKOK\\dataanggotalkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/LKOK/DataAnggotaLKOK/dataanggotalkok', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(196): view('superadmin/LKOK/DataAnggotaLKOK/dataanggotalkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->listdataanggotaLKOK()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 16:39:23 --> Undefined variable $tb_organisasi
+in APPPATH\Views\superadmin\LKOK\DataAnggotaLKOK\dataanggotalkok.php on line 53.
+ 1 APPPATH\Views\superadmin\LKOK\DataAnggotaLKOK\dataanggotalkok.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_organisasi', 'APPPATH\\Views\\superadmin\\LKOK\\DataAnggotaLKOK\\dataanggotalkok.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\LKOK\\DataAnggotaLKOK\\dataanggotalkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/LKOK/DataAnggotaLKOK/dataanggotalkok', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(196): view('superadmin/LKOK/DataAnggotaLKOK/dataanggotalkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->listdataanggotaLKOK()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 16:53:05 --> Undefined array key "o_nama"
+in APPPATH\Views\superadmin\LKOK\DataAnggotaLKOK\dataanggotalkok.php on line 56.
+ 1 APPPATH\Views\superadmin\LKOK\DataAnggotaLKOK\dataanggotalkok.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "o_nama"', 'APPPATH\\Views\\superadmin\\LKOK\\DataAnggotaLKOK\\dataanggotalkok.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\LKOK\\DataAnggotaLKOK\\dataanggotalkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/LKOK/DataAnggotaLKOK/dataanggotalkok', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(199): view('superadmin/LKOK/DataAnggotaLKOK/dataanggotalkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->listdataanggotaLKOK()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 16:53:45 --> Undefined array key "u_nama"
+in APPPATH\Views\superadmin\LKOK\DataAnggotaLKOK\dataanggotalkok.php on line 58.
+ 1 APPPATH\Views\superadmin\LKOK\DataAnggotaLKOK\dataanggotalkok.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "u_nama"', 'APPPATH\\Views\\superadmin\\LKOK\\DataAnggotaLKOK\\dataanggotalkok.php', 58)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\LKOK\\DataAnggotaLKOK\\dataanggotalkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/LKOK/DataAnggotaLKOK/dataanggotalkok', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(199): view('superadmin/LKOK/DataAnggotaLKOK/dataanggotalkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->listdataanggotaLKOK()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-25 16:53:57 --> Undefined variable $tb_anggota
+in APPPATH\Views\superadmin\LKOK\DataAnggotaLKOK\dataanggotalkok.php on line 66.
+ 1 APPPATH\Views\superadmin\LKOK\DataAnggotaLKOK\dataanggotalkok.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_anggota', 'APPPATH\\Views\\superadmin\\LKOK\\DataAnggotaLKOK\\dataanggotalkok.php', 66)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\LKOK\\DataAnggotaLKOK\\dataanggotalkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/LKOK/DataAnggotaLKOK/dataanggotalkok', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(199): view('superadmin/LKOK/DataAnggotaLKOK/dataanggotalkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->listdataanggotaLKOK()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

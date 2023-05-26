@@ -15,9 +15,6 @@
     <link rel="stylesheet" href="<?= base_url() ?>/assets/modules/@fortawesome/fontawesome-free/css/all.min.css">
     <!-- select search -->
     <link rel="stylesheet" href="<?= base_url() ?>/assets/css/select2.min.css">
-    <!-- Yeti login -->
-    <link rel="stylesheet" href="<?= base_url() ?>/assets/css/meyer-reset-login-yeti.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/assets/css/style-login-yeti.css">
 
     <!-- CSS Libraries -->
     <!-- <link rel="stylesheet" href="<?= base_url() ?>/assets/modules/jqvmap/dist/jqvmap.min.css">
@@ -155,14 +152,14 @@
                     </div> -->
                 </form>
                 <ul class="navbar-nav navbar-right">
-                    <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-envelope"></i></a>
+                    <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle beep"><i class="far fa-envelope"></i></a>
                         <div class="dropdown-menu dropdown-list dropdown-menu-right">
                             <div class="dropdown-header">Messages
                                 <div class="float-right">
-                                    <!-- <a href="#">Mark All As Read</a> -->
+                                    <a href="#">Mark All As Read</a>
                                 </div>
                             </div>
-                            <div class="dropdown-list-content dropdown-list-icons">
+                            <div class="dropdown-list-content dropdown-list-message">
                                 <!-- <a href="#" class="dropdown-item dropdown-item-unread">
                                     <div class="dropdown-item-avatar">
                                         <img alt="image" src="<?= base_url() ?>/assets/img/avatar/avatar-1.png" class="rounded-circle">
@@ -215,55 +212,6 @@
                                         <div class="time">Yesterday</div>
                                     </div>
                                 </a> -->
-                                <?php
-                                $current_time = time();
-                                foreach ($AlertLogCicilan as $tb_log_cicilan) {
-                                    $transaksi_time = strtotime($tb_log_cicilan['created_at']);
-                                    $waktu = $current_time - strtotime($tb_log_cicilan['created_at']);
-                                    $hari = floor($waktu / (3600 * 24));
-                                    $jam = floor(($waktu % (3600 * 24)) / 3600);
-                                    $menit = floor(($waktu % 3600) / 60);
-                                    foreach ($NotipDatacicilan as $tb_cicilan) {
-                                        $c_id = $tb_cicilan['c_id'];
-                                        if ($c_id == $tb_log_cicilan['c_id']) {
-                                            $u_created_at = $tb_log_cicilan['created_at'];
-                                            $waktusekarang = $current_time - strtotime($u_created_at);
-                                            $alerthari = floor($waktu / (3600 * 24));
-                                            if ($alerthari >= 1 && $alerthari <= 59) { ?>
-                                                <div class="dropdown-item">
-                                                    <div class="dropdown-item-icon bg-danger text-white">
-                                                        <i class="fas fa-exclamation-triangle"></i>
-                                                    </div>
-                                                    <div class="dropdown-item-desc">
-                                                        <?php foreach ($NotipDataUser as $tb_user) {
-                                                            if ($tb_log_cicilan['u_id'] == $tb_user['u_id']) {
-                                                                $c_id_log_cicilan = $tb_log_cicilan['c_id'];
-                                                                if ($c_id == $c_id_log_cicilan) {
-                                                                    $p_id = $tb_cicilan['p_id'];
-                                                                    $pe_id = $tb_cicilan['pe_id'];
-                                                                    foreach ($NotipDataPeriode as $tb_pay_periode) {
-                                                                        if ($pe_id == $tb_pay_periode['pe_id']) {
-                                                                            $pe_periode = $tb_pay_periode['pe_periode'];
-                                                                            foreach ($NotipDataPaket as $tb_paket) {
-                                                                                if ($p_id == $tb_paket['p_id']) { ?>
-                                                                                    <?= strtoupper('<b style="font-weight: bold; font-size: 13px;">' . $tb_user['u_nama']) . '</b> yang mengambil paket <b style="font-weight: bold; font-size: 13px;">' . $tb_paket['p_nama'] . '</b>, dengan jumlah bayar setoran sebesar Rp. <b style="font-weight: bold; font-size: 13px;">' .  number_format($tb_paket['p_setoran'], 2, ',', '.')  . '</b> sisa periode pembayaran sebanyak  <b style="font-weight: bold; font-size: 13px;">' . $tb_cicilan['c_cicilan_outstanding'] . '</b> <b style="font-weight: bold; font-size: 13px;">' . $tb_pay_periode['pe_nama'] . "</b> telah menunggak selama " . '<b style="font-weight: bold; font-size: 13px;">' . $alerthari . ' hari</b>'; ?>
-                                                        <?php }
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                        } ?>
-                                                        <div class="time"><?= $hari . " hari," . $jam . " jam," . $menit . " menit yang lalu" ?></div>
-                                                    </div>
-                                                </div>
-                                        <?php }
-                                        }
-                                        ?>
-                                <?php
-                                    }
-                                }
-                                ?>
                             </div>
                             <div class="dropdown-footer text-center">
                                 <a href="#">View All <i class="fas fa-chevron-right"></i></a>
@@ -273,9 +221,9 @@
                     <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
                         <div class="dropdown-menu dropdown-list dropdown-menu-right">
                             <div class="dropdown-header">Notifications
-                                <!-- <div class="float-right">
+                                <div class="float-right">
                                     <a href="#">Mark All As Read</a>
-                                </div> -->
+                                </div>
                             </div>
                             <div class="dropdown-list-content dropdown-list-icons">
                                 <!-- <a href="#" class="dropdown-item dropdown-item-unread">
@@ -295,156 +243,26 @@
                                         <b>You</b> and <b>Dedik Sugiharto</b> are now friends
                                         <div class="time">10 Hours Ago</div>
                                     </div>
-                                </a> -->
-                                <!-- <a href="#" class="dropdown-item">
+                                </a>
+                                <a href="#" class="dropdown-item">
                                     <div class="dropdown-item-icon bg-success text-white">
-                                        <i class="fas fa-receipt"></i>
+                                        <i class="fas fa-check"></i>
                                     </div>
                                     <div class="dropdown-item-desc">
                                         <b>Kusnaedi</b> has moved task <b>Fix bug header</b> to <b>Done</b>
                                         <div class="time">12 Hours Ago</div>
                                     </div>
-                                </a> -->
-                                <!-- Data approved transaksi -->
-                                <?php $current_time = time();
-                                foreach ($NotipDataTransaksi as $tb_transaksi) {
-                                    $transaksi_time = strtotime($tb_transaksi['waktu']);
-                                    $waktu = $current_time - strtotime($tb_transaksi['waktu']);
-                                    $hari = floor($waktu / (3600 * 24));
-                                    $jam = floor(($waktu % (3600 * 24)) / 3600);
-                                    $menit = floor(($waktu % 3600) / 60);
-                                    $approved = $tb_transaksi['t_approval_by'];
-                                    if ($approved == null) { ?>
-                                        <div class="dropdown-item">
-                                            <?php if ($approved != null) {
-                                                if ($approved != null) {
-                                                } else {
-                                            ?>
-                                                    <div class="dropdown-item-icon bg-success text-white">
-                                                        <i class="fas fa-check"></i>
-                                                    </div>
-                                                    <div class="dropdown-item-desc">
-                                                        <?php foreach ($NotipDataUser as $tb_user) {
-                                                            if ($tb_transaksi['u_id'] == $tb_user['u_id']) { ?>
-                                                                <?php foreach ($NotipDataPaket as $tb_paket) {
-                                                                    if ($tb_transaksi['p_id'] == $tb_paket['p_id']) { ?>
-                                                                        <?= strtoupper('<b style="font-weight: bold; font-size: 13px;">' . $tb_user['u_nama']) . '</b> telah mengambil paket <b style="font-weight: bold; font-size: 13px;">' . $tb_paket['p_nama'] . '</b>, dengan jumlah <b style="font-weight: bold; font-size: 13px;">' . $tb_transaksi['t_qty'] . "</b> paket."; ?>
-                                                        <?php }
-                                                                }
-                                                            }
-                                                        } ?>
-                                                        <div class="time"><a href="<?= base_url('admin/datatransaksi/noapprovedtransaksi/' . $tb_transaksi['t_id'] . '/noapproved') ?>" class="btn btn-primary btn-sm" disabled>Telah Disetujui</a></div>
-                                                        <div class="time"><?= $hari . " hari, " . $jam . " jam, " . $menit . " menit yang lalu" ?></div>
-
-                                                    </div>
-                                                <?php }
-                                            } else { ?>
-                                                <div class="dropdown-item-icon bg-danger text-white">
-                                                    <i class="fas fa-exclamation-triangle"></i>
-                                                </div>
-                                                <div class="dropdown-item-desc">
-                                                    <?php foreach ($NotipDataUser as $tb_user) {
-                                                        if ($tb_transaksi['u_id'] == $tb_user['u_id']) { ?>
-                                                            <?php foreach ($NotipDataPaket as $tb_paket) {
-                                                                if ($tb_transaksi['p_id'] == $tb_paket['p_id']) { ?>
-                                                                    <?= strtoupper('<b style="font-weight: bold; font-size: 13px;">' . $tb_user['u_nama']) . '</b> telah mengambil paket <b style="font-weight: bold; font-size: 13px;">' . $tb_paket['p_nama'] . '</b>, dengan jumlah <b style="font-weight: bold; font-size: 13px;">' . $tb_transaksi['t_qty'] . "</b> paket."; ?>
-                                                    <?php }
-                                                            }
-                                                        }
-                                                    } ?>
-                                                    <a href="#" data-href="<?= base_url('admin/datatransaksi/approvedtransaksi/' . $tb_transaksi['t_id'] . '/approved') ?>" onclick="confirmToApproved(this)" class="btn btn-warning btn-sm">Belum Disetujui</a>
-                                                    <div class="time"><?= $hari . " hari, " . $jam . " jam, " . $menit . " menit yang lalu" ?></div>
-
-                                                </div>
-                                            <?php } ?>
-                                        </div>
-                                <?php }
-                                } ?>
-
-                                <!-- Data approved transaksi Cicilan -->
-                                <?php $current_time = time();
-                                foreach ($NotipDataLogcicilansementara as $tb_log_cicilan_sementara) {
-                                    // foreach ($NotipDataLogcicilan as $tb_log_cicilan) {
-                                    $transaksi_time = strtotime($tb_log_cicilan_sementara['created_at']);
-                                    $waktu = $current_time - strtotime($tb_log_cicilan_sementara['created_at']);
-                                    $hari = floor($waktu / (3600 * 24));
-                                    $jam = floor(($waktu % (3600 * 24)) / 3600);
-                                    $menit = floor(($waktu % 3600) / 60);
-                                    $approvedsementara = $tb_log_cicilan_sementara['l_approval_by'];
-                                    if ($approvedsementara == null) { ?>
-                                        <div class="dropdown-item">
-                                            <?php
-                                            // $approvedsementara = $tb_log_cicilan_sementara['l_approval_by'];
-                                            // $approved = $tb_log_cicilan['l_approval_by'];
-                                            if ($approvedsementara != null) {
-                                                if ($approvedsementara != null) {
-                                                } else { ?>
-                                                    <div class="dropdown-item-icon bg-success text-white">
-                                                        <i class="fas fa-check"></i>
-                                                    </div>
-                                                    <div class="dropdown-item-desc">
-                                                        <?php foreach ($NotipDataUser as $tb_user) {
-                                                            if ($tb_log_cicilan_sementara['u_id'] == $tb_user['u_id']) {
-                                                                $c_id = $tb_log_cicilan_sementara['c_id'];
-                                                                foreach ($NotipDatacicilan as $tb_cicilan) {
-                                                                    if ($c_id == $tb_cicilan['c_id']) {
-                                                                        $p_id = $tb_cicilan['p_id'];
-                                                                        $pe_id = $tb_cicilan['pe_id'];
-                                                                        foreach ($NotipDataPeriode as $tb_pay_periode) {
-                                                                            if ($pe_id == $tb_pay_periode['pe_id']) {
-                                                                                $pe_periode = $tb_pay_periode['pe_periode'];
-                                                                                foreach ($NotipDataPaket as $tb_paket) {
-                                                                                    if ($p_id == $tb_paket['p_id']) {
-                                                                                        echo strtoupper('<b style="font-weight: bold; font-size: 13px;">' . $tb_user['u_nama']) . '</b> telah membayar paket <b style="font-weight: bold; font-size: 13px;">' . $tb_paket['p_nama'] . '</b>, dengan jumlah bayar sebesar Rp. <b style="font-weight: bold; font-size: 13px;">Rp' . number_format($tb_log_cicilan_sementara['l_jumlah_bayar'], 2, ',', '.') . '</b> sebanyak periode pembayaran <b style="font-weight: bold; font-size: 13px;">' . $pe_periode . '</b> <b style="font-weight: bold; font-size: 13px;">' . $tb_pay_periode['pe_nama'] . '</b>.';
-                                                                                    }
-                                                                                }
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                        } ?>
-
-                                                        <div class="time"><a href="<?= base_url('admin/datalogcicilan/noapprovedlogcicilan/' . $tb_log_cicilan_sementara['l_id'] . '/noapproved') ?>" class="btn btn-primary btn-sm" disabled>Telah Disetujui</a></div>
-                                                        <div class="time"><?= $hari . " hari," . $jam . " jam," . $menit . " menit yang lalu" ?></div>
-                                                    </div>
-                                                <?php
-                                                }
-                                            } else { ?>
-                                                <div class="dropdown-item-icon bg-danger text-white">
-                                                    <i class="fas fa-exclamation-triangle"></i>
-                                                </div>
-                                                <div class="dropdown-item-desc">
-                                                    <?php foreach ($NotipDataUser as $tb_user) {
-                                                        if ($tb_log_cicilan_sementara['u_id'] == $tb_user['u_id']) {
-                                                            $c_id = $tb_log_cicilan_sementara['c_id']; ?>
-                                                            <?php foreach ($NotipDatacicilan as $tb_cicilan) {
-                                                                if ($c_id == $tb_cicilan['c_id']) {
-                                                                    $p_id = $tb_cicilan['p_id'];
-                                                                    $pe_id = $tb_cicilan['pe_id'];
-                                                                    foreach ($NotipDataPeriode as $tb_pay_periode) {
-                                                                        if ($pe_id == $tb_pay_periode['pe_id']) {
-                                                                            $pe_periode = $tb_pay_periode['pe_periode'];
-                                                                            foreach ($NotipDataPaket as $tb_paket) {
-                                                                                if ($p_id == $tb_paket['p_id']) { ?>
-                                                                                    <?= strtoupper('<b style="font-weight: bold; font-size: 13px;">' . $tb_user['u_nama']) . '</b> telah membayar paket <b style="font-weight: bold; font-size: 13px;">' . $tb_paket['p_nama'] . '</b>, dengan jumlah bayar sebesar Rp. <b style="font-weight: bold; font-size: 13px;">' .  number_format($tb_log_cicilan_sementara['l_jumlah_bayar'], 2, ',', '.') . '</b> sebanyak periode pembayaran <b style="font-weight: bold; font-size: 13px;">' . $tb_log_cicilan_sementara['l_jumlah_pembayaran_cicilan'] . '</b> <b style="font-weight: bold; font-size: 13px;">' . $tb_pay_periode['pe_nama'] . "</b>."; ?>
-                                                    <?php }
-                                                                            }
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    } ?>
-                                                    <a href="#" data-href="<?= base_url('admin/datalogcicilan/approvedlogcicilan/' . $tb_log_cicilan_sementara['l_id'] . '/approved') ?>" onclick="confirmToApproved(this)" class="btn btn-warning btn-sm">Belum Disetujui</a>
-                                                    <div class="time"><?= $hari . " hari," . $jam . " jam," . $menit . " menit yang lalu" ?></div>
-                                                </div>
-                                            <?php } ?>
-                                        </div>
-                                <?php }
-                                }
-                                ?>
-                                <!-- <a href="#" class="dropdown-item">
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    <div class="dropdown-item-icon bg-danger text-white">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <div class="dropdown-item-desc">
+                                        Low disk space. Let's clean it!
+                                        <div class="time">17 Hours Ago</div>
+                                    </div>
+                                </a>
+                                <a href="#" class="dropdown-item">
                                     <div class="dropdown-item-icon bg-info text-white">
                                         <i class="fas fa-bell"></i>
                                     </div>
@@ -461,7 +279,7 @@
                     </li>
                     <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                             <img alt="image" src="<?= base_url() ?>/assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
-                            <div class="d-sm-none d-lg-inline-block">Hi, <?= session()->get('u_fullname'); ?></div>
+                            <div class="d-sm-none d-lg-inline-block">Hi, <?= session()->get('u_nama'); ?></div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
                             <!-- <div class="dropdown-title">Logged in 5 min ago</div>
@@ -485,7 +303,7 @@
             <div class="main-sidebar sidebar-style-2">
                 <aside id="sidebar-wrapper">
                     <div class="sidebar-brand">
-                        <img src="<?= base_url(); ?>/assets/img/logo/logo-removebg-preview.png" class="" alt="" style="margin-top: 10px; height: 80px;width: 40%; "><br>
+                        <img src="<?= base_url(); ?>/assets/img/logo/logo.png" class="" alt="" style="margin-top: 10px; height: 80px;width: 40%; "><br>
                         <a href="index.html">Arisya</a>
                     </div>
                     <div class="sidebar-brand sidebar-brand-sm">
@@ -532,12 +350,12 @@
     <script src="<?= base_url() ?>/assets/js/select2.min.js"></script>
 
     <!-- JS Libraies -->
-    <!-- <script src="<?= base_url() ?>/assets/modules/simpleweather/jquery.simpleWeather.min.js"></script>
-    <script src="<?= base_url() ?>/assets/modules/chart.js/dist/chart.min.js"></script>
-    <script src="<?= base_url() ?>/assets/modules/jqvmap/dist/jquery.vmap.min.js"></script>
-    <script src="<?= base_url() ?>/assets/modules/jqvmap/dist/maps/jquery.vmap.world.js"></script>
-    <script src="<?= base_url() ?>/assets/modules/summernote/dist/summernote-bs4.js"></script>
-    <script src="<?= base_url() ?>/assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script> -->
+    <!-- <script src="<?= base_url() ?>/assets/modules/simpleweather/jquery.simpleWeather.min.js"></script> -->
+    <!-- <script src="<?= base_url() ?>/assets/modules/chart.js/dist/chart.min.js"></script> -->
+    <!-- <script src="<?= base_url() ?>/assets/modules/jqvmap/dist/jquery.vmap.min.js"></script> -->
+    <!-- <script src="<?= base_url() ?>/assets/modules/jqvmap/dist/maps/jquery.vmap.world.js"></script> -->
+    <!-- <script src="<?= base_url() ?>/assets/modules/summernote/dist/summernote-bs4.js"></script> -->
+    <!-- <script src="<?= base_url() ?>/assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script> -->
     <script src="<?= base_url() ?>/assets/modules/cleave.js/dist/cleave.min.js"></script>
     <script src="<?= base_url() ?>/assets/modules/cleave.js/dist/addons/cleave-phone.id.js"></script>
     <script src="<?= base_url() ?>/assets/modules/datatables/media/js/jquery.dataTables.min.js"></script>
@@ -547,13 +365,13 @@
     <!-- Advanced Forms -->
     <script src="<?= base_url() ?>/assets/modules/jquery-pwstrength/jquery.pwstrength.min.js"></script>
     <!-- Date Range Picker -->
-    <script src="<?= base_url() ?>/assets/modules/bootstrap-daterangepicker/daterangepicker.js"></script>
-    <!-- <script src="<?= base_url() ?>/assets/modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
-    <script src="<?= base_url() ?>/assets/modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
-    <script src="<?= base_url() ?>/assets/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
-    <script src="<?= base_url() ?>/assets/modules/select2/dist/js/select2.full.min.js"></script>
-    <script src="<?= base_url() ?>/assets/modules/selectric/public/jquery.selectric.min.js"></script>
-    <script src="<?= base_url() ?>/assets/modules/jquery-ui/jquery-ui.min.js"></script> -->
+    <!-- <script src="<?= base_url() ?>/assets/modules/bootstrap-daterangepicker/daterangepicker.js"></script> -->
+    <!-- <script src="<?= base_url() ?>/assets/modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script> -->
+    <!-- <script src="<?= base_url() ?>/assets/modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script> -->
+    <!-- <script src="<?= base_url() ?>/assets/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script> -->
+    <!-- <script src="<?= base_url() ?>/assets/modules/select2/dist/js/select2.full.min.js"></script> -->
+    <!-- <script src="<?= base_url() ?>/assets/modules/selectric/public/jquery.selectric.min.js"></script> -->
+    <!-- <script src="<?= base_url() ?>/assets/modules/jquery-ui/jquery-ui.min.js"></script> -->
 
 
     <!-- Page Specific JS File -->
@@ -564,29 +382,7 @@
     <script src="<?= base_url() ?>/assets/js/custom.js"></script>
     <script src="<?= base_url() ?>/assets/js/phone.js"></script>
     <script src="<?= base_url() ?>/assets/js/numberRP.js"></script>
-    <!-- Yeti login -->
-    <script src="<?= base_url() ?>/assets/js/script-login-yeti.js"></script>
-    <script src="<?= base_url() ?>/assets/js/TweenMax-login-yeti.min.js"></script>
-    <div id="confirm-dialog-approved" class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <h4 class="h4">Apa kamu akan menyetujui data ini?</h4>
-                    <p>Data akan disetujui selamanya....</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" role="button" id="approved-button" class="btn btn-primary">Approved</a>
-                    <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <script type="text/javascript">
-        function confirmToApproved(el) {
-            $("#approved-button").attr("href", el.dataset.href);
-            $("#confirm-dialog-approved").modal('show');
-        }
-
         $(document).ready(function() {
             $('.js-example-basic-single').select2();
             $('.js-example-basic-multiple').select2();
@@ -600,7 +396,7 @@
                 var id_provinsi = $("#id_provinsi").val();
                 $.ajax({
                     type: "POST",
-                    url: "<?php echo base_url('AdminControllers/Kabupaten'); ?>",
+                    url: "<?php echo base_url('CoordinatorControllers/Kabupaten'); ?>",
                     data: {
                         u_provinsi: id_provinsi
                     },
@@ -617,7 +413,7 @@
                 var id_kabupaten = $("#id_kabupaten").val();
                 $.ajax({
                     type: "POST",
-                    url: "<?php echo base_url('AdminControllers/Kecamatan'); ?>",
+                    url: "<?php echo base_url('CoordinatorControllers/Kecamatan'); ?>",
                     data: {
                         u_kota: id_kabupaten
                     },
@@ -630,25 +426,24 @@
                 });
             });
             //show Item Barang
-            // $(document).on('click', '#tambahitembarang', function(e) {
-            //     e.preventDefault();
-            //     $.ajax({
-            //         url: "<?php echo base_url('AdminControllers/ShowItemBarang'); ?>",
-            //         method: 'post',
-            //         success: function(response) {
-            //             $("#itembarang").html(response);
-            //         },
-            //         error: function(xhr, status, error) {
-            //             console.log(error);
-            //         }
-            //     });
-            // });
+            $("#tambahitembarang").change(function(e) {
+                $.ajax({
+                    url: "<?php echo base_url('CoordinatorControllers/ShowItemBarang'); ?>",
+                    method: 'post',
+                    success: function(response) {
+                        $("#itembarang").html(response);
+                    },
+                    error: function(xhr, status, error) {
+                        console.log(error);
+                    }
+                });
+            });
             //show Harga Packaging
             $("#pa_id").change(function(e) {
                 var pa_id = $("#pa_id").val();
                 $.ajax({
                     type: "POST",
-                    url: "<?php echo base_url('AdminControllers/HargaPackaging'); ?>",
+                    url: "<?php echo base_url('CoordinatorControllers/HargaPackaging'); ?>",
                     data: {
                         pa_id: pa_id
                     },
@@ -665,12 +460,28 @@
                 var transaksi_p_id = $("#transaksi_p_id").val();
                 $.ajax({
                     type: "POST",
-                    url: "<?php echo base_url('AdminControllers/TotalHarga'); ?>",
+                    url: "<?php echo base_url('CoordinatorControllers/TotalHarga'); ?>",
                     data: {
                         p_id: transaksi_p_id
                     },
                     success: function(response) {
                         $("#p_hargapaket").html(response);
+                    },
+                    error: function(xhr, status, error) {
+                        console.log(error);
+                    }
+                });
+            });
+            $("#transaksi_p_id").change(function(e) {
+                var transaksi_p_id = $("#transaksi_p_id").val();
+                $.ajax({
+                    type: "POST",
+                    url: "<?php echo base_url('CoordinatorControllers/ShowPayperiode'); ?>",
+                    data: {
+                        p_id: transaksi_p_id
+                    },
+                    success: function(response) {
+                        $("#pe_nama").html(response);
                     },
                     error: function(xhr, status, error) {
                         console.log(error);
@@ -683,7 +494,7 @@
                 var p_id = $("#p_id").val();
                 $.ajax({
                     type: "POST",
-                    url: "<?php echo base_url('AdminControllers/PaketCicilan'); ?>",
+                    url: "<?php echo base_url('CoordinatorControllers/PaketCicilan'); ?>",
                     data: {
                         u_id: u_id,
                         p_id: p_id
@@ -700,28 +511,12 @@
                 var u_id_log_cicilan = $("#u_id_log_cicilan").val();
                 $.ajax({
                     type: "POST",
-                    url: "<?php echo base_url('AdminControllers/PaketLogCicilan'); ?>",
+                    url: "<?php echo base_url('CoordinatorControllers/PaketLogCicilan'); ?>",
                     data: {
                         u_id: u_id_log_cicilan
                     },
                     success: function(response) {
                         $("#t_id_log_cicilan").html(response);
-                    },
-                    error: function(xhr, status, error) {
-                        console.log(error);
-                    }
-                });
-            });
-            $("#transaksi_p_id").change(function(e) {
-                var transaksi_p_id = $("#transaksi_p_id").val();
-                $.ajax({
-                    type: "POST",
-                    url: "<?php echo base_url('AdminControllers/ShowPayperiode'); ?>",
-                    data: {
-                        p_id: transaksi_p_id
-                    },
-                    success: function(response) {
-                        $("#pe_nama").html(response);
                     },
                     error: function(xhr, status, error) {
                         console.log(error);
@@ -741,15 +536,15 @@
 
                 // Make an AJAX request to your controller
                 $.ajax({
-                    url: "<?php echo base_url('AdminControllers/SelectEditPaketBarang'); ?>",
+                    url: "<?php echo base_url('CoordinatorControllers/SelectEditPaketBarang'); ?>",
                     method: 'GET',
                     success: function(response) {
                         // $("#sb_id").html(response);
-                        // $("<?php echo base_url('AdminControllers/view'); ?>").show();
+                        // $("<?php echo base_url('CoordinatorControllers/view'); ?>").show();
                         var p_id = $("#p_id").val();
                         var myVariable = console.log(response);
                         $.ajax({
-                            url: "<?php echo base_url('AdminControllers/myFunction'); ?>",
+                            url: "<?php echo base_url('CoordinatorControllers/myFunction'); ?>",
                             type: 'post',
                             data: {
                                 selectitembarang: myVariable,

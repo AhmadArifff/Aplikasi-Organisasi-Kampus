@@ -28,12 +28,15 @@ class Noauth implements FilterInterface
         // mengonfigurasi dua filter berbeda untuk login filters multi users
         if (session()->get('isLoggedIn')) {
 
-            if (session()->get('role') == "admin") {
-                return redirect()->to(base_url('admin'));
+            if (session()->get('role') == "SuperAdmin") {
+                return redirect()->to(base_url('SuperAdmin'));
+            }
+            if (session()->get('role') == "AdminLK/OK'") {
+                return redirect()->to(base_url('AdminLK/OK'));
             }
 
-            if (session()->get('role') == "mahasiswa") {
-                return redirect()->to(base_url('mahasiswa'));
+            if (session()->get('role') == "Mahasiswa") {
+                return redirect()->to(base_url('Mahasiswa'));
             }
         }
     }

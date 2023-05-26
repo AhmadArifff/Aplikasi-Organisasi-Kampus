@@ -31,10 +31,17 @@ $('.nikktp').on('input', function() {
     $(this).val(val);
 });
 // tambahan kode untuk validasi input hanya angka dan 16 karakter
-$('.kodepos').on('input', function() {
+$('.angkatan').on('input', function() {
     var val = $(this).val().replace(/\D/g, ''); // hapus karakter selain digit
-    if (val.length > 5) {
-        val = val.slice(0, 5); // ambil 16 karakter pertama
+    if (val.length > 4) {
+        val = val.slice(0, 4); // ambil 16 karakter pertama
+    }
+    $(this).val(val);
+});
+$('.npm').on('input', function() {
+    var val = $(this).val().replace(/\D/g, ''); // hapus karakter selain digit
+    if (val.length > 12) {
+        val = val.slice(0, 12); // ambil 16 karakter pertama
     }
     $(this).val(val);
 });

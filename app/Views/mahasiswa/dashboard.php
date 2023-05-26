@@ -1,4 +1,4 @@
-<?= $this->extend('coordinator/layout/default') ?>
+<?= $this->extend('mahasiswa/layout/default') ?>
 <?= $this->section('title') ?>
 <title>Dashboard &mdash; ARISYA</title>
 <?= $this->endSection() ?>

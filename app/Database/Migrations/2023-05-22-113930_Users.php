@@ -33,7 +33,7 @@ class Users extends Migration
             ],
             'u_role' => [
                 'type' => 'ENUM',
-                'constraint' => ['admin', 'mahasiswa'],
+                'constraint' => ['SuperAdmin', 'Mahasiswa', 'AdminLK/OK'],
                 'null' => true,
             ],
             'u_gender' => [

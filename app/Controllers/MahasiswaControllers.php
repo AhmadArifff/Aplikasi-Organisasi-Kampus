@@ -23,11 +23,30 @@ class MahasiswaControllers extends BaseController
 {
     public function __construct()
     {
-        if (session()->get('u_role') != "mahasiswa") {
+        if (session()->get('u_role') != "Mahasiswa") {
             echo 'Access denied';
             exit;
         }
     }
-    
-    
+    public function dashboard()
+    {
+        $menu = [
+            'AdminDashboard' => 'dashboard',
+            'RegisterUser' => '',
+            'RegisterSupplier' => '',
+            'DataKategoriBarang' => '',
+            'DataKategoriPaket' => '',
+            'DataBarang' => '',
+            'MenuDataBarang' => '',
+            'DataBarangSupplier' => '',
+            'DataPackingBarang' => '',
+            'DataPeriodeTransaksi' => '',
+            'MenuDataTransaksi' => '',
+            'DataPaketBarang' => '',
+            'DataTransaksi' => '',
+            'DataTransaksiCicilan' => '',
+            'DataTransaksiLogCicilan' => '',
+        ];
+        return view("mahasiswa/dashboard", $menu);
+    }
 }

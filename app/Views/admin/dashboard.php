@@ -6,12 +6,7 @@
 <section class="section">
     <?= csrf_field(); ?>
     <div class="section-header">
-        <h1>Advanced Forms</h1>
-        <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item"><a href="#">Dashboard</a></div>
-            <div class="breadcrumb-item"><a href="#">Forms</a></div>
-            <div class="breadcrumb-item">Advanced Forms</div>
-        </div>
+        <h1>Dashboard</h1>
     </div>
     <div class="section-body">
         <div class="row">
