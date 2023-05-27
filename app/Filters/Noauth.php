@@ -32,7 +32,7 @@ class Noauth implements FilterInterface
                 return redirect()->to(base_url('SuperAdmin'));
             }
             if (session()->get('role') == "AdminLK/OK'") {
-                return redirect()->to(base_url('AdminLK/OK'));
+                return redirect()->to(base_url('AdminLK-OK'));
             }
 
             if (session()->get('role') == "Mahasiswa") {

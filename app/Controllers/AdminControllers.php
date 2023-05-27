@@ -17,7 +17,7 @@ use CodeIgniter\HTTP\IncomingRequest;
 
 
 
-class SuperAdminControllers extends BaseController
+class AdminControllers extends BaseController
 {
     protected $UsersModels;
     protected $ProdiModels;
@@ -42,35 +42,83 @@ class SuperAdminControllers extends BaseController
     {
         $menu = [
             'Dashboard' => 'dashboard',
-            'User' => '',
-            'Fakultas' => '',
-            'LKOK' => '',
             'Event' => '',
+            'DataanggotaLKOK' => '',
         ];
         return view("admin/dashboard", $menu);
     }
-    public function listdatauser()
+    public function listdataanggotaLKOK()
     {
         $menu = [
             'Dashboard' => '',
-            'User' => 'user',
-            'Fakultas' => '',
-            'LKOK' => '',
             'Event' => '',
+            'DataanggotaLKOK' => 'DataanggotaLKOK',
+            's' => 's',
+            'tb_user' => $this->UsersModels->findAll(),
+            'tb_prodi' => $this->ProdiModels->findAll(),
+            'tb_organisasi' => $this->OrganisasiModels->findAll(),
+            'tb_anggotaorganisasi' => $this->AnggotaOrganisasiModels->findAll(),
+        ];
+        return view("admin/LKOK/DataAnggotaLKOK/dataanggotalkok", $menu);
+    }
+    public function registeranggotaLKOK()
+    {
+        $menu = [
+            'Dashboard' => '',
+            'Event' => '',
+            'DataanggotaLKOK' => 'DataanggotaLKOK',
+            'tb_user' => $this->UsersModels->findAll(),
+            'tb_prodi' => $this->ProdiModels->findAll(),
+            'tb_organisasi' => $this->OrganisasiModels->findAll(),
+        ];
+        return view("admin/LKOK/DataAnggotaLKOK/registeranggotalkok", $menu);
+    }
+    public function editanggotaLKOK($ao_id)
+    {
+        $menu = [
+            'Dashboard' => '',
+            'Event' => '',
+            'DataanggotaLKOK' => 'DataanggotaLKOK',
+            'tb_user' => $this->UsersModels->findAll(),
+            'tb_prodi' => $this->ProdiModels->findAll(),
+            'tb_organisasi' => $this->OrganisasiModels->findAll(),
+            'tb_anggotaorganisasi' => $this->AnggotaOrganisasiModels->where('ao_id', $ao_id)->first(),
+        ];
+        return view("admin/LKOK/DataAnggotaLKOK/registereditanggotalkok", $menu);
+    }
+    public function listdataevent()
+    {
+        $menu = [
+            'Dashboard' => '',
+            'Event' => 'event',
+            'DataanggotaLKOK' => '',
+            'tb_user' => $this->UsersModels->findAll(),
+            'tb_prodi' => $this->ProdiModels->findAll(),
+            'tb_event' => $this->KegiatanModels->findAll(),
+        ];
+        return view("admin/Event/dataevent", $menu);
+    }
+    public function registerevent()
+    {
+        $menu = [
+            'Dashboard' => '',
+            'Event' => 'event',
+            'DataanggotaLKOK' => '',
             'tb_user' => $this->UsersModels->findAll(),
             'tb_prodi' => $this->ProdiModels->findAll(),
         ];
-        return view("admin/Datauser/datauser", $menu);
+        return view("admin/Event/registerevent", $menu);
     }
-    public function registeruser()
+    public function editevent($e_id)
     {
         $menu = [
             'Dashboard' => '',
-            'User' => 'user',
-            'Fakultas' => '',
-            'LKOK' => '',
-            'Event' => '',
+            'Event' => 'event',
+            'DataanggotaLKOK' => '',
+            'tb_user' => $this->UsersModels->findAll(),
+            'tb_prodi' => $this->ProdiModels->findAll(),
+            'tb_kegiatan' => $this->KegiatanModels->where('k_id', $e_id)->first(),
         ];
-        return view("admin/Datauser/registeruser", $menu);
+        return view("admin/Event/registereditevent", $menu);
     }
 }

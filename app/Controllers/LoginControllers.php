@@ -9,10 +9,12 @@ class LoginControllers extends BaseController
 {
     public function index()
     {
-        if (session()->get('u_role') == "admin") {
-            return redirect()->to('admin/dashboard');
+        if (session()->get('u_role') == "superadmin") {
+            return redirect()->to('superadmin/dashboard');
         } else if (session()->get('u_role') == "mahasiswa") {
             return redirect()->to('mahasiswa/dashboard');
+        } else if (session()->get('u_role') == "admin") {
+            return redirect()->to('admin/dashboard');
         }
         return view('login');
     }
@@ -35,7 +37,7 @@ class LoginControllers extends BaseController
                 if ($user['u_role'] == "SuperAdmin") {
                     return redirect()->to(base_url('SuperAdmin/dashboard'));
                 } else if ($user['u_role'] == "AdminLK/OK") {
-                    return redirect()->to(base_url('AdminLK/OK/dashboard'));
+                    return redirect()->to(base_url('AdminLK-OK/dashboard'));
                 } else if ($user['u_role'] == "Mahasiswa") {
                     return redirect()->to(base_url('Mahasiswa/dashboard'));
                 }

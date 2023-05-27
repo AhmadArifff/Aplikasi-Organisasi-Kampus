@@ -37,6 +37,10 @@ class Kegiatan extends Migration
                 'type'           => 'VARCHAR',
                 'constraint'     => 255,
             ],
+            'k_foto'   => [
+                'type'           => 'VARCHAR',
+                'constraint'     => 255,
+            ],
             'k_create_at'       => [
                 'type'           => 'DATETIME',
                 'null'           => true,
