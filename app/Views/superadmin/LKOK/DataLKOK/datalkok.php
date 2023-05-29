@@ -54,6 +54,7 @@
                                         <td>
                                             <a href="<?= base_url('SuperAdmin/dataLK-OK/' . $data['o_id'] . '/edit') ?>" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i></a>
                                             <a href="#" data-href="<?= base_url('SuperAdmin/dataLK-OK/' . $data['o_id'] . '/delete') ?>" onclick="confirmToDelete(this)" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
+                                            <a href="<?= base_url('SuperAdmin/morelkok') ?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i></a>
                                         </td>
                                     </tr>
                                 <?php $i++;

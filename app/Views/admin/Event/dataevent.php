@@ -19,6 +19,7 @@
                     <div class="card-header">
                         <h4>Data Event</h4>
                         <div class="card-header-action">
+                        <a href="<?= base_url(); ?>/AdminLK-OK/viewevent" class="btn btn-primary"><i class="fas fa-eye" ></i>  Semua Event</a>
                             <a href="<?= base_url(); ?>/AdminLK-OK/dataevent/registerevent" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah Data</a>
                             <!-- <a href="<?= base_url('admin/admincontrollers/exportfileexceluser') ?>" class="btn btn-primary"><i class="fas fa-download"></i> Export Data</a> -->
                             <!-- Export modal by tgl -->
@@ -70,6 +71,7 @@
                                         <td>
                                             <a href="<?= base_url('AdminLK-OK/dataevent/' . $event['u_id'] . '/edit') ?>" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i></a>
                                             <a href="#" data-href="<?= base_url('AdminLK-OK/dataevent/' . $event['u_id'] . '/delete') ?>" onclick="confirmToDelete(this)" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
+                                            <a href="<?= base_url(); ?>/AdminLK-OK/viewevent" class="btn btn-primary btn-sm"><i class="fas fa-eye" ></i></a>
                                         </td>
                                     </tr>
                                 <?php $i++;

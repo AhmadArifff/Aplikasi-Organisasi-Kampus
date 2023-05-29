@@ -153,6 +153,19 @@ class SuperAdminControllers extends BaseController
         ];
         return view("superadmin/LKOK/DataLKOK/datalkok", $menu);
     }
+    public function morelkok()
+    {
+        $menu = [
+            'Dashboard' => '',
+            'User' => '',
+            'Fakultas' => '',
+            'Event' => '',
+            'LKOK' => 'lkok',
+            'DataLKOK' => 'datalkok',
+            'DataAnggotaLKOK' => '',
+        ];
+        return view("superadmin/LKOK/DataLKOK/morelkok", $menu);
+    }
     public function registerLKOK()
     {
         $menu = [
@@ -277,5 +290,18 @@ class SuperAdminControllers extends BaseController
             'DataAnggotaLKOK' => '',
         ];
         return view("superadmin/Event/registereditevent", $menu);
+    }
+    public function viewevent()
+    {
+        $menu = [
+            'Dashboard' => '',
+            'User' => '',
+            'Fakultas' => '',
+            'LKOK' => '',
+            'Event' => 'event',
+            'DataLKOK' => '',
+            'DataAnggotaLKOK' => '',
+        ];
+        return view("superadmin/Event/viewevent", $menu);
     }
 }

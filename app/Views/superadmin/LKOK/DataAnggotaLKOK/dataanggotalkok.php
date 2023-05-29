@@ -43,7 +43,9 @@
                                     <th class="text-center">#</th>
                                     <th>NAMA PENGGUNA</th>
                                     <th>NAMA PRODI</th>
+                                    <th>MENJABAT STAF</th>
                                     <th>NAMA ORGANISASI</th>
+                                    <th>FOTO</th>
                                     <th>Action Button</th>
                                 </tr>
                             </thead>

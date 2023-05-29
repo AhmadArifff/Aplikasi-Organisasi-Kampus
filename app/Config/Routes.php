@@ -43,6 +43,8 @@ $routes->match(['get', 'post'], 'login', 'LoginControllers::login', ["filter" =>
 $routes->group("SuperAdmin", ["filter" => "auth"], function ($routes) {
     //Dashboard
     $routes->get("dashboard", "SuperAdminControllers::dashboard");
+    $routes->get("viewevent", "SuperAdminControllers::viewevent");
+    $routes->get("morelkok", "SuperAdminControllers::morelkok");
     //Register User
     $routes->get('datauser', 'SuperAdminControllers::listdatauser');
     $routes->get('datauser/registeruser', 'SuperAdminControllers::registeruser');
@@ -79,12 +81,16 @@ $routes->group("SuperAdmin", ["filter" => "auth"], function ($routes) {
 $routes->group("AdminLK-OK", ["filter" => "auth"], function ($routes) {
     //Dashboard
     $routes->get("dashboard", "AdminControllers::dashboard");
+    $routes->get("viewevent", "AdminControllers::viewevent");
+    $routes->get("morelkok", "AdminControllers::morelkok");
     //Register User
     $routes->get('datauser', 'AdminControllers::listdatauser');
     $routes->get('datauser/registeruser', 'AdminControllers::registeruser');
     $routes->post('datauser/registeruser/process', 'AdminControllers::registeruserprocess');
     $routes->add('datauser/(:segment)/edit', 'AdminControllers::edituser/$1');
     $routes->get('datauser/(:segment)/delete', 'AdminControllers::deleteuser/$1');
+    //Register LK/OK
+    $routes->get('dataLK-OK', 'AdminControllers::listdataLKOK');
     //Register Anggota LK/OK
     $routes->get('dataanggotaLK-OK', 'AdminControllers::listdataanggotaLKOK');
     $routes->get('dataanggotaLK-OK/registeranggotaLK-OK', 'AdminControllers::registeranggotaLKOK');
@@ -103,6 +109,9 @@ $routes->group("AdminLK-OK", ["filter" => "auth"], function ($routes) {
 //coordinator Routes
 $routes->group("Mahasiswa", ["filter" => "auth"], function ($routes) {
     $routes->get("dashboard", "MahasiswaControllers::dashboard");
+    $routes->get("morelkok", "MahasiswaControllers::morelkok");
+    //Register Anggota LK/OK
+    $routes->get('dataLK-OK', 'MahasiswaControllers::listdataLKOK');
     //Register Event
     $routes->get('dataevent', 'MahasiswaControllers::listdataevent');
     $routes->get('logout', 'LoginControllers::logout');

@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="<?= base_url() ?>/assets/modules/weathericons/css/weather-icons-wind.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/assets/modules/summernote/dist/summernote-bs4.css"> -->
     <link rel="stylesheet" href="<?= base_url() ?>/assets/modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/css/bootstrap-social.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/css/owl.theme.default.min.css">
 
     <!-- CSS Advanced Forms -->
     <!-- <link rel="stylesheet" href="<?= base_url() ?>/assets/modules/bootstrap-daterangepicker/daterangepicker.css">
@@ -152,7 +155,7 @@
                     </div> -->
                 </form>
                 <ul class="navbar-nav navbar-right">
-                    
+
                     <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
                         <div class="dropdown-menu dropdown-list dropdown-menu-right">
                             <div class="dropdown-header">Notifications
@@ -317,6 +320,8 @@
     <script src="<?= base_url() ?>/assets/js/custom.js"></script>
     <script src="<?= base_url() ?>/assets/js/phone.js"></script>
     <script src="<?= base_url() ?>/assets/js/numberRP.js"></script>
+    <script src="<?= base_url() ?>/assets/js/owl.carousel.min.js"></script>
+    <script src="<?= base_url() ?>/assets/js/components-user.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('.js-example-basic-single').select2();

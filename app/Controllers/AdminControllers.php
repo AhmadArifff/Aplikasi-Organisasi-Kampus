@@ -43,16 +43,47 @@ class AdminControllers extends BaseController
         $menu = [
             'Dashboard' => 'dashboard',
             'Event' => '',
-            'DataanggotaLKOK' => '',
+            'LKOK' => '',
+            'DataLKOK' => '',
+            'DataAnggotaLKOK' => '',
         ];
         return view("admin/dashboard", $menu);
+    }
+    public function listdataLKOK()
+    {
+        $menu = [
+            'Dashboard' => '',
+            'User' => '',
+            'Fakultas' => '',
+            'LKOK' => 'lkok',
+            'Event' => '',
+            'tb_organisasi' => $this->OrganisasiModels->findAll(),
+            'DataLKOK' => 'datalkok',
+            'DataAnggotaLKOK' => '',
+        ];
+        return view("admin/LKOK/DataLKOK/datalkok", $menu);
+    }
+    public function morelkok()
+    {
+        $menu = [
+            'Dashboard' => '',
+            'User' => '',
+            'Fakultas' => '',
+            'Event' => '',
+            'LKOK' => 'lkok',
+            'DataLKOK' => 'datalkok',
+            'DataAnggotaLKOK' => '',
+        ];
+        return view("admin/LKOK/DataLKOK/morelkok", $menu);
     }
     public function listdataanggotaLKOK()
     {
         $menu = [
             'Dashboard' => '',
             'Event' => '',
-            'DataanggotaLKOK' => 'DataanggotaLKOK',
+            'LKOK' => 'lkok',
+            'DataLKOK' => '',
+            'DataAnggotaLKOK' => 'dataanggotalkok',
             's' => 's',
             'tb_user' => $this->UsersModels->findAll(),
             'tb_prodi' => $this->ProdiModels->findAll(),
@@ -66,7 +97,9 @@ class AdminControllers extends BaseController
         $menu = [
             'Dashboard' => '',
             'Event' => '',
-            'DataanggotaLKOK' => 'DataanggotaLKOK',
+            'LKOK' => 'lkok',
+            'DataLKOK' => '',
+            'DataAnggotaLKOK' => 'dataanggotalkok',
             'tb_user' => $this->UsersModels->findAll(),
             'tb_prodi' => $this->ProdiModels->findAll(),
             'tb_organisasi' => $this->OrganisasiModels->findAll(),
@@ -78,7 +111,9 @@ class AdminControllers extends BaseController
         $menu = [
             'Dashboard' => '',
             'Event' => '',
-            'DataanggotaLKOK' => 'DataanggotaLKOK',
+            'LKOK' => 'lkok',
+            'DataLKOK' => '',
+            'DataAnggotaLKOK' => 'dataanggotalkok',
             'tb_user' => $this->UsersModels->findAll(),
             'tb_prodi' => $this->ProdiModels->findAll(),
             'tb_organisasi' => $this->OrganisasiModels->findAll(),
@@ -91,7 +126,9 @@ class AdminControllers extends BaseController
         $menu = [
             'Dashboard' => '',
             'Event' => 'event',
-            'DataanggotaLKOK' => '',
+            'LKOK' => '',
+            'DataLKOK' => '',
+            'DataAnggotaLKOK' => '',
             'tb_user' => $this->UsersModels->findAll(),
             'tb_prodi' => $this->ProdiModels->findAll(),
             'tb_event' => $this->KegiatanModels->findAll(),
@@ -103,7 +140,9 @@ class AdminControllers extends BaseController
         $menu = [
             'Dashboard' => '',
             'Event' => 'event',
-            'DataanggotaLKOK' => '',
+            'LKOK' => '',
+            'DataLKOK' => '',
+            'DataAnggotaLKOK' => '',
             'tb_user' => $this->UsersModels->findAll(),
             'tb_prodi' => $this->ProdiModels->findAll(),
         ];
@@ -114,11 +153,24 @@ class AdminControllers extends BaseController
         $menu = [
             'Dashboard' => '',
             'Event' => 'event',
-            'DataanggotaLKOK' => '',
+            'LKOK' => '',
+            'DataLKOK' => '',
+            'DataAnggotaLKOK' => '',
             'tb_user' => $this->UsersModels->findAll(),
             'tb_prodi' => $this->ProdiModels->findAll(),
             'tb_kegiatan' => $this->KegiatanModels->where('k_id', $e_id)->first(),
         ];
         return view("admin/Event/registereditevent", $menu);
+    }
+    public function viewevent()
+    {
+        $menu = [
+            'Dashboard' => '',
+            'Event' => 'event',
+            'LKOK' => '',
+            'DataLKOK' => '',
+            'DataAnggotaLKOK' => '',
+        ];
+        return view("admin/Event/viewevent", $menu);
     }
 }

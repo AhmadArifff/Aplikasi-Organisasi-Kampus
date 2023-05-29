@@ -30,6 +30,14 @@ class AnggotaOrganisasi extends Migration
                 'constraint'     => 11,
                 'unsigned'       => true,
             ],
+            'ao_staf' => [
+                'type' => 'ENUM',
+                'constraint' => ['Ketua', 'WakilKetua', 'Seketaris', 'Bendahara', 'PDD', 'ERD', 'Danus', 'Anggota'],
+            ],
+            'ao_foto'   => [
+                'type'           => 'VARCHAR',
+                'constraint'     => 255,
+            ],
             'ao_create_at'  => [
                 'type'           => 'DATETIME',
                 'null'           => true,

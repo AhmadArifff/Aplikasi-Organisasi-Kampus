@@ -11,13 +11,28 @@
     <div class="section-body">
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                <div class="card card-statistic-1">
-                    <div class="card-icon bg-primary">
-                        <i class="far fa-user"></i>
+                <div class="card card-statistic-1" Style="border-radius:15px;">
+                    <div class="card-icon bg-warning">
+                        <i class="fas"><ion-icon name="tennisball-outline"></ion-icon></i>
                     </div>
                     <div class="card-wrap">
                         <div class="card-header">
-                            <h4>Total Admin</h4>
+                            <h4>Total LK/OK</h4>
+                        </div>
+                        <div class="card-body">
+                            <?= countdata('tb_user') ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="card card-statistic-1">
+                    <div class="card-icon bg-info">
+                        <i class="fas"><ion-icon name="megaphone-outline"></ion-icon></i>
+                    </div>
+                    <div class="card-wrap">
+                        <div class="card-header">
+                            <h4>Total Event</h4>
                         </div>
                         <div class="card-body">
                             <?= countdata('tb_user') ?>
