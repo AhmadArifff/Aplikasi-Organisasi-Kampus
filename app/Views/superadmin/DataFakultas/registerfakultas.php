@@ -34,12 +34,11 @@
                                 <?php echo session()->getFlashdata('success'); ?>
                             </div>
                         <?php endif; ?>
-                        <form method="post" action="<?= base_url(); ?>/admin/datauser/registeruser/process">
+                        <form method="post" action="<?= base_url(); ?>/SuperAdmin/datafakultas/registerfakultas/process">
                             <?= csrf_field(); ?>
-
                             <div class="form-group ">
-                                <label>Nama Lengkap</label>
-                                <input id="text" type="text" class="form-control huruf" name="u_fullname" placeholder="Masukan Full Name" required>
+                                <label>Nama Prodi</label>
+                                <input id="text" type="text" class="form-control huruf" name="p_nama" placeholder="Masukan Prodi" required>
                             </div>
 
                             <div class="form-group">

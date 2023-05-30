@@ -1,15 +1,15 @@
 <?= $this->extend('superadmin/layout/default') ?>
 <?= $this->section('title') ?>
-<title>Fakultas &mdash; ARISYA</title>
+<title>Prodi &mdash; ARISYA</title>
 <?= $this->endSection() ?>
 <?= $this->section('content') ?>
 <section class="section">
     <?= csrf_field(); ?>
     <div class="section-header">
-        <h1>Users</h1>
+        <h1>Prodi</h1>
         <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item">Users</div>
-            <div class="breadcrumb-item">Data Users</div>
+            <div class="breadcrumb-item">Prodi</div>
+            <div class="breadcrumb-item">Data Prodi</div>
         </div>
     </div>
     <div class="section-body">
@@ -41,7 +41,7 @@
                             <thead>
                                 <tr class="table-primary">
                                     <th class="text-center">#</th>
-                                    <th>NAMA FAKULTAS</th>
+                                    <th>NAMA PRODI</th>
                                     <th>Action Button</th>
                                 </tr>
                             </thead>

@@ -242,10 +242,10 @@
                 <aside id="sidebar-wrapper">
                     <div class="sidebar-brand">
                         <img src="<?= base_url(); ?>/assets/img/logo/logo.png" class="" alt="" style="margin-top: 10px; height: 80px;width: 40%; "><br>
-                        <a href="index.html">Arisya</a>
+                        <p href="index.html">Aplikasi Organisasi Universitas</p>
                     </div>
                     <div class="sidebar-brand sidebar-brand-sm">
-                        <a href="index.html">ar</a>
+                        <a href="index.html">AOU</a>
                     </div>
                     <ul class="sidebar-menu">
                         <?= $this->include('superadmin/layout/menu') ?>
@@ -261,7 +261,7 @@
             <input type="text" name="sb_hargaasli" class="form-control phone-number" placeholder="Masukan Harga Asli" required hidden>
             <footer class="main-footer">
                 <div class="footer-left">
-                    Copyright &copy; 2023 <div class="bullet"></div> Developed By <a href="">Arisya</a>
+                    Copyright &copy; 2023 <div class="bullet"></div> Developed By <a href="">Aplikasi Organisasi Universitas</a>
                 </div>
                 <div class="footer-right">
                     v1.0.0

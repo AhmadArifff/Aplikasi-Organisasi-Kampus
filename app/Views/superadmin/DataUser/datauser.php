@@ -44,7 +44,7 @@
                                     <th>NPM</th>
                                     <th>NAMA LENGKAP</th>
                                     <th>ROLE AKSES</th>
-                                    <th>PRODI</th>
+                                    <th>NAMA PRODI</th>
                                     <th>JENIS KELAMIN</th>
                                     <th>ANGKATAN</th>
                                     <th>ALAMAT</th>

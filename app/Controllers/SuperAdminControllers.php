@@ -21,7 +21,6 @@ class SuperAdminControllers extends BaseController
 {
     protected $UsersModels;
     protected $ProdiModels;
-    protected $FakultasModels;
     protected $OrganisasiModels;
     protected $AnggotaOrganisasiModels;
     protected $KegiatanModels;
@@ -125,6 +124,27 @@ class SuperAdminControllers extends BaseController
         ];
         return view("superadmin/DataFakultas/registerfakultas", $menu);
     }
+    public function registerfakultasprocess()
+    {
+        if (!$this->validate([
+            'p_nama' => [
+                'rules' => 'required|min_length[4]|max_length[100]',
+                'errors' => [
+                    'required' => '{field} Harus diisi',
+                    'min_length' => '{field} Minimal 4 Karakter',
+                    'max_length' => '{field} Maksimal 100 Karakter',
+                ]
+            ],
+        ])) {
+            session()->setFlashdata('error', $this->validator->listErrors());
+            return redirect()->back()->withInput();
+        }
+        $this->ProdiModels->insert([
+            'p_nama' => $this->request->getVar('p_nama')
+        ]);
+        session()->setFlashdata('success', 'Data Berhasil Disimpan!');
+        return redirect()->to('/SuperAdmin/datafakultas');
+    }
     public function editfakultas($p_id)
     {
         $menu = [
@@ -137,6 +157,27 @@ class SuperAdminControllers extends BaseController
             'DataLKOK' => '',
             'DataAnggotaLKOK' => '',
         ];
+        // $menu['tb_prodi'] = $this->ProdiModels->where('p_id', $p_id)->first();
+        // lakukan validasi data artikel
+        $validation = \Config\Services::validation();
+        $validation->setRules([
+            'p_nama' => [
+                'rules' => 'required|min_length[4]|max_length[100]',
+                'errors' => [
+                    'required' => '{field} Harus diisi',
+                    'min_length' => '{field} Minimal 4 Karakter',
+                    'max_length' => '{field} Maksimal 100 Karakter',
+                ]
+            ],
+        ]);
+        $isDataValid = $validation->withRequest($this->request)->run();
+        if ($isDataValid) {
+            $this->ProdiModels->update($p_id, [
+                'p_nama' => $this->request->getVar('p_nama')
+            ]);
+            session()->setFlashdata('success', 'Data Berhasil Di Edit!');
+            return redirect('SuperAdmin/datafakultas');
+        }
         return view("superadmin/DataFakultas/registereditfakultas", $menu);
     }
     public function listdataLKOK()

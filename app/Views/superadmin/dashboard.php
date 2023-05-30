@@ -32,7 +32,7 @@
                     </div>
                     <div class="card-wrap">
                         <div class="card-header">
-                            <h4>Total Fakultas</h4>
+                            <h4>Total Prodi</h4>
                         </div>
                         <div class="card-body">
                             <?= countdata('tb_user') ?>

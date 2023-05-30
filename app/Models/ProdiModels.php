@@ -21,9 +21,9 @@ class ProdiModels extends Model
     // Dates
     protected $useTimestamps        = true;
     protected $dateFormat           = 'datetime';
-    protected $createdField         = 'waktu';
-    protected $updatedField         = 'waktu';
-    protected $deletedField         = 'waktu';
+    protected $createdField         = 'p_create_at';
+    protected $updatedField         = 'p_update_at';
+    protected $deletedField         = 'p_delete_at';
 
     // Validation
     protected $validationRules      = [];

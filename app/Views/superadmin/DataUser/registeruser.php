@@ -44,7 +44,7 @@
                                             <i class="fas fa-user"></i>
                                         </div>
                                     </div>
-                                    <input id="frist_name" type="text" class="form-control npm" name="u_username" autofocus placeholder="Masukan Username" required>
+                                    <input id="frist_name" type="text" class="form-control npm" name="u_username" autofocus placeholder="Masukan NPM" required>
                                 </div>
                             </div>
                             <div class="row">
@@ -83,7 +83,7 @@
                             <div class="row">
                                 <div class="form-group col-6">
                                     <label>Nama Lengkap</label>
-                                    <input id="text" type="text" class="form-control huruf" name="u_fullname" placeholder="Masukan Full Name" required>
+                                    <input id="text" type="text" class="form-control huruf" name="u_fullname" placeholder="Masukan Nama Lengkap" required>
                                 </div>
                                 <div class="form-group col-6">
                                     <label>Role Akses</label>
@@ -112,9 +112,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group col-6">
-                                    <label>Fakultas Prodi</label>
+                                    <label>Nama Prodi</label>
                                     <select class="js-example-basic-single" name="u_role" required>
-                                        <option value="">--Pilih Fakultas Prodi--</option>
+                                        <option value="">--Pilih Nama Prodi--</option>
                                         <?php foreach ($tb_prodi as $data) { ?>
                                             <option value="<?php echo $data['p_id']; ?>"><?php echo $data['p_nama']; ?></option>
                                         <?php } ?>
@@ -124,7 +124,7 @@
                             <div class="row">
                                 <div class="form-group col-6">
                                     <label>Angkatan</label>
-                                    <input id="frist_name" type="text" class="form-control angkatan" name="u_kodepos" placeholder="Masukan Kode Pos" required>
+                                    <input id="frist_name" type="text" class="form-control angkatan" name="u_kodepos" placeholder="Masukan Angkatan" required>
                                 </div>
                                 <div class="form-group col-6">
                                     <label>Alamat</label>
