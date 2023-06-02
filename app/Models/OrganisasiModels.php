@@ -41,4 +41,31 @@ class OrganisasiModels extends Model
     protected $afterFind            = [];
     protected $beforeDelete         = [];
     protected $afterDelete          = [];
+
+    public function createLKOK($data)
+    {
+        $this->insert($data);
+        return $this->getInsertID();
+    }
+
+    public function updateLKOK($id, $data)
+    {
+        $this->db->table('tb_organisasi')->where('id', $id)->update($data);
+        $affectedRows = $this->db->affectedRows();
+    }
+
+    public function deleteLKOK($id = null, bool $purge = false)
+    {
+        if ($purge)
+    {
+        // Perform a permanent delete
+        $this->db->table('tb_organisasi')->where('id', $id)->delete();
+    }
+    else
+    {
+        // Perform a soft delete
+        $this->db->table('tb_organisasi')->where('id', $id)->update(['deleted_at' => date('Y-m-d H:i:s')]);
+    }
+        return $this->affectedRows();
+    }
 }

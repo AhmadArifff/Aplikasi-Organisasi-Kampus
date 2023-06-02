@@ -34,15 +34,15 @@
                                 <?php echo session()->getFlashdata('success'); ?>
                             </div>
                         <?php endif; ?>
-                        <form method="post" action="<?= base_url(); ?>/admin/datauser/registeruser/process">
+                        <form method="post" action="">
                             <?= csrf_field(); ?>
                             <div class="form-group ">
                                 <label>Nama LK/OK</label>
-                                <input id="text" type="text" class="form-control huruf" name="u_fullname" placeholder="Masukan Full Name" required>
+                                <input id="text" type="text" class="form-control huruf" name="o_nama" placeholder="<?= $tb_organisasi['o_nama'] ?>" required>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-lg btn-block" name="submit">
-                                    Register
+                                    Submit
                                 </button>
                             </div>
                         </form>

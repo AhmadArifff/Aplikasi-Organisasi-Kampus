@@ -1,0 +1,48 @@
+CRITICAL - 2023-05-31 08:46:25 --> Undefined variable $o_id
+in APPPATH\Views\superadmin\LKOK\DataLKOK\registereditlkok.php on line 37.
+ 1 APPPATH\Views\superadmin\LKOK\DataLKOK\registereditlkok.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $o_id', 'APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\registereditlkok.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\registereditlkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/LKOK/DataLKOK/registereditlkok', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(277): view('superadmin/LKOK/DataLKOK/registereditlkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->editLKOK('2')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-31 08:47:35 --> Undefined variable $o_id
+in APPPATH\Views\superadmin\LKOK\DataLKOK\registereditlkok.php on line 37.
+ 1 APPPATH\Views\superadmin\LKOK\DataLKOK\registereditlkok.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $o_id', 'APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\registereditlkok.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\registereditlkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/LKOK/DataLKOK/registereditlkok', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(277): view('superadmin/LKOK/DataLKOK/registereditlkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->editLKOK('2')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-31 08:48:14 --> Undefined variable $o_nama
+in APPPATH\Views\superadmin\LKOK\DataLKOK\registereditlkok.php on line 37.
+ 1 APPPATH\Views\superadmin\LKOK\DataLKOK\registereditlkok.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $o_nama', 'APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\registereditlkok.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\registereditlkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/LKOK/DataLKOK/registereditlkok', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(277): view('superadmin/LKOK/DataLKOK/registereditlkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->editLKOK('2')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-31 08:50:41 --> Undefined variable $organisasi
+in APPPATH\Views\superadmin\LKOK\DataLKOK\registereditlkok.php on line 37.
+ 1 APPPATH\Views\superadmin\LKOK\DataLKOK\registereditlkok.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $organisasi', 'APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\registereditlkok.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\registereditlkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/LKOK/DataLKOK/registereditlkok', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(277): view('superadmin/LKOK/DataLKOK/registereditlkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->editLKOK('2')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

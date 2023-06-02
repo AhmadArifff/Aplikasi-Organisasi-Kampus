@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 CRITICAL - 2023-05-30 14:55:58 --> Call to a member function insert() on null
 in APPPATH\Controllers\SuperAdminControllers.php on line 143.
  1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->registerfakultasprocess()
@@ -67,3 +68,227 @@ in APPPATH\Views\superadmin\DataFakultas\registereditfakultas.php on line 42.
  8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+=======
+ERROR - 2023-05-30 05:31:36 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'organisasi_kamp...', 3306, '', 0)
+#1 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\app\Controllers\LoginControllers.php(26): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+#6 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+#7 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\app\Controllers\LoginControllers.php(26): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+#5 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+#6 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-05-30 05:31:36 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+WHERE `u_npm` = :u_npm:', [...], false)
+ 3 APPPATH\Controllers\LoginControllers.php(26): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-05-30 09:53:03 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Database\MySQLi\Connection.php:170
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Database\MySQLi\Connection.php(170): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'organisasi_kamp...', 3306, '', 0)
+#1 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\app\Controllers\LoginControllers.php(26): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+#6 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+#7 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\app\Controllers\LoginControllers.php(26): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+#5 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+#6 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-05-30 09:53:03 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+WHERE `u_npm` = :u_npm:', [...], false)
+ 3 APPPATH\Controllers\LoginControllers.php(26): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-30 14:23:06 --> Declaration of App\Models\ProdiModels::delete($id) must be compatible with CodeIgniter\BaseModel::delete($id = null, bool $purge = false)
+in APPPATH\Models\ProdiModels.php on line 58.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-05-30 14:31:04 --> Class "App\Controllers\LKOKModels" not found
+in APPPATH\Controllers\SuperAdminControllers.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\SuperAdminControllers->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-30 14:51:15 --> Class "App\Controllers\OrganisasiModels" not found
+in APPPATH\Controllers\LKOKControllers.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LKOKControllers->create()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LKOKControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-30 14:53:30 --> Class "App\Controllers\LKOKModels" not found
+in APPPATH\Controllers\LKOKControllers.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LKOKControllers->create()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LKOKControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-30 14:54:05 --> Class "App\Controllers\LKOKModels" not found
+in APPPATH\Controllers\LKOKControllers.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LKOKControllers->create()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LKOKControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-30 14:55:41 --> Class "App\Controllers\OrganisasiModels" not found
+in APPPATH\Controllers\LKOKControllers.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LKOKControllers->create()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LKOKControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-30 14:56:22 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 729.
+ 1 SYSTEMPATH\BaseModel.php(729): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Models\OrganisasiModels.php(47): CodeIgniter\Model->insert([...])
+ 4 APPPATH\Controllers\LKOKControllers.php(23): App\Models\OrganisasiModels->createLKOK([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LKOKControllers->create()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LKOKControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-30 14:56:54 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 729.
+ 1 SYSTEMPATH\BaseModel.php(729): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Models\LKOKModels.php(54): CodeIgniter\Model->insert([...])
+ 4 APPPATH\Controllers\LKOKControllers.php(23): App\Models\LKOKModels->createLKOK([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LKOKControllers->create()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LKOKControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-30 15:01:32 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 729.
+ 1 SYSTEMPATH\BaseModel.php(729): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Models\LKOKModels.php(54): CodeIgniter\Model->insert([...])
+ 4 APPPATH\Controllers\LKOKControllers.php(23): App\Models\LKOKModels->createLKOK([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LKOKControllers->create()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LKOKControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-30 15:03:31 --> CodeIgniter\Session\Session::getFlashdata(): Argument #1 ($key) must be of type ?string, array given, called in C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\app\Controllers\LKOKControllers.php on line 24
+in SYSTEMPATH\Session\Session.php on line 633.
+ 1 APPPATH\Controllers\LKOKControllers.php(24): CodeIgniter\Session\Session->getFlashdata([...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LKOKControllers->create()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LKOKControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-30 15:06:18 --> CodeIgniter\Session\Session::getFlashdata(): Argument #1 ($key) must be of type ?string, array given, called in C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\app\Controllers\LKOKControllers.php on line 25
+in SYSTEMPATH\Session\Session.php on line 633.
+ 1 APPPATH\Controllers\LKOKControllers.php(25): CodeIgniter\Session\Session->getFlashdata([...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LKOKControllers->create()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LKOKControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-30 15:50:17 --> Call to undefined method App\Models\LKOKModels::create
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\LKOKControllers.php(23): CodeIgniter\Model->__call('create', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LKOKControllers->create()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LKOKControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-30 15:52:18 --> Call to undefined method App\Models\LKOKModels::create
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\LKOKControllers.php(23): CodeIgniter\Model->__call('create', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LKOKControllers->create()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LKOKControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-30 15:54:11 --> Too few arguments to function App\Controllers\LKOKControllers::create(), 0 passed in C:\xampp\htdocs\Aplikasi-Organisasi-Kampus\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\LKOKControllers.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LKOKControllers->create()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LKOKControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-30 15:54:44 --> Call to undefined method App\Models\LKOKModels::create
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\LKOKControllers.php(21): CodeIgniter\Model->__call('create', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LKOKControllers->create()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LKOKControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-30 15:58:25 --> Class "App\Models\LkokModel" not found
+in APPPATH\Controllers\LKOKControllers.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\LkokControllers->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-30 15:59:24 --> Creation of dynamic property App\Controllers\LkokControllers::$LKOKModels is deprecated
+in APPPATH\Controllers\LKOKControllers.php on line 14.
+ 1 APPPATH\Controllers\LKOKControllers.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\LkokControllers::$LKOKModels is deprecated', 'APPPATH\\Controllers\\LKOKControllers.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\LkokControllers->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-30 16:00:08 --> Undefined property: App\Controllers\LkokControllers::$LKOKModels
+in APPPATH\Controllers\LKOKControllers.php on line 26.
+ 1 APPPATH\Controllers\LKOKControllers.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\LkokControllers::$LKOKModels', 'APPPATH\\Controllers\\LKOKControllers.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LkokControllers->create()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LkokControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-30 19:33:59 --> Cannot redeclare App\Controllers\SuperAdminControllers::registerfakultasprocess()
+in APPPATH\Controllers\SuperAdminControllers.php on line 224.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+>>>>>>> Stashed changes

@@ -255,3 +255,26 @@ in APPPATH\Views\superadmin\LKOK\DataAnggotaLKOK\dataanggotalkok.php on line 67.
  8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 22:17:23 --> Undefined variable $ProdiModels
+in APPPATH\Controllers\SuperAdminControllers.php on line 37.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ProdiModels', 'APPPATH\\Controllers\\SuperAdminControllers.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\SuperAdminControllers->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 22:18:35 --> Creation of dynamic property App\Controllers\SuperAdminControllers::$Prodi is deprecated
+in APPPATH\Controllers\SuperAdminControllers.php on line 36.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\SuperAdminControllers::$Prodi is deprecated', 'APPPATH\\Controllers\\SuperAdminControllers.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\SuperAdminControllers->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-05-29 22:19:12 --> Call to a member function findAll() on null
+in APPPATH\Controllers\SuperAdminControllers.php on line 225.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->registeranggotaLKOK()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

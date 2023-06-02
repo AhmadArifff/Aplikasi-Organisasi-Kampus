@@ -33,7 +33,7 @@
                                 <?php echo session()->getFlashdata('success'); ?>
                             </div>
                         <?php endif; ?>
-                        <form method="post" action="<?= base_url(); ?>/admin/datauser/registeruser/process">
+                        <form method="post" action="">
                             <?= csrf_field(); ?>
                             <div class="row">
                                 <div class="form-group col-6">
@@ -47,7 +47,7 @@
                                 </div>
                                 <div class="form-group col-6">
                                     <label>Fakultas</label>
-                                    <select class="js-example-basic-single" name="u_role" required>
+                                    <select class="js-example-basic-single" name="p_id" required>
                                         <option value="">--Pilih Fakultas--</option>
                                         <?php foreach ($tb_prodi as $data) { ?>
                                             <option value="<?php echo $data['p_id']; ?>"><?php echo $data['p_nama']; ?></option>

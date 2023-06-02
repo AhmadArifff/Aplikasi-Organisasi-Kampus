@@ -34,7 +34,11 @@
                                 <?php echo session()->getFlashdata('success'); ?>
                             </div>
                         <?php endif; ?>
+<<<<<<< Updated upstream
                         <form method="post" action="<?= base_url(); ?>/SuperAdmin/datafakultas/registerfakultas/process">
+=======
+                        <form method="post" action="<?= base_url(); ?>/SuperAdmin/registeruser/process">
+>>>>>>> Stashed changes
                             <?= csrf_field(); ?>
                             <div class="form-group ">
                                 <label>Nama Prodi</label>

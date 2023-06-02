@@ -34,7 +34,11 @@
                                 <?php echo session()->getFlashdata('success'); ?>
                             </div>
                         <?php endif; ?>
+<<<<<<< Updated upstream
                         <form method="post" action="">
+=======
+                        <form method="post" action="<?= base_url(); ?>/SuperAdmin/datauser/registeruser/process">
+>>>>>>> Stashed changes
                             <?= csrf_field(); ?>
 
                             <div class="form-group ">

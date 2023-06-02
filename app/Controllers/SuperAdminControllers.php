@@ -221,6 +221,27 @@ class SuperAdminControllers extends BaseController
         ];
         return view("superadmin/LKOK/DataLKOK/registerlkok", $menu);
     }
+    public function registerLKOKprocess()
+    {
+        if (!$this->validate([
+            'o_nama' => [
+                'rules' => 'required|min_length[4]|max_length[100]',
+                'errors' => [
+                    'required' => '{field} Harus diisi',
+                    'min_length' => '{field} Minimal 4 Karakter',
+                    'max_length' => '{field} Maksimal 100 Karakter',
+                ]
+            ],
+        ])) {
+            session()->setFlashdata('error', $this->validator->listErrors());
+            return redirect()->back()->withInput();
+        }
+        $this->OrganisasiModels->insert([
+            'o_nama' => $this->request->getVar('o_nama')
+        ]);
+        session()->setFlashdata('success', 'Data LKOK Berhasil Disimpan!');
+        return redirect()->to('/SuperAdmin/dataLK-OK');
+    }
     public function editLKOK($o_id)
     {
         $menu = [
@@ -233,8 +254,48 @@ class SuperAdminControllers extends BaseController
             'DataLKOK' => 'datalkok',
             'DataAnggotaLKOK' => '',
         ];
-        return view("superadmin/LKOK/DataLKOK/registereditlkok", $menu);
+        $validation = \Config\Services::validation();
+        $validation->setRules([
+            'o_nama' => [
+                'rules' => 'required|min_length[4]|max_length[100]',
+                'errors' => [
+                    'required' => '{field} Harus diisi',
+                    'min_length' => '{field} Minimal 4 Karakter',
+                    'max_length' => '{field} Maksimal 100 Karakter',
+                ]
+            ],
+        ]);
+        $isDataValid = $validation->withRequest($this->request)->run();
+        if ($isDataValid) {
+            $this->OrganisasiModels->update($o_id, [
+                'o_nama' => $this->request->getVar('o_nama')
+            ]);
+            session()->setFlashdata('success', 'Data LKOK Berhasil Di Edit!');
+            return redirect('SuperAdmin/datafakultas');
+        
     }
+    return view("superadmin/LKOK/DataLKOK/registereditlkok", $menu);
+}   
+
+    public function deleteLKOK($o_id)
+    {
+    $menu = [
+        'Dashboard' => '',
+        'User' => '',
+        'Fakultas' => '',
+        'LKOK' => 'lkok',
+        'Event' => '',
+        'tb_organisasi' => $this->OrganisasiModels->where('o_id', $o_id)->first(),
+        'DataLKOK' => 'datalkok',
+        'DataAnggotaLKOK' => '',
+    ];
+    
+        $this->OrganisasiModels->delete($o_id);
+        session()->setFlashdata('success', 'Data LKOK Berhasil Di Hapus!');
+        return redirect('SuperAdmin/dataLK-OK');
+    return view("superadmin/LKOK/DataLKOK/registereditlkok", $menu);
+}
+
     public function listdataanggotaLKOK()
     {
         $menu = [
@@ -268,6 +329,22 @@ class SuperAdminControllers extends BaseController
         ];
         return view("superadmin/LKOK/DataAnggotaLKOK/registeranggotalkok", $menu);
     }
+
+    public function registeranggotaLKOKprocess()
+    {
+        $this->AnggotaOrganisasiModels->insert([
+            'u_id' => $this->request->getVar('u_id'),
+            'p_id' => $this->request->getVar('p_id'),
+            'ao_staf' => $this->request->getVar('u_role'),
+            'o_id' => $this->request->getVar('p_id'),
+            'p_foto' => $this->request->getVar('p_foto'),
+            
+        ]);
+        session()->setFlashdata('success', 'Data Anggota LKOK Berhasil Disimpan!');
+        return redirect()->to('/superadmin/LKOK/DataAnggotaLKOK');
+    }
+
+
     public function editanggotaLKOK($ao_id)
     {
         $menu = [
@@ -283,6 +360,11 @@ class SuperAdminControllers extends BaseController
             'tb_anggotaorganisasi' => $this->AnggotaOrganisasiModels->where('ao_id', $ao_id)->first(),
             'DataAnggotaLKOK' => 'dataanggotalkok',
         ];
+
+        $this->AnggotaOrganisasiModels->update($o_id, [
+            'o_nama' => $this->request->getVar('o_nama')
+        ]);
+        session()->setFlashdata('success', 'Data LKOK Berhasil Di Edit!');
         return view("superadmin/LKOK/DataAnggotaLKOK/registereditanggotalkok", $menu);
     }
     public function listdataevent()
