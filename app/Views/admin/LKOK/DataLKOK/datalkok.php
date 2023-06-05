@@ -52,7 +52,7 @@
                                         <td><?= $i ?></td>
                                         <td><?= $data['o_nama'] ?></td>
                                         <td>
-                                            <a href="<?= base_url('AdminLK-OK/morelkok') ?>" class="btn btn-primary btn-sm"><i class="fas fa-eye "></i></a>
+                                            <a href="<?= base_url('AdminLK-OK/morelkok/' . $data['o_id']) ?>" class="btn btn-primary btn-sm"><i class="fas fa-eye "></i></a>
                                         </td>
                                     </tr>
                                 <?php $i++;

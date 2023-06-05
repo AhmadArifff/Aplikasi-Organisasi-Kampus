@@ -15,21 +15,24 @@ class KegiatanModels extends Model
     protected $useSoftDelete        = false;
     protected $protectFields        = true;
     protected $allowedFields        = [
+        'u_id',
         'p_id',
         'k_nama',
-        'k_kegiatan',
+        'k_deskripsikegiatan',
         'k_jeniskegiatan',
+        'k_foto',
+        'k_check_u_id',
         'k_create_at',
         'k_update_at',
         'k_delete_at'
     ];
 
     // Dates
-    protected $useTimestamps        = false;
+    protected $useTimestamps        = true;
     protected $dateFormat           = 'datetime';
-    protected $createdField         = 'u_created_at';
-    protected $updatedField         = 'updated_at';
-    protected $deletedField         = 'deleted_at';
+    protected $createdField         = 'k_create_at';
+    protected $updatedField         = 'k_update_at';
+    protected $deletedField         = 'k_delete_at';
 
     // Validation
     protected $validationRules      = [];
@@ -47,8 +50,9 @@ class KegiatanModels extends Model
     protected $afterFind            = [];
     protected $beforeDelete         = [];
     protected $afterDelete          = [];
-    public function datakategoribarang()
+    
+    public function dataeventbyid($k_id)
     {
-        return $this->db->table('tb_kategori')->Get()->getResultArray();
+        return $this->db->table('tb_kegiatan')->where('k_id', $k_id)->Get()->getRowArray();
     }
 }

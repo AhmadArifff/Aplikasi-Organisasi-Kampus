@@ -1,0 +1,732 @@
+CRITICAL - 2023-06-04 09:22:25 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 729.
+ 1 SYSTEMPATH\BaseModel.php(729): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\SuperAdminControllers.php(609): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->registereventprocess()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 09:22:54 --> Undefined array key "k_kegiatan"
+in APPPATH\Views\superadmin\Event\dataevent.php on line 70.
+ 1 APPPATH\Views\superadmin\Event\dataevent.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "k_kegiatan"', 'APPPATH\\Views\\superadmin\\Event\\dataevent.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\Event\\dataevent.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Event/dataevent', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(543): view('superadmin/Event/dataevent', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->listdataevent()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 10:12:55 --> syntax error, unexpected end of file
+in APPPATH\Views\superadmin\Event\viewevent.php on line 105.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Event/viewevent', [], true)
+ 3 APPPATH\Controllers\SuperAdminControllers.php(707): view('superadmin/Event/viewevent', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 10:48:07 --> Cannot access offset of type string on string
+in APPPATH\Views\superadmin\Event\viewevent.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Event/viewevent', [], true)
+ 4 APPPATH\Controllers\SuperAdminControllers.php(712): view('superadmin/Event/viewevent', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 10:49:26 --> Cannot access offset of type string on string
+in APPPATH\Views\superadmin\Event\viewevent.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Event/viewevent', [], true)
+ 4 APPPATH\Controllers\SuperAdminControllers.php(712): view('superadmin/Event/viewevent', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 10:49:27 --> Cannot access offset of type string on string
+in APPPATH\Views\superadmin\Event\viewevent.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Event/viewevent', [], true)
+ 4 APPPATH\Controllers\SuperAdminControllers.php(712): view('superadmin/Event/viewevent', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 10:50:12 --> Cannot access offset of type string on string
+in APPPATH\Views\superadmin\Event\viewevent.php on line 39.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Event/viewevent', [], true)
+ 4 APPPATH\Controllers\SuperAdminControllers.php(712): view('superadmin/Event/viewevent', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 10:51:04 --> Cannot use object of type stdClass as array
+in APPPATH\Views\superadmin\Event\viewevent.php on line 37.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Event/viewevent', [], true)
+ 4 APPPATH\Controllers\SuperAdminControllers.php(712): view('superadmin/Event/viewevent', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 10:51:05 --> Cannot use object of type stdClass as array
+in APPPATH\Views\superadmin\Event\viewevent.php on line 37.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Event/viewevent', [], true)
+ 4 APPPATH\Controllers\SuperAdminControllers.php(712): view('superadmin/Event/viewevent', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 10:51:05 --> Cannot use object of type stdClass as array
+in APPPATH\Views\superadmin\Event\viewevent.php on line 37.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Event/viewevent', [], true)
+ 4 APPPATH\Controllers\SuperAdminControllers.php(712): view('superadmin/Event/viewevent', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 10:55:26 --> Attempt to read property "u_id" on array
+in APPPATH\Controllers\SuperAdminControllers.php on line 711.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(711): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "u_id" on array', 'APPPATH\\Controllers\\SuperAdminControllers.php', 711)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 10:56:50 --> Attempt to read property "u_id" on array
+in APPPATH\Controllers\SuperAdminControllers.php on line 711.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(711): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "u_id" on array', 'APPPATH\\Controllers\\SuperAdminControllers.php', 711)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 10:56:51 --> Attempt to read property "u_id" on array
+in APPPATH\Controllers\SuperAdminControllers.php on line 711.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(711): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "u_id" on array', 'APPPATH\\Controllers\\SuperAdminControllers.php', 711)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 10:56:52 --> Attempt to read property "u_id" on array
+in APPPATH\Controllers\SuperAdminControllers.php on line 711.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(711): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "u_id" on array', 'APPPATH\\Controllers\\SuperAdminControllers.php', 711)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 10:56:54 --> Attempt to read property "u_id" on array
+in APPPATH\Controllers\SuperAdminControllers.php on line 711.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(711): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "u_id" on array', 'APPPATH\\Controllers\\SuperAdminControllers.php', 711)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 10:58:18 --> Attempt to read property "u_id" on array
+in APPPATH\Controllers\SuperAdminControllers.php on line 711.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(711): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "u_id" on array', 'APPPATH\\Controllers\\SuperAdminControllers.php', 711)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 10:58:19 --> Attempt to read property "u_id" on array
+in APPPATH\Controllers\SuperAdminControllers.php on line 711.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(711): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "u_id" on array', 'APPPATH\\Controllers\\SuperAdminControllers.php', 711)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 10:58:19 --> Attempt to read property "u_id" on array
+in APPPATH\Controllers\SuperAdminControllers.php on line 711.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(711): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "u_id" on array', 'APPPATH\\Controllers\\SuperAdminControllers.php', 711)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 10:58:20 --> Attempt to read property "u_id" on array
+in APPPATH\Controllers\SuperAdminControllers.php on line 711.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(711): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "u_id" on array', 'APPPATH\\Controllers\\SuperAdminControllers.php', 711)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 11:04:36 --> Unknown column 'created_at' in 'order clause'
+in APPPATH\Views\superadmin\Event\viewevent.php on line 51.
+ 1 APPPATH\Views\superadmin\Event\viewevent.php(51): mysqli_query(Object(mysqli), 'SELECT * FROM tb_anggota_organisasi WHERE u_id = \'2\' ORDER BY created_at DESC LIMIT 1')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\Event\\viewevent.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Event/viewevent', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(707): view('superadmin/Event/viewevent', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 11:04:52 --> Undefined variable $tb_anggotaorganisasi
+in APPPATH\Views\superadmin\Event\viewevent.php on line 54.
+ 1 APPPATH\Views\superadmin\Event\viewevent.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_anggotaorganisasi', 'APPPATH\\Views\\superadmin\\Event\\viewevent.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\Event\\viewevent.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Event/viewevent', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(707): view('superadmin/Event/viewevent', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-04 12:26:27 --> mysqli_sql_exception: Table 'tb_pengambilan_organisasi' already exists in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Database\Migrations\2023-06-03-060646_Pengambilanorganisasi.php(45): CodeIgniter\Database\Forge->createTable('tb_pengambilan_...')
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MigrationRunner.php(868): App\Database\Migrations\Pengambilanorganisasi->up()
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MigrationRunner.php(187): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2023-06-04 12:29:53 --> mysqli_sql_exception: Table 'tb_pengambilan_organisasi' already exists in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Database\Migrations\2023-06-03-060646_Pengambilanorganisasi.php(45): CodeIgniter\Database\Forge->createTable('tb_pengambilan_...')
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MigrationRunner.php(868): App\Database\Migrations\Pengambilanorganisasi->up()
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MigrationRunner.php(187): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2023-06-04 12:33:35 --> mysqli_sql_exception: Table 'tb_pengambilan_organisasi' already exists in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Database\Migrations\2023-06-04-053248_Pengambilanorganisasi.php(46): CodeIgniter\Database\Forge->createTable('tb_pengambilan_...')
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MigrationRunner.php(868): App\Database\Migrations\Pengambilanorganisasi->up()
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MigrationRunner.php(187): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2023-06-04 12:34:46 --> mysqli_sql_exception: Table 'tb_pengambilan_organisasi' already exists in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Database\Migrations\2023-06-04-053248_Pengambilanorganisasi.php(46): CodeIgniter\Database\Forge->createTable('tb_pengambilan_...')
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MigrationRunner.php(868): App\Database\Migrations\Pengambilanorganisasi->up()
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MigrationRunner.php(187): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2023-06-04 12:36:08 --> mysqli_sql_exception: Table 'tb_pengambilan_organisasi' already exists in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('CREATE TABLE `t...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `t...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `t...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\Forge.php(509): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `t...')
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Database\Migrations\2023-06-04-053248_Pengambilanorganisasi.php(46): CodeIgniter\Database\Forge->createTable('tb_pengambilan_...')
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MigrationRunner.php(868): App\Database\Migrations\Pengambilanorganisasi->up()
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MigrationRunner.php(187): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\BaseCommand.php(112): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#14 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#15 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#16 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#18 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\spark(98): CodeIgniter\CLI\Console->run()
+#19 {main}
+CRITICAL - 2023-06-04 14:09:05 --> Cannot use object of type stdClass as array
+in APPPATH\Views\superadmin\Event\registerevent.php on line 44.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Event/registerevent', [], true)
+ 4 APPPATH\Controllers\SuperAdminControllers.php(558): view('superadmin/Event/registerevent', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->registerevent()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-04 14:34:27 --> mysqli_sql_exception: Table 'organisasi_kampus_widyatama.tbl_kabupaten' doesn't exist in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Models\UsersModels.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php(48): App\Models\UsersModels->getuser_p_id('2')
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->Prodi()
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-06-04 14:34:27 --> Table 'organisasi_kampus_widyatama.tbl_kabupaten' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_kabupaten`
+WHERE `u_prodi` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_kabupaten`
+WHERE `u_prodi` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_kabupaten`
+WHERE `u_prodi` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_kabupaten`
+WHERE `u_prodi` = :u_prodi:', [...], false)
+ 5 APPPATH\Models\UsersModels.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\SuperAdminControllers.php(48): App\Models\UsersModels->getuser_p_id('2')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->Prodi()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-04 14:35:04 --> mysqli_sql_exception: Table 'organisasi_kampus_widyatama.tbl_kabupaten' doesn't exist in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Models\UsersModels.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php(48): App\Models\UsersModels->getuser_p_id('2')
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->Prodi()
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-06-04 14:35:04 --> Table 'organisasi_kampus_widyatama.tbl_kabupaten' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_kabupaten`
+WHERE `u_prodi` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_kabupaten`
+WHERE `u_prodi` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_kabupaten`
+WHERE `u_prodi` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_kabupaten`
+WHERE `u_prodi` = :u_prodi:', [...], false)
+ 5 APPPATH\Models\UsersModels.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\SuperAdminControllers.php(48): App\Models\UsersModels->getuser_p_id('2')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->Prodi()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-04 14:36:48 --> mysqli_sql_exception: Table 'organisasi_kampus_widyatama.tbl_kabupaten' doesn't exist in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Models\UsersModels.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php(48): App\Models\UsersModels->getuser_p_id('2')
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->Prodi()
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-06-04 14:36:48 --> Table 'organisasi_kampus_widyatama.tbl_kabupaten' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_kabupaten`
+WHERE `u_prodi` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_kabupaten`
+WHERE `u_prodi` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_kabupaten`
+WHERE `u_prodi` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_kabupaten`
+WHERE `u_prodi` = :u_prodi:', [...], false)
+ 5 APPPATH\Models\UsersModels.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\SuperAdminControllers.php(48): App\Models\UsersModels->getuser_p_id('2')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->Prodi()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 14:38:21 --> Undefined array key "p_id"
+in APPPATH\Controllers\SuperAdminControllers.php on line 51.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "p_id"', 'APPPATH\\Controllers\\SuperAdminControllers.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->Prodi()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 15:01:23 --> Undefined variable $tb_anggotaorganisasi
+in APPPATH\Views\superadmin\Event\registereditevent.php on line 44.
+ 1 APPPATH\Views\superadmin\Event\registereditevent.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_anggotaorganisasi', 'APPPATH\\Views\\superadmin\\Event\\registereditevent.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\Event\\registereditevent.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Event/registereditevent', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(704): view('superadmin/Event/registereditevent', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->editevent('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 15:30:49 --> Undefined variable $data
+in APPPATH\Views\superadmin\layout\default.php on line 219.
+ 1 APPPATH\Views\superadmin\layout\default.php(219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\superadmin\\layout\\default.php', 219)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\layout\\default.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('superadmin/layout/default', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Event/viewevent', [], true)
+ 6 APPPATH\Controllers\SuperAdminControllers.php(720): view('superadmin/Event/viewevent', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->viewevent()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-04 15:50:41 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`organisasi_kampus_widyatama`.`tb_kegiatan`, CONSTRAINT `tb_kegiatan_ibfk_1` FOREIGN KEY (`u_id`) REFERENCES `tb_user` (`u_id`)) in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php(221): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->deleteuser('3')
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2023-06-04 15:51:17 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`organisasi_kampus_widyatama`.`tb_kegiatan`, CONSTRAINT `tb_kegiatan_ibfk_1` FOREIGN KEY (`u_id`) REFERENCES `tb_user` (`u_id`)) in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php(221): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->deleteuser('3')
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2023-06-04 15:54:37 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`organisasi_kampus_widyatama`.`tb_anggota_organisasi`, CONSTRAINT `tb_anggota_organisasi_ibfk_2` FOREIGN KEY (`p_id`) REFERENCES `tb_prodi` (`p_id`)) in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php(322): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->deletefakultas('1')
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2023-06-04 15:57:46 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`organisasi_kampus_widyatama`.`tb_pengambilan_organisasi`, CONSTRAINT `tb_pengambilan_organisasi_ibfk_2` FOREIGN KEY (`o_id`) REFERENCES `tb_organisasi` (`o_id`)) in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\BaseModel.php(984): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php(434): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->deleteLKOK('1')
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-06-04 16:14:05 --> Undefined array key "ao_foto"
+in APPPATH\Controllers\SuperAdminControllers.php on line 594.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(594): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ao_foto"', 'APPPATH\\Controllers\\SuperAdminControllers.php', 594)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->deleteanggotaLKOK('1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 16:18:45 --> Undefined array key "ao_foto"
+in APPPATH\Controllers\SuperAdminControllers.php on line 594.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(594): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ao_foto"', 'APPPATH\\Controllers\\SuperAdminControllers.php', 594)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->deleteanggotaLKOK('1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 17:06:37 --> Undefined array key "k_kegiatan"
+in APPPATH\Views\admin\Event\dataevent.php on line 70.
+ 1 APPPATH\Views\admin\Event\dataevent.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "k_kegiatan"', 'APPPATH\\Views\\admin\\Event\\dataevent.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\Event\\dataevent.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Event/dataevent', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(136): view('admin/Event/dataevent', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdataevent()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 17:11:14 --> Undefined array key "o_id"
+in APPPATH\Views\admin\LKOK\DataAnggotaLKOK\dataanggotalkok.php on line 68.
+ 1 APPPATH\Views\admin\LKOK\DataAnggotaLKOK\dataanggotalkok.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "o_id"', 'APPPATH\\Views\\admin\\LKOK\\DataAnggotaLKOK\\dataanggotalkok.php', 68)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\LKOK\\DataAnggotaLKOK\\dataanggotalkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/LKOK/DataAnggotaLKOK/dataanggotalkok', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(96): view('admin/LKOK/DataAnggotaLKOK/dataanggotalkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdataanggotaLKOK()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 17:12:05 --> Undefined variable $tb_pengambilan_organisasi
+in APPPATH\Views\admin\LKOK\DataAnggotaLKOK\dataanggotalkok.php on line 70.
+ 1 APPPATH\Views\admin\LKOK\DataAnggotaLKOK\dataanggotalkok.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_pengambilan_organisasi', 'APPPATH\\Views\\admin\\LKOK\\DataAnggotaLKOK\\dataanggotalkok.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\LKOK\\DataAnggotaLKOK\\dataanggotalkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/LKOK/DataAnggotaLKOK/dataanggotalkok', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(96): view('admin/LKOK/DataAnggotaLKOK/dataanggotalkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdataanggotaLKOK()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 17:12:06 --> Undefined variable $tb_pengambilan_organisasi
+in APPPATH\Views\admin\LKOK\DataAnggotaLKOK\dataanggotalkok.php on line 70.
+ 1 APPPATH\Views\admin\LKOK\DataAnggotaLKOK\dataanggotalkok.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_pengambilan_organisasi', 'APPPATH\\Views\\admin\\LKOK\\DataAnggotaLKOK\\dataanggotalkok.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\LKOK\\DataAnggotaLKOK\\dataanggotalkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/LKOK/DataAnggotaLKOK/dataanggotalkok', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(96): view('admin/LKOK/DataAnggotaLKOK/dataanggotalkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdataanggotaLKOK()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 20:03:20 --> Undefined variable $tb_pengambilan_organisasi
+in APPPATH\Views\admin\LKOK\DataAnggotaLKOK\registereditanggotalkok.php on line 74.
+ 1 APPPATH\Views\admin\LKOK\DataAnggotaLKOK\registereditanggotalkok.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_pengambilan_organisasi', 'APPPATH\\Views\\admin\\LKOK\\DataAnggotaLKOK\\registereditanggotalkok.php', 74)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\LKOK\\DataAnggotaLKOK\\registereditanggotalkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/LKOK/DataAnggotaLKOK/registereditanggotalkok', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(177): view('admin/LKOK/DataAnggotaLKOK/registereditanggotalkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editanggotaLKOK('3')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 20:09:07 --> Undefined array key "k_kegiatan"
+in APPPATH\Views\admin\Event\dataevent.php on line 70.
+ 1 APPPATH\Views\admin\Event\dataevent.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "k_kegiatan"', 'APPPATH\\Views\\admin\\Event\\dataevent.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\Event\\dataevent.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Event/dataevent', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(245): view('admin/Event/dataevent', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdataevent()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 22:03:07 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\Event\registereditevent.php on line 44.
+ 1 APPPATH\Views\admin\Event\registereditevent.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\Event\\registereditevent.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\Event\\registereditevent.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Event/registereditevent', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(327): view('admin/Event/registereditevent', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editevent('3')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 22:04:53 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\Event\registereditevent.php on line 44.
+ 1 APPPATH\Views\admin\Event\registereditevent.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\Event\\registereditevent.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\Event\\registereditevent.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Event/registereditevent', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(389): view('admin/Event/registereditevent', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editevent('3')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 22:09:40 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\Event\registereditevent.php on line 44.
+ 1 APPPATH\Views\admin\Event\registereditevent.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\Event\\registereditevent.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\Event\\registereditevent.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Event/registereditevent', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(389): view('admin/Event/registereditevent', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editevent('3')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 22:12:20 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\Event\registereditevent.php on line 44.
+ 1 APPPATH\Views\admin\Event\registereditevent.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\Event\\registereditevent.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\Event\\registereditevent.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Event/registereditevent', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(389): view('admin/Event/registereditevent', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editevent('3')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 22:14:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\Event\registereditevent.php on line 44.
+ 1 APPPATH\Views\admin\Event\registereditevent.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\Event\\registereditevent.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\Event\\registereditevent.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Event/registereditevent', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(389): view('admin/Event/registereditevent', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editevent('3')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 22:33:49 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\Event\registereditevent.php on line 44.
+ 1 APPPATH\Views\admin\Event\registereditevent.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\Event\\registereditevent.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\Event\\registereditevent.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Event/registereditevent', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(389): view('admin/Event/registereditevent', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editevent('3')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 22:35:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\Event\registereditevent.php on line 44.
+ 1 APPPATH\Views\admin\Event\registereditevent.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\Event\\registereditevent.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\Event\\registereditevent.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Event/registereditevent', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(389): view('admin/Event/registereditevent', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editevent('3')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 22:36:43 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\Event\registereditevent.php on line 44.
+ 1 APPPATH\Views\admin\Event\registereditevent.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\Event\\registereditevent.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\Event\\registereditevent.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Event/registereditevent', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(389): view('admin/Event/registereditevent', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editevent('3')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 22:36:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\Event\registereditevent.php on line 52.
+ 1 APPPATH\Views\admin\Event\registereditevent.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\Event\\registereditevent.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\Event\\registereditevent.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Event/registereditevent', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(389): view('admin/Event/registereditevent', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editevent('3')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 22:38:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\Event\registereditevent.php on line 44.
+ 1 APPPATH\Views\admin\Event\registereditevent.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\Event\\registereditevent.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\Event\\registereditevent.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Event/registereditevent', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(389): view('admin/Event/registereditevent', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->editevent('3')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-04 22:50:05 --> Undefined variable $tb_event
+in APPPATH\Views\admin\Event\viewevent.php on line 19.
+ 1 APPPATH\Views\admin\Event\viewevent.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_event', 'APPPATH\\Views\\admin\\Event\\viewevent.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\Event\\viewevent.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/Event/viewevent', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(431): view('admin/Event/viewevent', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->viewevent()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

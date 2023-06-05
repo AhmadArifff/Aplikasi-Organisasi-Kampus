@@ -7,6 +7,8 @@ use App\Models\UsersModels;
 use App\Models\ProdiModels;
 use App\Models\KegiatanModels;
 use App\Models\OrganisasiModels;
+use App\Models\AnggotaOrganisasiModels;
+use App\Models\PengambilanOrganisasiModels;
 
 
 class MahasiswaControllers extends BaseController
@@ -15,6 +17,8 @@ class MahasiswaControllers extends BaseController
     protected $ProdiModels;
     protected $KegiatanModels;
     protected $OrganisasiModels;
+    protected $AnggotaOrganisasiModels;
+    protected $PengambilanOrganisasiModels;
     public function __construct()
     {
         if (session()->get('u_role') != "Mahasiswa") {
@@ -25,6 +29,8 @@ class MahasiswaControllers extends BaseController
         $this->ProdiModels = new ProdiModels();
         $this->OrganisasiModels = new OrganisasiModels();
         $this->KegiatanModels = new KegiatanModels();
+        $this->AnggotaOrganisasiModels = new AnggotaOrganisasiModels();
+        $this->PengambilanOrganisasiModels = new PengambilanOrganisasiModels();
     }
     public function dashboard()
     {
@@ -39,19 +45,22 @@ class MahasiswaControllers extends BaseController
     {
         $menu = [
             'Dashboard' => '',
-            'User' => '',
             'LKOK' => 'lkok',
             'Event' => '',
             'tb_organisasi' => $this->OrganisasiModels->findAll(),
         ];
         return view("mahasiswa/LKOK/DataLKOK/datalkok", $menu);
     }
-    public function morelkok()
+    public function morelkok($o_id)
     {
         $menu = [
             'Dashboard' => '',
-            'Event' => '',
-            'LKOK' => 'lkok',
+            'Event' => 'lkok',
+            'LKOK' => '',
+            'tb_organisasi' => $this->OrganisasiModels->where('o_id', $o_id)->first(),
+            'tb_anggotaorganisasi' => $this->AnggotaOrganisasiModels->findAll(),
+            'tb_pengambilanorganisasi' => $this->PengambilanOrganisasiModels->findAll(),
+            'tb_user' => $this->UsersModels->findAll(),
         ];
         return view("mahasiswa/LKOK/DataLKOK/morelkok", $menu);
     }

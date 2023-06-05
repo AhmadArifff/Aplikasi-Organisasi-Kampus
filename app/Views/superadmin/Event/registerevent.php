@@ -33,12 +33,12 @@
                                 <?php echo session()->getFlashdata('success'); ?>
                             </div>
                         <?php endif; ?>
-                        <form method="post" action="<?= base_url(); ?>/admin/datauser/registeruser/process">
+                        <form method="post" action="<?= base_url(); ?>/AdminLK-OK/dataevent/registerevent/process" enctype="multipart/form-data">
                             <?= csrf_field(); ?>
                             <div class="row">
                                 <div class="form-group col-6">
                                     <label>Nama Pengguna</label>
-                                    <select class="js-example-basic-single" name="u_role" required>
+                                    <select class="js-example-basic-single" name="u_id" id="u_id" required>
                                         <option value="">--Pilih Nama Pengguna--</option>
                                         <?php foreach ($tb_user as $data) { ?>
                                             <option value="<?php echo $data['u_id']; ?>"><?php echo $data['u_nama']; ?></option>
@@ -47,27 +47,27 @@
                                 </div>
                                 <div class="form-group col-6">
                                     <label>Fakultas</label>
-                                    <select class="js-example-basic-single" name="u_role" required>
-                                        <option value="">--Pilih Fakultas--</option>
-                                        <?php foreach ($tb_prodi as $data) { ?>
-                                            <option value="<?php echo $data['p_id']; ?>"><?php echo $data['p_nama']; ?></option>
-                                        <?php } ?>
+                                    <select class="js-example-basic-single" name="p_id" id="p_id" required>
                                     </select>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-6">
                                     <label>Nama Kegiatan</label>
-                                    <input id="text" type="text" class="form-control huruf" name="u_fullname" placeholder="Masukan Full Name" required>
+                                    <input id="text" type="text" class="form-control " name="k_nama" placeholder="Masukan Nama Kegiatan" required>
                                 </div>
                                 <div class="form-group col-6">
                                     <label>Jenis Kegiatan</label>
-                                    <input id="text" type="text" class="form-control huruf" name="u_fullname" placeholder="Masukan Full Name" required>
+                                    <input id="text" type="text" class="form-control " name="k_jeniskegiatan" placeholder="Masukan Jenis Kegiatan" required>
                                 </div>
                             </div>
                             <div class="form-group ">
                                 <label>Deskripsi Kegiatan</label>
-                                <textarea class="form-control" name="" id="" rows="3"></textarea>
+                                <textarea class="form-control" name="k_deskripsikegiatan" id="" rows="3"></textarea>
+                            </div>
+                            <div class="form-group ">
+                                <label for="">Foto</label>
+                                <input type="file" name="k_foto" class="form-control" id="file" required accept=".jpg, .jpeg, .png" /></p>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-lg btn-block" name="submit">

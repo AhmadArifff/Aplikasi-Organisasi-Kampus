@@ -39,12 +39,18 @@ $routes->setAutoRoute(false);
 $routes->get('/login', 'LoginControllers::index');
 $routes->get('/', 'LoginControllers::index');
 $routes->match(['get', 'post'], 'login', 'LoginControllers::login', ["filter" => "noauth"]);
+// Prodi Select Otomatis
+$routes->post('Prodi', 'SuperAdminControllers::Prodi');
+$routes->post('ProdiAdmin', 'AdminControllers::Prodi');
 //admin Routes
 $routes->group("SuperAdmin", ["filter" => "auth"], function ($routes) {
     //Dashboard
     $routes->get("dashboard", "SuperAdminControllers::dashboard");
     $routes->get("viewevent", "SuperAdminControllers::viewevent");
-    $routes->get("morelkok", "SuperAdminControllers::morelkok");
+    // $routes->get("morelkok", "SuperAdminControllers::morelkok");
+    $routes->add("morelkok/(:segment)", "SuperAdminControllers::morelkok/$1");
+    $routes->add("morelkok/visi/(:segment)", "SuperAdminControllers::visi/$1");
+    $routes->add("morelkok/misi/(:segment)", "SuperAdminControllers::misi/$1");
     //Register User
     $routes->get('datauser', 'SuperAdminControllers::listdatauser');
     $routes->get('datauser/registeruser', 'SuperAdminControllers::registeruser');
@@ -68,13 +74,15 @@ $routes->group("SuperAdmin", ["filter" => "auth"], function ($routes) {
     $routes->get('dataanggotaLK-OK/registeranggotaLK-OK', 'SuperAdminControllers::registeranggotaLKOK');
     $routes->post('dataanggotaLK-OK/registeranggotaLK-OK/process', 'SuperAdminControllers::registeranggotaLKOKprocess');
     $routes->add('dataanggotaLK-OK/(:segment)/edit', 'SuperAdminControllers::editanggotaLKOK/$1');
-    $routes->get('dataLK-OK/(:segment)/delete', 'SuperAdminControllers::deleteanggotaLKOK/$1');
+    $routes->get('dataanggotaLK-OK/(:segment)/delete', 'SuperAdminControllers::deleteanggotaLKOK/$1');
     //Register Event
     $routes->get('dataevent', 'SuperAdminControllers::listdataevent');
     $routes->get('dataevent/registerevent', 'SuperAdminControllers::registerevent');
     $routes->post('dataevent/registerevent/process', 'SuperAdminControllers::registereventprocess');
     $routes->add('dataevent/(:segment)/edit', 'SuperAdminControllers::editevent/$1');
     $routes->get('dataevent/(:segment)/delete', 'SuperAdminControllers::deleteevent/$1');
+    //Approve check
+    $routes->add('dataevent/approved/(:segment)', 'SuperAdminControllers::approved/$1');
     //logout
     $routes->get('logout', 'LoginControllers::logout');
 });
@@ -82,13 +90,8 @@ $routes->group("AdminLK-OK", ["filter" => "auth"], function ($routes) {
     //Dashboard
     $routes->get("dashboard", "AdminControllers::dashboard");
     $routes->get("viewevent", "AdminControllers::viewevent");
-    $routes->get("morelkok", "AdminControllers::morelkok");
-    //Register User
-    $routes->get('datauser', 'AdminControllers::listdatauser');
-    $routes->get('datauser/registeruser', 'AdminControllers::registeruser');
-    $routes->post('datauser/registeruser/process', 'AdminControllers::registeruserprocess');
-    $routes->add('datauser/(:segment)/edit', 'AdminControllers::edituser/$1');
-    $routes->get('datauser/(:segment)/delete', 'AdminControllers::deleteuser/$1');
+    // $routes->get("morelkok", "AdminControllers::morelkok");
+    $routes->add("morelkok/(:segment)", "AdminControllers::morelkok/$1");
     //Register LK/OK
     $routes->get('dataLK-OK', 'AdminControllers::listdataLKOK');
     //Register Anggota LK/OK
@@ -96,7 +99,7 @@ $routes->group("AdminLK-OK", ["filter" => "auth"], function ($routes) {
     $routes->get('dataanggotaLK-OK/registeranggotaLK-OK', 'AdminControllers::registeranggotaLKOK');
     $routes->post('dataanggotaLK-OK/registeranggotaLK-OK/process', 'AdminControllers::registeranggotaLKOKprocess');
     $routes->add('dataanggotaLK-OK/(:segment)/edit', 'AdminControllers::editanggotaLKOK/$1');
-    $routes->get('dataLK-OK/(:segment)/delete', 'AdminControllers::deleteanggotaLKOK/$1');
+    $routes->get('dataanggotaLK-OK/(:segment)/delete', 'AdminControllers::deleteanggotaLKOK/$1');
     //Register Event
     $routes->get('dataevent', 'AdminControllers::listdataevent');
     $routes->get('dataevent/registerevent', 'AdminControllers::registerevent');
@@ -109,7 +112,8 @@ $routes->group("AdminLK-OK", ["filter" => "auth"], function ($routes) {
 //coordinator Routes
 $routes->group("Mahasiswa", ["filter" => "auth"], function ($routes) {
     $routes->get("dashboard", "MahasiswaControllers::dashboard");
-    $routes->get("morelkok", "MahasiswaControllers::morelkok");
+    // $routes->get("morelkok", "MahasiswaControllers::morelkok");
+    $routes->add("morelkok/(:segment)", "MahasiswaControllers::morelkok/$1");
     //Register Anggota LK/OK
     $routes->get('dataLK-OK', 'MahasiswaControllers::listdataLKOK');
     //Register Event

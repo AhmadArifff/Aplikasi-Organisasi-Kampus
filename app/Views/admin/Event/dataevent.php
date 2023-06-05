@@ -19,7 +19,7 @@
                     <div class="card-header">
                         <h4>Data Event</h4>
                         <div class="card-header-action">
-                        <a href="<?= base_url(); ?>/AdminLK-OK/viewevent" class="btn btn-primary"><i class="fas fa-eye" ></i>  Semua Event</a>
+                            <a href="<?= base_url(); ?>/AdminLK-OK/viewevent" class="btn btn-primary"><i class="fas fa-eye"></i> Semua Event</a>
                             <a href="<?= base_url(); ?>/AdminLK-OK/dataevent/registerevent" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah Data</a>
                             <!-- <a href="<?= base_url('admin/admincontrollers/exportfileexceluser') ?>" class="btn btn-primary"><i class="fas fa-download"></i> Export Data</a> -->
                             <!-- Export modal by tgl -->
@@ -47,6 +47,7 @@
                                     <th>NAMA KEGIATAN</th>
                                     <th>JENIS KEGIATAN</th>
                                     <th>DESKRIPSI KEGIATAN</th>
+                                    <th>FOTO KEGIATAN</th>
                                     <th>Action Button</th>
                                 </tr>
                             </thead>
@@ -65,13 +66,14 @@
                                                     echo $data['p_nama'];
                                                 }
                                             endforeach ?></td>
-                                        <td><?= $event['k_jeniskegiatan'] ?></td>
                                         <td><?= $event['k_nama'] ?></td>
-                                        <td><?= $event['k_kegiatan'] ?> </td>
+                                        <td><?= $event['k_jeniskegiatan'] ?></td>
+                                        <td><?= $event['k_deskripsikegiatan'] ?> </td>
+                                        <td style="text-align:center"><img src="<?= base_url('Event/' . $event['k_foto']) ?>" width="200px" style="border-radius: 5px;"></td>
                                         <td>
-                                            <a href="<?= base_url('AdminLK-OK/dataevent/' . $event['u_id'] . '/edit') ?>" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i></a>
-                                            <a href="#" data-href="<?= base_url('AdminLK-OK/dataevent/' . $event['u_id'] . '/delete') ?>" onclick="confirmToDelete(this)" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
-                                            <a href="<?= base_url(); ?>/AdminLK-OK/viewevent" class="btn btn-primary btn-sm"><i class="fas fa-eye" ></i></a>
+                                            <a href="<?= base_url('AdminLK-OK/dataevent/' . $event['k_id'] . '/edit') ?>" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i></a>
+                                            <a href="#" data-href="<?= base_url('AdminLK-OK/dataevent/' . $event['k_id'] . '/delete') ?>" onclick="confirmToDelete(this)" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
+                                            <a href="<?= base_url(); ?>/AdminLK-OK/viewevent" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i></a>
                                         </td>
                                     </tr>
                                 <?php $i++;

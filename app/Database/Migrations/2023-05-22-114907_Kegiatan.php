@@ -41,6 +41,12 @@ class Kegiatan extends Migration
                 'type'           => 'VARCHAR',
                 'constraint'     => 255,
             ],
+            'k_check_u_id'   => [
+                'type'           => 'INT',
+                'constraint'     => 11,
+                'unsigned'       => true,
+                'null'           => true,
+            ],
             'k_create_at'       => [
                 'type'           => 'DATETIME',
                 'null'           => true,
@@ -56,8 +62,8 @@ class Kegiatan extends Migration
         ]);
 
         $this->forge->addPrimaryKey('k_id', true);
-        $this->forge->addUniqueKey('u_id', true);
-        $this->forge->addUniqueKey('p_id', true);
+        // $this->forge->addUniqueKey('u_id', true);
+        // $this->forge->addUniqueKey('p_id', true);
         // $this->forge->addForeignKey('p_id', 'tb_prodi', 'p_id', 'RESTRICT','RESTRICT');
 
         $this->forge->createTable('tb_kegiatan');

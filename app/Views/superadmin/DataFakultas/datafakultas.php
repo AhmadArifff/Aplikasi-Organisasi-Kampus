@@ -17,7 +17,7 @@
             <div class="col-18">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Data User</h4>
+                        <h4>Data Prodi</h4>
                         <div class="card-header-action">
                             <a href="<?= base_url(); ?>/SuperAdmin/datafakultas/registerfakultas" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah Data</a>
                             <!-- <a href="<?= base_url('admin/admincontrollers/exportfileexceluser') ?>" class="btn btn-primary"><i class="fas fa-download"></i> Export Data</a> -->

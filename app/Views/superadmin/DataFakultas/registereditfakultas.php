@@ -38,8 +38,8 @@
                             <?= csrf_field(); ?>
 
                             <div class="form-group ">
-                                <label>Nama Lengkap</label>
-                                <input id="text" type="text" class="form-control huruf" name="p_nama" placeholder="Masukan Full Name" value="<?= $tb_prodi['p_nama'] ?>" required>
+                                <label>Nama Prodi</label>
+                                <input id="text" type="text" class="form-control huruf" name="p_nama" placeholder="Masukan Nama Prodi" value="<?= $tb_prodi['p_nama'] ?>" required>
                             </div>
 
                             <div class="form-group">

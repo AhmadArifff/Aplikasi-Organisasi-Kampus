@@ -29,9 +29,12 @@
                                         <div class="card bg-light">
                                             <div class="card-header">
                                                 <h4>Visi :</h4>
+                                                <div class="card-header-action">
+                                                    <a href="<?= base_url('SuperAdmin/morelkok/visi/' . $tb_organisasi['o_id'] ) ?>" class="btn btn-warning btn-sm h-100"><i class="fas fa-pencil-alt"></i></a>
+                                                </div>
                                             </div>
                                             <div class="card-body">
-                                                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum:</p>
+                                                <!-- <p>Sunt in culpa qui officia deserunt mollit anim id est laborum:</p> -->
                                                 <ul>
                                                     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</li>
                                                     <li>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</li>
@@ -40,9 +43,12 @@
                                             </div>
                                             <div class="card-header">
                                                 <h4>Misi :</h4>
+                                                <div class="card-header-action">
+                                                    <a href="<?= base_url('SuperAdmin/morelkok/misi/' . $tb_organisasi['o_id'] ) ?>" class="btn btn-warning btn-sm h-100"><i class="fas fa-pencil-alt"></i></a>
+                                                </div>
                                             </div>
                                             <div class="card-body">
-                                                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum:</p>
+                                                <!-- <p>Sunt in culpa qui officia deserunt mollit anim id est laborum:</p> -->
                                                 <ul>
                                                     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</li>
                                                     <li>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</li>
@@ -58,21 +64,52 @@
                                 <div class="col-12 ">
                                     <div class="card author-box card-primary">
                                         <div class="card-body">
-                                            <div class="author-box-left" style="margin-left:50px;">
-                                                <img alt="image" src="<?= base_url('LKOK/foto.jpeg') ?>" class="rounded-circle author-box-picture">
-                                                <div class="clearfix"></div>
-                                                <button class="btn btn-primary mt-3" disable>Ketua</button>
-                                            </div>
-                                            <div class="author-box-left" style="margin-left:30%;">
-                                                <img alt="image" src="<?= base_url('LKOK/foto.jpeg') ?>" class="rounded-circle author-box-picture">
-                                                <div class="clearfix"></div>
-                                                <button class="btn btn-primary mt-3" disable>Wakil Ketua</button>
-                                            </div>
+                                            <?php
+                                            foreach ($tb_pengambilanorganisasi as $pengambilanorganisasi) {
+                                                if ($tb_organisasi['o_id'] == $pengambilanorganisasi['o_id']) {
+                                                    $ao_id = $pengambilanorganisasi['ao_id'];
+                                                    foreach ($tb_anggotaorganisasi as $anggotaorganisasi) {
+                                                        if ($ao_id == $anggotaorganisasi['ao_id']) {
+                                                            foreach ($tb_user as $user) {
+                                                                if ($anggotaorganisasi['u_id'] == $user['u_id']) {
+                                                                    if ($anggotaorganisasi['ao_staf'] == "Ketua") {
+
+                                            ?>
+                                                                        <div class="author-box-left" style="margin-left:50px;">
+                                                                            <img alt="image" src="<?= base_url('Anggota-LKOK/' . $anggotaorganisasi['ao_foto']) ?>" style="margin-top: 10px; aspect-ratio: 3/3; " class="rounded-circle author-box-picture">
+                                                                            <div class="clearfix"></div>
+                                                                            <b>
+                                                                                <div class="user-name mt-2"><?= $user['u_nama'] ?></div>
+                                                                            </b>
+                                                                            <div class="text-job text-muted mt-1"><?= $anggotaorganisasi['ao_staf'] ?></div>
+                                                                        </div>
+                                                                    <?php
+                                                                    }
+                                                                    if ($anggotaorganisasi['ao_staf'] == "WakilKetua") {
+                                                                    ?>
+                                                                        <div class="author-box-left" style="margin-left:30%;">
+                                                                            <img alt="image" src="<?= base_url('Anggota-LKOK/' . $anggotaorganisasi['ao_foto']) ?>" style="margin-top: 10px;  aspect-ratio: 3/3; ; " class="rounded-circle author-box-picture">
+                                                                            <div class="clearfix"></div>
+                                                                            <b>
+                                                                                <div class="user-name mt-2"><?= $user['u_nama'] ?></div>
+                                                                            </b>
+                                                                            <div class="text-job text-muted mt-1"><?= $anggotaorganisasi['ao_staf'] ?></div>
+                                                                        </div>
+                                            <?php
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            ?>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="section-body">
+                            <div class="section-body"></div>
                                 <div class="col-12 ">
                                     <div class="card card-danger">
                                         <div class="card-header">
@@ -80,66 +117,44 @@
                                         </div>
                                         <div class="card-body">
                                             <div class="owl-carousel owl-theme" id="users-carousel">
-                                                <div>
-                                                    <div class="user-item">
-                                                        <img alt="image" src="<?= base_url('assets/img/avatar/avatar-1.png') ?>" class="img-fluid">
-                                                        <div class="user-details">
-                                                            <div class="user-name">Hasan Basri</div>
-                                                            <div class="text-job text-muted">Web Developer</div>
-                                                            <div class="user-cta">
-                                                                <!-- <button class="btn btn-primary follow-btn" data-follow-action="alert('user1 followed');" data-unfollow-action="alert('user1 unfollowed');">Follow</button> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div class="user-item">
-                                                        <img alt="image" src="<?= base_url('assets/img/avatar/avatar-1.png') ?>" class="img-fluid">
-                                                        <div class="user-details">
-                                                            <div class="user-name">Kusnaedi</div>
-                                                            <div class="text-job text-muted">Mobile Developer</div>
-                                                            <div class="user-cta">
-                                                                <!-- <button class="btn btn-primary follow-btn" data-follow-action="alert('user2 followed');" data-unfollow-action="alert('user2 unfollowed');">Follow</button> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div class="user-item">
-                                                        <img alt="image" src="<?= base_url('assets/img/avatar/avatar-1.png') ?>" class="img-fluid">
-                                                        <div class="user-details">
-                                                            <div class="user-name">Bagus Dwi Cahya</div>
-                                                            <div class="text-job text-muted">UI Designer</div>
-                                                            <div class="user-cta">
-                                                                <!-- <button class="btn btn-danger following-btn" data-unfollow-action="alert('user3 unfollowed');" data-follow-action="alert('user3 followed');">Following</button> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div class="user-item">
-                                                        <img alt="image" src="<?= base_url('assets/img/avatar/avatar-1.png') ?>" class="img-fluid">
-                                                        <div class="user-details">
-                                                            <div class="user-name">Wildan Ahdian</div>
-                                                            <div class="text-job text-muted">Project Manager</div>
-                                                            <div class="user-cta">
-                                                                <!-- <button class="btn btn-primary follow-btn" data-follow-action="alert('user4 followed');" data-unfollow-action="alert('user4 unfollowed');">Follow</button> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div class="user-item">
-                                                        <img alt="image" src="<?= base_url('assets/img/avatar/avatar-1.png') ?>" class="img-fluid">
-                                                        <div class="user-details">
-                                                            <div class="user-name">Deden Febriansyah</div>
-                                                            <div class="text-job text-muted">IT Support</div>
-                                                            <div class="user-cta">
-                                                                <!-- <button class="btn btn-primary follow-btn" data-follow-action="alert('user5 followed');" data-unfollow-action="alert('user5 unfollowed');">Follow</button> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            <?php
+                                                foreach ($tb_pengambilanorganisasi as $pengambilanorganisasi) {
+                                                    if ($tb_organisasi['o_id'] == $pengambilanorganisasi['o_id']) {
+                                                        $ao_id = $pengambilanorganisasi['ao_id'];
+                                                        foreach ($tb_anggotaorganisasi as $anggotaorganisasi) {
+                                                            if ($ao_id == $anggotaorganisasi['ao_id']) {
+                                                                foreach ($tb_user as $user) {
+                                                                    if ($anggotaorganisasi['u_id'] == $user['u_id']) {
+                                                                        if ($anggotaorganisasi['ao_staf'] != "Ketua" && $anggotaorganisasi['ao_staf'] != "WakilKetua") {
+                                                                            $nama = $user['u_nama'];
+                                                                            $foto =  $anggotaorganisasi['ao_foto'];
+                                                                            $staf = $anggotaorganisasi['ao_staf'];
+
+                                                                            // Tampilkan data anggota organisasi di sini
+                                                                            ?>
+                                                                            <div>
+                                                                                <div class="user-item">
+                                                                                    <img alt="image" src="<?= base_url('Anggota-LKOK/' . $foto) ?>" style="aspect-ratio: 3/2; object-fit: contain ; " class="img-fluid">
+                                                                                    <div class="user-details">
+                                                                                        <div class="user-name"><?= $nama ?></div>
+                                                                                        <div class="text-job text-muted"><?= $staf ?></div>
+                                                                                        <div class="user-cta">
+                                                                                            <!-- <button class="btn btn-primary follow-btn" data-follow-action="alert('user1 followed');" data-unfollow-action="alert('user1 unfollowed');">Follow</button> -->
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <?php
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                ?>
+
+
                                             </div>
                                         </div>
                                     </div>

@@ -8,6 +8,9 @@ use App\Models\ProdiModels;
 use App\Models\OrganisasiModels;
 use App\Models\AnggotaOrganisasiModels;
 use App\Models\KegiatanModels;
+use App\Models\PengambilanOrganisasiModels;
+use App\Models\VisiModels;
+use App\Models\MisiModels;
 use CodeIgniter\HTTP\IncomingRequest;
 
 /**
@@ -24,6 +27,9 @@ class SuperAdminControllers extends BaseController
     protected $OrganisasiModels;
     protected $AnggotaOrganisasiModels;
     protected $KegiatanModels;
+    protected $PengambilanOrganisasiModels;
+    protected $VisiModels;
+    protected $MisiModels;
     public function __construct()
     {
         if (session()->get('u_role') != "SuperAdmin") {
@@ -38,6 +44,22 @@ class SuperAdminControllers extends BaseController
         $this->OrganisasiModels = new OrganisasiModels();
         $this->AnggotaOrganisasiModels = new AnggotaOrganisasiModels();
         $this->KegiatanModels = new KegiatanModels();
+        $this->PengambilanOrganisasiModels = new PengambilanOrganisasiModels();
+        $this->VisiModels = new VisiModels();
+        $this->MisiModels = new MisiModels();
+    }
+    public function Prodi()
+    {
+        $u_id = $this->request->getPost('u_id');
+        $datauser = $this->UsersModels->getuser_u_id($u_id);
+        echo '<option value="">----Pilih Fakultas---- </option>';
+        foreach ($datauser as $value => $k) {
+            $p_id = $k['u_prodi'];
+            $dataprodi = $this->ProdiModels->getprodi_p_id($p_id);
+            foreach ($dataprodi as $item) {
+                echo "<option value=" . $item['p_id'] . ">" . $item['p_nama'] . "</option>";
+            }
+        }
     }
     public function dashboard()
     {
@@ -49,6 +71,9 @@ class SuperAdminControllers extends BaseController
             'Event' => '',
             'DataLKOK' => 'datalkok',
             'DataAnggotaLKOK' => 'dataangggotalkok',
+            'NotipEvent' => $this->KegiatanModels->findAll(),
+            'NotipUser' => $this->UsersModels->findAll(),
+            'Notiprodi' => $this->ProdiModels->findAll(),
         ];
         return view("superadmin/dashboard", $menu);
     }
@@ -64,6 +89,9 @@ class SuperAdminControllers extends BaseController
             'tb_prodi' => $this->ProdiModels->findAll(),
             'DataLKOK' => 'datalkok',
             'DataAnggotaLKOK' => 'dataangggotalkok',
+            'NotipEvent' => $this->KegiatanModels->findAll(),
+            'NotipUser' => $this->UsersModels->findAll(),
+            'Notiprodi' => $this->ProdiModels->findAll(),
         ];
         return view("superadmin/Datauser/datauser", $menu);
     }
@@ -78,8 +106,67 @@ class SuperAdminControllers extends BaseController
             'tb_prodi' => $this->ProdiModels->findAll(),
             'DataLKOK' => '',
             'DataAnggotaLKOK' => '',
+            'NotipEvent' => $this->KegiatanModels->findAll(),
+            'NotipUser' => $this->UsersModels->findAll(),
+            'Notiprodi' => $this->ProdiModels->findAll(),
         ];
         return view("superadmin/Datauser/registeruser", $menu);
+    }
+    public function registeruserprocess()
+    {
+        if (!$this->validate([
+            'u_npm' => [
+                'rules' => 'required|min_length[4]|max_length[12]|is_unique[tb_user.u_npm]',
+                'errors' => [
+                    'required' => '{field} Harus diisi',
+                    'min_length' => '{field} Minimal 4 Karakter',
+                    'max_length' => '{field} Maksimal 12 Karakter',
+                    'is_unique' => 'NPM sudah digunakan sebelumnya'
+                ]
+            ],
+            'u_password' => [
+                'rules' => 'required|min_length[4]|max_length[50]',
+                'errors' => [
+                    'required' => '{field} Harus diisi',
+                    'min_length' => '{field} Minimal 4 Karakter',
+                    'max_length' => '{field} Maksimal 50 Karakter',
+                ]
+            ],
+            'password-confirm' => [
+                'rules' => 'matches[u_password]',
+                'errors' => [
+                    'matches' => 'Konfirmasi Password tidak sesuai dengan password',
+                ]
+            ],
+            'u_nama' => [
+                'rules' => 'required|min_length[4]|max_length[50]',
+                'errors' => [
+                    'required' => '{field} Harus diisi',
+                    'min_length' => '{field} Minimal 4 Karakter',
+                    'max_length' => '{field} Maksimal 50 Karakter',
+                ]
+            ],
+            'u_role' => 'required',
+            'u_gender' => 'required',
+            'u_prodi' => 'required',
+            'u_angkatan' => 'required',
+            'u_alamat' => 'required',
+        ])) {
+            session()->setFlashdata('error', $this->validator->listErrors());
+            return redirect()->back()->withInput();
+        }
+        $this->UsersModels->insert([
+            'u_npm' => $this->request->getVar('u_npm'),
+            'u_password' => password_hash($this->request->getVar('u_password'), PASSWORD_BCRYPT),
+            'u_nama' => $this->request->getVar('u_nama'),
+            'u_role' => $this->request->getVar('u_role'),
+            'u_gender' => $this->request->getVar('u_gender'),
+            'u_prodi' => $this->request->getVar('u_prodi'),
+            'u_angkatan' => $this->request->getVar('u_angkatan'),
+            'u_alamat' => $this->request->getVar('u_alamat'),
+        ]);
+        session()->setFlashdata('success', 'Data Berhasil Disimpan!');
+        return redirect()->to('/SuperAdmin/datauser');
     }
     public function edituser($u_id)
     {
@@ -93,8 +180,76 @@ class SuperAdminControllers extends BaseController
             'tb_user' => $this->UsersModels->where('u_id', $u_id)->first(),
             'DataLKOK' => '',
             'DataAnggotaLKOK' => '',
+            'NotipEvent' => $this->KegiatanModels->findAll(),
+            'NotipUser' => $this->UsersModels->findAll(),
+            'Notiprodi' => $this->ProdiModels->findAll(),
         ];
+        $validation = \Config\Services::validation();
+        $validation->setRules([
+            'u_npm' => 'required',
+            'u_password' => [
+                'rules' => 'required|min_length[4]|max_length[50]',
+                'errors' => [
+                    'required' => '{field} Harus diisi',
+                    'min_length' => '{field} Minimal 4 Karakter',
+                    'max_length' => '{field} Maksimal 50 Karakter',
+                ]
+            ],
+            'password-confirm' => [
+                'rules' => 'matches[u_password]',
+                'errors' => [
+                    'matches' => 'Konfirmasi Password tidak sesuai dengan password',
+                ]
+            ],
+            'u_nama' => [
+                'rules' => 'required|min_length[4]|max_length[50]',
+                'errors' => [
+                    'required' => '{field} Harus diisi',
+                    'min_length' => '{field} Minimal 4 Karakter',
+                    'max_length' => '{field} Maksimal 50 Karakter',
+                ]
+            ],
+            'u_role' => 'required',
+            'u_gender' => 'required',
+            'u_prodi' => 'required',
+            'u_angkatan' => 'required',
+            'u_alamat' => 'required',
+        ]);
+        $isDataValid = $validation->withRequest($this->request)->run();
+        // jika data vlid, maka simpan ke database
+        if ($isDataValid) {
+            $this->UsersModels->update($u_id, [
+                'u_npm' => $this->request->getVar('u_npm'),
+                'u_password' => password_hash($this->request->getVar('u_password'), PASSWORD_BCRYPT),
+                'u_nama' => $this->request->getVar('u_nama'),
+                'u_role' => $this->request->getVar('u_role'),
+                'u_gender' => $this->request->getVar('u_gender'),
+                'u_prodi' => $this->request->getVar('u_prodi'),
+                'u_angkatan' => $this->request->getVar('u_angkatan'),
+                'u_alamat' => $this->request->getVar('u_alamat'),
+            ]);
+            session()->setFlashdata('success', 'Data Berhasil Di Edit!');
+            return redirect('SuperAdmin/datauser');
+        }
         return view("superadmin/Datauser/registeredituser", $menu);
+    }
+    public function deleteuser($u_id)
+    {
+        try {
+            $result = $this->UsersModels->delete($u_id);
+            if ($result) {
+                session()->setFlashdata('success', 'Data Berhasil Di Hapus!');
+            } else {
+                session()->setFlashdata('error', 'Data Tidak Berhasil Di Hapus!');
+            }
+        } catch (\mysqli_sql_exception $e) {
+            session()->setFlashdata('error', 'Data Tidak Berhasil Di Hapus! Karena Data ini kemungkinan sudah dipakai di:
+            <br>1. <b>Anggota LK/OK</b> Sebagai <b>Nama Pengguna</b>!
+            <br>2. <b>Anggota LK/OK</b> sebagai <b>Nama Pengguna</b>!
+            <br>2. <b>Event</b> sebagai <b>Nama Pengguna</b>!
+            <br>Silahkan Cek Data ini yang kemungkinan sudah dipakai di <b>3 form diatas</b>, jika ada maka hapus terlebih dahulu dan apabila sudah tidak ada maka Data ini yang mau dihapus dapat dilakukan!');
+        }
+        return redirect()->to('/SuperAdmin/datauser');
     }
     public function listdatafakultas()
     {
@@ -107,6 +262,9 @@ class SuperAdminControllers extends BaseController
             'tb_prodi' => $this->ProdiModels->findAll(),
             'DataLKOK' => '',
             'DataAnggotaLKOK' => '',
+            'NotipEvent' => $this->KegiatanModels->findAll(),
+            'NotipUser' => $this->UsersModels->findAll(),
+            'Notiprodi' => $this->ProdiModels->findAll(),
         ];
         return view("superadmin/DataFakultas/datafakultas", $menu);
     }
@@ -121,6 +279,9 @@ class SuperAdminControllers extends BaseController
             'tb_prodi' => $this->ProdiModels->findAll(),
             'DataLKOK' => '',
             'DataAnggotaLKOK' => '',
+            'NotipEvent' => $this->KegiatanModels->findAll(),
+            'NotipUser' => $this->UsersModels->findAll(),
+            'Notiprodi' => $this->ProdiModels->findAll(),
         ];
         return view("superadmin/DataFakultas/registerfakultas", $menu);
     }
@@ -156,6 +317,9 @@ class SuperAdminControllers extends BaseController
             'tb_prodi' => $this->ProdiModels->where('p_id', $p_id)->first(),
             'DataLKOK' => '',
             'DataAnggotaLKOK' => '',
+            'NotipEvent' => $this->KegiatanModels->findAll(),
+            'NotipUser' => $this->UsersModels->findAll(),
+            'Notiprodi' => $this->ProdiModels->findAll(),
         ];
         // $menu['tb_prodi'] = $this->ProdiModels->where('p_id', $p_id)->first();
         // lakukan validasi data artikel
@@ -180,6 +344,24 @@ class SuperAdminControllers extends BaseController
         }
         return view("superadmin/DataFakultas/registereditfakultas", $menu);
     }
+    public function deletefakultas($p_id)
+    {
+        try {
+            $result = $this->ProdiModels->delete($p_id);
+            if ($result) {
+                session()->setFlashdata('success', 'Data Berhasil Di Hapus!');
+            } else {
+                session()->setFlashdata('error', 'Data Tidak Berhasil Di Hapus!');
+            }
+        } catch (\mysqli_sql_exception $e) {
+            session()->setFlashdata('error', 'Data Tidak Berhasil Di Hapus! Karena Data ini kemungkinan sudah dipakai di:
+            <br>1. <b>Users</b> Sebagai <b>Nama Prodi</b>!
+            <br>1. <b>Anggota LK/OK</b> Sebagai <b>Nama Prodi</b>!
+            <br>2. <b>Event</b> sebagai <b>Nama Prodi</b>!
+            <br>Silahkan Cek Data ini yang kemungkinan sudah dipakai di <b>3 form diatas</b>, jika ada maka hapus terlebih dahulu dan apabila sudah tidak ada maka Data ini yang mau dihapus dapat dilakukan!');
+        }
+        return redirect()->to('/SuperAdmin/datafakultas');
+    }
     public function listdataLKOK()
     {
         $menu = [
@@ -191,10 +373,13 @@ class SuperAdminControllers extends BaseController
             'tb_organisasi' => $this->OrganisasiModels->findAll(),
             'DataLKOK' => 'datalkok',
             'DataAnggotaLKOK' => '',
+            'NotipEvent' => $this->KegiatanModels->findAll(),
+            'NotipUser' => $this->UsersModels->findAll(),
+            'Notiprodi' => $this->ProdiModels->findAll(),
         ];
         return view("superadmin/LKOK/DataLKOK/datalkok", $menu);
     }
-    public function morelkok()
+    public function morelkok($o_id)
     {
         $menu = [
             'Dashboard' => '',
@@ -204,9 +389,95 @@ class SuperAdminControllers extends BaseController
             'LKOK' => 'lkok',
             'DataLKOK' => 'datalkok',
             'DataAnggotaLKOK' => '',
+            'tb_organisasi' => $this->OrganisasiModels->where('o_id', $o_id)->first(),
+            'tb_anggotaorganisasi' => $this->AnggotaOrganisasiModels->findAll(),
+            'tb_pengambilanorganisasi' => $this->PengambilanOrganisasiModels->findAll(),
+            'tb_user' => $this->UsersModels->findAll(),
+            'NotipEvent' => $this->KegiatanModels->findAll(),
+            'NotipUser' => $this->UsersModels->findAll(),
+            'Notiprodi' => $this->ProdiModels->findAll(),
         ];
         return view("superadmin/LKOK/DataLKOK/morelkok", $menu);
     }
+    public function visi($o_id)
+    {
+        $menu = [
+            'Dashboard' => '',
+            'User' => '',
+            'Fakultas' => '',
+            'Event' => '',
+            'LKOK' => 'lkok',
+            'DataLKOK' => 'datalkok',
+            'DataAnggotaLKOK' => '',
+            'tb_organisasi' => $this->OrganisasiModels->where('o_id', $o_id)->first(),
+            'tb_visi_o_id' => $this->VisiModels->where('o_id', $o_id)->first(),
+            'tb_visi' => $this->VisiModels->findAll(),
+            'NotipEvent' => $this->KegiatanModels->findAll(),
+            'NotipUser' => $this->UsersModels->findAll(),
+            'Notiprodi' => $this->ProdiModels->findAll(),
+        ];
+        $validation = \Config\Services::validation();
+        $validation->setRules([
+            'v_ke1' => 'required',
+            'v_ke2' => 'required',
+            'v_ke3' => 'required',
+            'v_ke4' => 'required',
+            'v_ke5' => 'required',
+        ]);
+        $isDataValid = $validation->withRequest($this->request)->run();
+        $data_o_id = $this->request->getVar('o_id');
+        $datavisi = $this->VisiModels->findAll();
+            foreach ($datavisi as $visi){
+                if($data_o_id == $visi['o_id']){
+                    $datavisi = $visi['o_id'];
+                }
+            }
+            if(!empty($datavisi)) {
+                if ($isDataValid) {
+                    $this->VisiModels->update($o_id, [
+                        'o_id' => $this->request->getVar('o_id'),
+                        'v_ke1' => $this->request->getVar('v_ke1'),
+                        'v_ke2' => $this->request->getVar('v_ke2'),
+                        'v_ke3' => $this->request->getVar('v_ke3'),
+                        'v_ke4' => $this->request->getVar('v_ke4'),
+                        'v_ke5' => $this->request->getVar('v_ke5')
+                    ]);
+                    session()->setFlashdata('success', 'Data Berhasil Di Edit!');
+                    return redirect('SuperAdmin/morelkok/'.$o_id);
+                }
+            }else{
+                if ($isDataValid) {
+                    $this->OrganisasiModels->insert([
+                        'o_id' => $this->request->getVar('o_id'),
+                        'v_ke1' => $this->request->getVar('v_ke1'),
+                        'v_ke2' => $this->request->getVar('v_ke2'),
+                        'v_ke3' => $this->request->getVar('v_ke3'),
+                        'v_ke4' => $this->request->getVar('v_ke4'),
+                        'v_ke5' => $this->request->getVar('v_ke5')
+                    ]);
+                    session()->setFlashdata('success', 'Data Berhasil Di Simpan!');
+                    return redirect('SuperAdmin/morelkok/'.$o_id);
+                }
+            }
+        return view("superadmin/LKOK/DataLKOK/registereditvisi", $menu);
+    }
+    public function misi($o_id)
+    {
+        $menu = [
+            'Dashboard' => '',
+            'User' => '',
+            'Fakultas' => '',
+            'Event' => '',
+            'LKOK' => 'lkok',
+            'DataLKOK' => 'datalkok',
+            'DataAnggotaLKOK' => '',
+            'NotipEvent' => $this->KegiatanModels->findAll(),
+            'NotipUser' => $this->UsersModels->findAll(),
+            'Notiprodi' => $this->ProdiModels->findAll(),
+        ];
+        return view("superadmin/LKOK/DataLKOK/morelkok", $menu);
+    }
+
     public function registerLKOK()
     {
         $menu = [
@@ -218,8 +489,32 @@ class SuperAdminControllers extends BaseController
             'tb_organisasi' => $this->OrganisasiModels->findAll(),
             'DataLKOK' => 'datalkok',
             'DataAnggotaLKOK' => '',
+            'NotipEvent' => $this->KegiatanModels->findAll(),
+            'NotipUser' => $this->UsersModels->findAll(),
+            'Notiprodi' => $this->ProdiModels->findAll(),
         ];
         return view("superadmin/LKOK/DataLKOK/registerlkok", $menu);
+    }
+    public function registerLKOKprocess()
+    {
+        if (!$this->validate([
+            'o_nama' => [
+                'rules' => 'required|min_length[4]|max_length[100]',
+                'errors' => [
+                    'required' => '{field} Harus diisi',
+                    'min_length' => '{field} Minimal 4 Karakter',
+                    'max_length' => '{field} Maksimal 100 Karakter',
+                ]
+            ],
+        ])) {
+            session()->setFlashdata('error', $this->validator->listErrors());
+            return redirect()->back()->withInput();
+        }
+        $this->OrganisasiModels->insert([
+            'o_nama' => $this->request->getVar('o_nama')
+        ]);
+        session()->setFlashdata('success', 'Data Berhasil Disimpan!');
+        return redirect()->to('/SuperAdmin/dataLK-OK');
     }
     public function editLKOK($o_id)
     {
@@ -232,8 +527,46 @@ class SuperAdminControllers extends BaseController
             'tb_organisasi' => $this->OrganisasiModels->where('o_id', $o_id)->first(),
             'DataLKOK' => 'datalkok',
             'DataAnggotaLKOK' => '',
+            'NotipEvent' => $this->KegiatanModels->findAll(),
+            'NotipUser' => $this->UsersModels->findAll(),
+            'Notiprodi' => $this->ProdiModels->findAll(),
         ];
+        $validation = \Config\Services::validation();
+        $validation->setRules([
+            'o_nama' => [
+                'rules' => 'required|min_length[4]|max_length[100]',
+                'errors' => [
+                    'required' => '{field} Harus diisi',
+                    'min_length' => '{field} Minimal 4 Karakter',
+                    'max_length' => '{field} Maksimal 100 Karakter',
+                ]
+            ],
+        ]);
+        $isDataValid = $validation->withRequest($this->request)->run();
+        if ($isDataValid) {
+            $this->OrganisasiModels->update($o_id, [
+                'o_nama' => $this->request->getVar('o_nama')
+            ]);
+            session()->setFlashdata('success', 'Data Berhasil Di Edit!');
+            return redirect('SuperAdmin/dataLK-OK');
+        }
         return view("superadmin/LKOK/DataLKOK/registereditlkok", $menu);
+    }
+    public function deleteLKOK($o_id)
+    {
+        try {
+            $result = $this->OrganisasiModels->delete($o_id);
+            if ($result) {
+                session()->setFlashdata('success', 'Data Berhasil Di Hapus!');
+            } else {
+                session()->setFlashdata('error', 'Data Tidak Berhasil Di Hapus!');
+            }
+        } catch (\mysqli_sql_exception $e) {
+            session()->setFlashdata('error', 'Data Tidak Berhasil Di Hapus! Karena Data ini kemungkinan sudah dipakai di:
+            <br>1. <b>Anggota LK/OK</b> Sebagai <b>Nama Organisasi</b>!
+            <br>Silahkan Cek Data ini yang kemungkinan sudah dipakai di <b>1 form diatas</b>, jika ada maka hapus terlebih dahulu dan apabila sudah tidak ada maka Data ini yang mau dihapus dapat dilakukan!');
+        }
+        return redirect()->to('/SuperAdmin/dataLK-OK');
     }
     public function listdataanggotaLKOK()
     {
@@ -243,12 +576,16 @@ class SuperAdminControllers extends BaseController
             'Fakultas' => '',
             'LKOK' => 'lkok',
             'Event' => '',
-            'tb_user' => $this->UsersModels->findAll(),
+            'tb_user' => $this->UsersModels->getuserno_superadmin(),
             'tb_prodi' => $this->ProdiModels->findAll(),
             'tb_organisasi' => $this->OrganisasiModels->findAll(),
             'tb_anggotaorganisasi' => $this->AnggotaOrganisasiModels->findAll(),
+            'tb_pengambilan_organisasi' => $this->PengambilanOrganisasiModels->findAll(),
             'DataLKOK' => '',
             'DataAnggotaLKOK' => 'dataanggotalkok',
+            'NotipEvent' => $this->KegiatanModels->findAll(),
+            'NotipUser' => $this->UsersModels->findAll(),
+            'Notiprodi' => $this->ProdiModels->findAll(),
         ];
         return view("superadmin/LKOK/DataAnggotaLKOK/dataanggotalkok", $menu);
     }
@@ -260,14 +597,57 @@ class SuperAdminControllers extends BaseController
             'Fakultas' => '',
             'LKOK' => 'lkok',
             'Event' => '',
-            'tb_user' => $this->UsersModels->findAll(),
+            'tb_user' => $this->UsersModels->getuserno_superadmin(),
             'tb_prodi' => $this->ProdiModels->findAll(),
             'tb_organisasi' => $this->OrganisasiModels->findAll(),
             'DataLKOK' => '',
             'DataAnggotaLKOK' => 'dataanggotalkok',
+            'NotipEvent' => $this->KegiatanModels->findAll(),
+            'NotipUser' => $this->UsersModels->findAll(),
+            'Notiprodi' => $this->ProdiModels->findAll(),
         ];
         return view("superadmin/LKOK/DataAnggotaLKOK/registeranggotalkok", $menu);
     }
+    public function registeranggotaLKOKprocess()
+    {
+        if (!$this->validate([
+            'u_id' => 'required',
+            'p_id' => 'required',
+            'o_id' => 'required',
+            'ao_staf' => 'required',
+            'ao_foto' => [
+                'rules' => 'uploaded[ao_foto]|max_size[ao_foto,1024]|mime_in[ao_foto,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
+                'errors' => [
+                    'uploaded' => '{field} Wajib diisi!',
+                    'max_size' => 'Ukuran {field} Maksimal 1024 KB ',
+                    'mime_in' => 'Format {field} harus JPG/JPEG/PNG!',
+                ]
+            ],
+        ])) {
+            session()->setFlashdata('error', $this->validator->listErrors());
+            return redirect()->back()->withInput();
+        }
+        $foto = $this->request->getFile('ao_foto');
+        $nama_file = $foto->getRandomName();
+        $this->AnggotaOrganisasiModels->insert([
+            'u_id' => $this->request->getVar('u_id'),
+            'p_id' => $this->request->getVar('p_id'),
+            'ao_staf' => $this->request->getVar('ao_staf'),
+            'ao_foto' => $nama_file
+        ]);
+        $foto->move('Anggota-LKOK', $nama_file);
+        $data_organisasi_diikuti = $this->request->getVar('o_id');
+        foreach ($data_organisasi_diikuti as $idorganisasi) {
+            $this->PengambilanOrganisasiModels->insert([
+                'ao_id' => $this->AnggotaOrganisasiModels->getInsertID(),
+                'o_id' => $idorganisasi
+            ]);
+        }
+
+        session()->setFlashdata('success', 'Data Berhasil Disimpan!');
+        return redirect()->to('/SuperAdmin/dataanggotaLK-OK');
+    }
+
     public function editanggotaLKOK($ao_id)
     {
         $menu = [
@@ -276,14 +656,87 @@ class SuperAdminControllers extends BaseController
             'Fakultas' => '',
             'LKOK' => 'lkok',
             'Event' => '',
-            'tb_user' => $this->UsersModels->findAll(),
+            'tb_user' => $this->UsersModels->getuserno_superadmin(),
             'tb_prodi' => $this->ProdiModels->findAll(),
             'tb_organisasi' => $this->OrganisasiModels->findAll(),
-            'DataLKOK' => '',
+            'tb_pengambilan_organisasi' => $this->PengambilanOrganisasiModels->findAll(),
             'tb_anggotaorganisasi' => $this->AnggotaOrganisasiModels->where('ao_id', $ao_id)->first(),
+            'DataLKOK' => '',
             'DataAnggotaLKOK' => 'dataanggotalkok',
+            'NotipEvent' => $this->KegiatanModels->findAll(),
+            'NotipUser' => $this->UsersModels->findAll(),
+            'Notiprodi' => $this->ProdiModels->findAll(),
         ];
+        $validation = \Config\Services::validation();
+        $validation->setRules([
+            'u_id' => 'required',
+            'p_id' => 'required',
+            'o_id' => 'required',
+            'ao_staf' => 'required',
+            'ao_foto' => [
+                'rules' => 'max_size[ao_foto,1024]|mime_in[ao_foto,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
+                'errors' => [
+                    'uploaded' => '{field} Wajib diisi!',
+                    'max_size' => 'Ukuran {field} Maksimal 1024 KB ',
+                    'mime_in' => 'Format {field} harus JPG/JPEG/PNG!',
+                ]
+            ],
+        ]);
+        $isDataValid = $validation->withRequest($this->request)->run();
+        // jika data vlid, maka simpan ke database
+        if ($isDataValid) {
+            $foto = $this->request->getFile('ao_foto');
+            $prefoto = $this->request->getVar('preview');
+            if ($foto->getError() == 4) {
+                $nama_file = $prefoto;
+            } else {
+                $nama_file = $foto->getRandomName();
+                if ($prefoto != '') {
+                    unlink('Anggota-LKOK/' . $prefoto);
+                }
+                $foto->move('Anggota-LKOK', $nama_file);
+            }
+            $this->AnggotaOrganisasiModels->update($ao_id, [
+                'u_id' => $this->request->getVar('u_id'),
+                'p_id' => $this->request->getVar('p_id'),
+                'ao_staf' => $this->request->getVar('ao_staf'),
+                'ao_foto' => $nama_file
+            ]);
+            $data_organisasi = $this->OrganisasiModels->findAll();
+            $o_id = $this->request->getVar('o_id');
+            $this->AnggotaOrganisasiModels->deleteanggota_by_ao_id($ao_id);
+
+            foreach ($o_id as $data_by_o_id) {
+                foreach ($data_organisasi as $tb_organisasi) {
+                    if ($data_by_o_id == $tb_organisasi['o_id']) {
+                        $id_organisasi = $tb_organisasi['o_id'];
+                    }
+                }
+                $this->PengambilanOrganisasiModels->insert([
+                    'ao_id' => $ao_id,
+                    'o_id' => $id_organisasi
+                ]);
+            }
+            session()->setFlashdata('success', 'Data Berhasil Di Edit!');
+            return redirect('SuperAdmin/dataanggotaLK-OK');
+        }
         return view("superadmin/LKOK/DataAnggotaLKOK/registereditanggotalkok", $menu);
+    }
+    public function deleteanggotaLKOK($ao_id)
+    {
+        $unlinkfotobyid = $this->AnggotaOrganisasiModels->dataanggotaorganisasibyid($ao_id);
+        unlink('Anggota-LKOK/' . $unlinkfotobyid['ao_foto']);
+        try {
+            $this->PengambilanOrganisasiModels->delete_pengambilan_organisasi_by_ao_id($ao_id);
+            $result = $this->AnggotaOrganisasiModels->delete($ao_id);
+            if ($result) {
+                session()->setFlashdata('success', 'Data Berhasil Di Hapus!');
+            } else {
+                session()->setFlashdata('error', 'Data Tidak Berhasil Di Hapus!');
+            }
+        } catch (\mysqli_sql_exception $e) {
+        }
+        return redirect()->to('/SuperAdmin/dataanggotaLK-OK');
     }
     public function listdataevent()
     {
@@ -298,6 +751,9 @@ class SuperAdminControllers extends BaseController
             'tb_event' => $this->KegiatanModels->findAll(),
             'DataLKOK' => '',
             'DataAnggotaLKOK' => '',
+            'NotipEvent' => $this->KegiatanModels->findAll(),
+            'NotipUser' => $this->UsersModels->findAll(),
+            'Notiprodi' => $this->ProdiModels->findAll(),
         ];
         return view("superadmin/Event/dataevent", $menu);
     }
@@ -316,6 +772,61 @@ class SuperAdminControllers extends BaseController
         ];
         return view("superadmin/Event/registerevent", $menu);
     }
+    public function registereventprocess()
+    {
+        if (!$this->validate([
+            'u_id' => 'required',
+            'p_id' => 'required',
+            'k_nama' => [
+                'rules' => 'required|min_length[4]|max_length[50]',
+                'errors' => [
+                    'required' => '{field} Harus diisi',
+                    'min_length' => '{field} Minimal 4 Karakter',
+                    'max_length' => '{field} Maksimal 50 Karakter',
+                ]
+            ],
+            'k_jeniskegiatan' => [
+                'rules' => 'required|min_length[4]|max_length[50]',
+                'errors' => [
+                    'required' => '{field} Harus diisi',
+                    'min_length' => '{field} Minimal 4 Karakter',
+                    'max_length' => '{field} Maksimal 50 Karakter',
+                ]
+            ],
+            'k_deskripsikegiatan' => [
+                'rules' => 'required|min_length[4]|max_length[1000]',
+                'errors' => [
+                    'required' => '{field} Harus diisi',
+                    'min_length' => '{field} Minimal 4 Karakter',
+                    'max_length' => '{field} Maksimal 1000 Karakter',
+                ]
+            ],
+            'k_foto' => [
+                'rules' => 'uploaded[k_foto]|max_size[k_foto,2024]|mime_in[k_foto,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
+                'errors' => [
+                    'uploaded' => '{field} Wajib diisi!',
+                    'max_size' => 'Ukuran {field} Maksimal 2024 KB ',
+                    'mime_in' => 'Format {field} harus JPG/JPEG/PNG!',
+                ]
+            ],
+        ])) {
+            session()->setFlashdata('error', $this->validator->listErrors());
+            return redirect()->back()->withInput();
+        }
+        $foto = $this->request->getFile('k_foto');
+        $nama_file = $foto->getRandomName();
+        $this->KegiatanModels->insert([
+            'u_id' => $this->request->getVar('u_id'),
+            'p_id' => $this->request->getVar('p_id'),
+            'k_nama' => $this->request->getVar('k_nama'),
+            'k_jeniskegiatan' => $this->request->getVar('k_jeniskegiatan'),
+            'k_deskripsikegiatan' => $this->request->getVar('k_deskripsikegiatan'),
+            'k_foto' => $nama_file
+        ]);
+        $foto->move('Event', $nama_file);
+        session()->setFlashdata('success', 'Data Berhasil Disimpan!');
+        return redirect()->to('/SuperAdmin/dataevent');
+    }
     public function editevent($e_id)
     {
         $menu = [
@@ -326,12 +837,103 @@ class SuperAdminControllers extends BaseController
             'Event' => 'event',
             'tb_user' => $this->UsersModels->findAll(),
             'tb_prodi' => $this->ProdiModels->findAll(),
-            'DataLKOK' => '',
             'tb_kegiatan' => $this->KegiatanModels->where('k_id', $e_id)->first(),
+            'DataLKOK' => '',
             'DataAnggotaLKOK' => '',
+            'NotipEvent' => $this->KegiatanModels->findAll(),
+            'NotipUser' => $this->UsersModels->findAll(),
+            'Notiprodi' => $this->ProdiModels->findAll(),
         ];
+        $validation = \Config\Services::validation();
+        $validation->setRules([
+            'u_id' => 'required',
+            'p_id' => 'required',
+            'k_nama' => [
+                'rules' => 'required|min_length[4]|max_length[50]',
+                'errors' => [
+                    'required' => '{field} Harus diisi',
+                    'min_length' => '{field} Minimal 4 Karakter',
+                    'max_length' => '{field} Maksimal 50 Karakter',
+                ]
+            ],
+            'k_jeniskegiatan' => [
+                'rules' => 'required|min_length[4]|max_length[50]',
+                'errors' => [
+                    'required' => '{field} Harus diisi',
+                    'min_length' => '{field} Minimal 4 Karakter',
+                    'max_length' => '{field} Maksimal 50 Karakter',
+                ]
+            ],
+            'k_deskripsikegiatan' => [
+                'rules' => 'required|min_length[4]|max_length[1000]',
+                'errors' => [
+                    'required' => '{field} Harus diisi',
+                    'min_length' => '{field} Minimal 4 Karakter',
+                    'max_length' => '{field} Maksimal 1000 Karakter',
+                ]
+            ],
+            'k_foto' => [
+                'rules' => 'max_size[k_foto,2024]|mime_in[k_foto,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
+                'errors' => [
+                    'uploaded' => '{field} Wajib diisi!',
+                    'max_size' => 'Ukuran {field} Maksimal 2024 KB ',
+                    'mime_in' => 'Format {field} harus JPG/JPEG/PNG!',
+                ]
+            ],
+        ]);
+        $isDataValid = $validation->withRequest($this->request)->run();
+        // jika data vlid, maka simpan ke database
+        if ($isDataValid) {
+            $foto = $this->request->getFile('k_foto');
+            $prefoto = $this->request->getVar('preview');
+            if ($foto->getError() == 4) {
+                $nama_file = $prefoto;
+            } else {
+                $nama_file = $foto->getRandomName();
+                if ($prefoto != '') {
+                    unlink('Event/' . $prefoto);
+                }
+                $foto->move('Event', $nama_file);
+            }
+            $this->KegiatanModels->update($e_id, [
+                'u_id' => $this->request->getVar('u_id'),
+                'p_id' => $this->request->getVar('p_id'),
+                'k_nama' => $this->request->getVar('k_nama'),
+                'k_jeniskegiatan' => $this->request->getVar('k_jeniskegiatan'),
+                'k_deskripsikegiatan' => $this->request->getVar('k_deskripsikegiatan'),
+                'k_foto' => $nama_file
+            ]);
+            session()->setFlashdata('success', 'Data Berhasil Di Edit!');
+            return redirect('SuperAdmin/dataevent');
+        }
         return view("superadmin/Event/registereditevent", $menu);
     }
+    public function deleteevent($k_id)
+    {
+        $unlinkfotobyid = $this->KegiatanModels->dataeventbyid($k_id);
+        unlink('Event/' . $unlinkfotobyid['k_foto']);
+        try {
+            $result = $this->KegiatanModels->delete($k_id);
+            if ($result) {
+                session()->setFlashdata('success', 'Data Berhasil Di Hapus!');
+            } else {
+                session()->setFlashdata('error', 'Data Tidak Berhasil Di Hapus!');
+            }
+        } catch (\mysqli_sql_exception $e) {
+        }
+        return redirect()->to('/SuperAdmin/dataevent');
+    }
+    public function approved($k_id)
+    {
+        if ($k_id != null) {
+            $this->KegiatanModels->update($k_id, [
+                'k_check_u_id' => session()->get('u_id')
+            ]);
+            return redirect()->back();
+        }
+        return redirect()->back();
+    }
+    
     public function viewevent()
     {
         $menu = [
@@ -342,6 +944,12 @@ class SuperAdminControllers extends BaseController
             'Event' => 'event',
             'DataLKOK' => '',
             'DataAnggotaLKOK' => '',
+            'tb_user' => $this->UsersModels->findAll(),
+            'tb_prodi' => $this->ProdiModels->findAll(),
+            'tb_event' => $this->KegiatanModels->findAll(),
+            'NotipEvent' => $this->KegiatanModels->findAll(),
+            'NotipUser' => $this->UsersModels->findAll(),
+            'Notiprodi' => $this->ProdiModels->findAll(),
         ];
         return view("superadmin/Event/viewevent", $menu);
     }

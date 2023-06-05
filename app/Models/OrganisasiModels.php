@@ -15,15 +15,18 @@ class OrganisasiModels extends Model
     protected $useSoftDelete        = false;
     protected $protectFields        = true;
     protected $allowedFields        = [
-        'o_nama', 'o_create_at', 'o_update_at', 'o_delete_at'
+        'o_nama',
+        'o_create_at',
+        'o_update_at',
+        'o_delete_at'
     ];
 
     // Dates
-    protected $useTimestamps        = false;
+    protected $useTimestamps        = true;
     protected $dateFormat           = 'datetime';
-    protected $createdField         = 'u_created_at';
-    protected $updatedField         = 'updated_at';
-    protected $deletedField         = 'deleted_at';
+    protected $createdField         = 'o_create_at';
+    protected $updatedField         = 'o_update_at';
+    protected $deletedField         = 'o_delete_at';
 
     // Validation
     protected $validationRules      = [];

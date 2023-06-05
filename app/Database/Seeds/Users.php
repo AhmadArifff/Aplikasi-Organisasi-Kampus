@@ -9,20 +9,20 @@ class Users extends Seeder
     public function run()
     {
         $data = [
-            [
-                'u_npm' => '40621190002',
-                'u_nama' => 'AHMAD ARIF',
-                // 'u_email' => 'ahmad.8117@widyatama.ac.id',
-                'u_password' => password_hash('12345', PASSWORD_BCRYPT), // encrypt password
-                'u_role' => 'Mahasiswa',
-                'u_gender' => 'Laki-laki',
-                'u_prodi' => 1,
-                'u_angkatan' => 2021,
-                'u_alamat' => 'Jl. Contoh Alamat 123',
-                'u_create_at' => date('Y-m-d H:i:s'),
-                'u_update_at' => date('Y-m-d H:i:s'),
-                'u_delete_at' => null,
-            ],
+            // [
+            //     'u_npm' => '40621190002',
+            //     'u_nama' => 'AHMAD ARIF',
+            //     // 'u_email' => 'ahmad.8117@widyatama.ac.id',
+            //     'u_password' => password_hash('12345', PASSWORD_BCRYPT), // encrypt password
+            //     'u_role' => 'Mahasiswa',
+            //     'u_gender' => 'Laki-laki',
+            //     'u_prodi' => 1,
+            //     'u_angkatan' => 2021,
+            //     'u_alamat' => 'Jl. Contoh Alamat 123',
+            //     'u_create_at' => date('Y-m-d H:i:s'),
+            //     'u_update_at' => date('Y-m-d H:i:s'),
+            //     'u_delete_at' => null,
+            // ],
             [
                 'u_npm' => '12345',
                 'u_nama' => 'Super Admin',
@@ -37,20 +37,20 @@ class Users extends Seeder
                 'u_update_at' => date('Y-m-d H:i:s'),
                 'u_delete_at' => null,
             ],
-            [
-                'u_npm' => '123',
-                'u_nama' => 'Admin LK/OK',
-                // 'u_email' => 'admin@widyatama.ac.id',
-                'u_password' => password_hash('12345', PASSWORD_BCRYPT), // encrypt password
-                'u_role' => 'AdminLK/OK',
-                'u_gender' => 'Perempuan',
-                'u_prodi' => 3,
-                'u_angkatan' => 2021,
-                'u_alamat' => 'Jl. Contoh Alamat 123',
-                'u_create_at' => date('Y-m-d H:i:s'),
-                'u_update_at' => date('Y-m-d H:i:s'),
-                'u_delete_at' => null,
-            ],
+            // [
+            //     'u_npm' => '123',
+            //     'u_nama' => 'Admin LK/OK',
+            //     // 'u_email' => 'admin@widyatama.ac.id',
+            //     'u_password' => password_hash('12345', PASSWORD_BCRYPT), // encrypt password
+            //     'u_role' => 'AdminLK/OK',
+            //     'u_gender' => 'Perempuan',
+            //     'u_prodi' => 3,
+            //     'u_angkatan' => 2021,
+            //     'u_alamat' => 'Jl. Contoh Alamat 123',
+            //     'u_create_at' => date('Y-m-d H:i:s'),
+            //     'u_update_at' => date('Y-m-d H:i:s'),
+            //     'u_delete_at' => null,
+            // ],
             // Tambahkan data lainnya di sini
         ];
 

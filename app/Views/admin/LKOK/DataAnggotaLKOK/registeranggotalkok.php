@@ -33,12 +33,12 @@
                                 <?php echo session()->getFlashdata('success'); ?>
                             </div>
                         <?php endif; ?>
-                        <form method="post" action="<?= base_url(); ?>/admin/datauser/registeruser/process">
+                        <form method="post" action="<?= base_url(); ?>/AdminLK-OK/dataanggotaLK-OK/registeranggotaLK-OK/process" enctype="multipart/form-data">
                             <?= csrf_field(); ?>
                             <div class="row">
                                 <div class="form-group col-6">
                                     <label>Nama Pengguna</label>
-                                    <select class="js-example-basic-single" name="u_role" required>
+                                    <select class="js-example-basic-single" name="u_id" id="u_id" required>
                                         <option value="">--Pilih Nama Pengguna--</option>
                                         <?php foreach ($tb_user as $data) { ?>
                                             <option value="<?php echo $data['u_id']; ?>"><?php echo $data['u_nama']; ?></option>
@@ -47,22 +47,36 @@
                                 </div>
                                 <div class="form-group col-6">
                                     <label>Fakultas</label>
-                                    <select class="js-example-basic-single" name="u_role" required>
-                                        <option value="">--Pilih Fakultas--</option>
-                                        <?php foreach ($tb_prodi as $data) { ?>
-                                            <option value="<?php echo $data['p_id']; ?>"><?php echo $data['p_nama']; ?></option>
+                                    <select class="js-example-basic-single" name="p_id" id="p_id" required>
+                                    </select>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label>Menjabat Staf</label>
+                                    <select class="js-example-basic-single" name="ao_staf" required>
+                                        <option value="">--Pilih Staf--</option>
+                                        <option value="Ketua">Ketua</option>
+                                        <option value="WakilKetua">WakilKetua</option>
+                                        <option value="Seketaris">Seketaris</option>
+                                        <option value="Bendahara">Bendahara</option>
+                                        <option value="PDD">PDD</option>
+                                        <option value="ERD">ERD</option>
+                                        <option value="Danus">Danus</option>
+                                        <option value="Danus">Anggota</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label>Organisasi</label>
+                                    <select class="js-example-basic-multiple" name="o_id[]" id="" multiple="multiple" required>
+                                        <option value="">--Pilih Organisasi--</option>
+                                        <?php foreach ($tb_organisasi as $data) { ?>
+                                            <option value="<?php echo $data['o_id']; ?>"><?php echo $data['o_nama']; ?></option>
                                         <?php } ?>
                                     </select>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label>Organisasi</label>
-                                <select class="js-example-basic-multiple" name="o_id[]" id="" multiple="multiple" required>
-                                    <option value="">--Pilih Organisasi--</option>
-                                    <?php foreach ($tb_organisasi as $data) { ?>
-                                        <option value="<?php echo $data['o_id']; ?>"><?php echo $data['o_nama']; ?></option>
-                                    <?php } ?>
-                                </select>
+                            <div class="form-group ">
+                                <label for="">Foto</label>
+                                <input type="file" name="ao_foto" class="form-control" id="file" required accept=".jpg, .jpeg, .png" /></p>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-lg btn-block" name="submit">

@@ -68,7 +68,7 @@ class Users extends Migration
         ]);
 
         $this->forge->addPrimaryKey('u_id');
-        $this->forge->addUniqueKey('u_prodi');
+        // $this->forge->addUniqueKey('u_prodi', true);
         // $this->forge->addForeignKey('u_prodi', 'tb_prodi', 'p_id', 'RESTRICT', 'RESTRICT');
         $this->forge->createTable('tb_user');
     }

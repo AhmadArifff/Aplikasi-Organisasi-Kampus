@@ -64,14 +64,26 @@
                                                     echo $prodi['p_nama'];
                                                 }
                                             endforeach ?></td>
-                                        <td><?php foreach ($tb_organisasi as $anggota) :
-                                                if ($data['o_id'] == $anggota['o_id']) {
-                                                    echo $anggota['o_nama'];
+                                        <td><?= $data['ao_staf'] ?></td>
+                                        <td><?php
+                                            $j = 1;
+                                            foreach ($tb_pengambilan_organisasi as $data_pengambilan_organisasi) :
+                                                if ($data['ao_id'] == $data_pengambilan_organisasi['ao_id']) {
+                                                    foreach ($tb_organisasi as $data_organisasi) {
+                                                        $o_id = $data_pengambilan_organisasi['o_id'];
+                                                        if ($o_id == $data_organisasi['o_id']) {
+                                                            $tampil = $j . ". " . $data_organisasi['o_nama'] .  "<br />\n";
+                                                        }
+                                                    }
+                                                    echo $tampil;
+                                                    $j++;
                                                 }
-                                            endforeach ?></td>
+                                            endforeach;
+                                            ?></td>
+                                        <td style="text-align:center"><img src="<?= base_url('Anggota-LKOK/' . $data['ao_foto']) ?>" width="200px" style="border-radius: 5px;"></td>
                                         <td>
-                                            <a href="<?= base_url('SuperAdmin/dataanggotaLK-OK/' . $data['u_id'] . '/edit') ?>" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i></a>
-                                            <a href="#" data-href="<?= base_url('SuperAdmin/datadata/' . $data['u_id'] . '/delete') ?>" onclick="confirmToDelete(this)" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
+                                            <a href="<?= base_url('SuperAdmin/dataanggotaLK-OK/' . $data['ao_id'] . '/edit') ?>" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i></a>
+                                            <a href="#" data-href="<?= base_url('SuperAdmin/dataanggotaLK-OK/' . $data['ao_id'] . '/delete') ?>" onclick="confirmToDelete(this)" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
                                         </td>
                                     </tr>
                                 <?php $i++;

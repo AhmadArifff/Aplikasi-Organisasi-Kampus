@@ -25,11 +25,11 @@ class AnggotaOrganisasi extends Migration
                 'constraint'     => 11,
                 'unsigned'       => true,
             ],
-            'o_id'          => [
-                'type'           => 'INT',
-                'constraint'     => 11,
-                'unsigned'       => true,
-            ],
+            // 'o_id'          => [
+            //     'type'           => 'INT',
+            //     'constraint'     => 11,
+            //     'unsigned'       => true,
+            // ],
             'ao_staf' => [
                 'type' => 'ENUM',
                 'constraint' => ['Ketua', 'WakilKetua', 'Seketaris', 'Bendahara', 'PDD', 'ERD', 'Danus', 'Anggota'],
@@ -53,9 +53,9 @@ class AnggotaOrganisasi extends Migration
         ]);
 
         $this->forge->addPrimaryKey('ao_id', true);
-        $this->forge->addUniqueKey('u_id', true);
-        $this->forge->addUniqueKey('p_id', true);
-        $this->forge->addUniqueKey('o_id', true);
+        // $this->forge->addUniqueKey('u_id', true);
+        // $this->forge->addUniqueKey('p_id', true);
+        // $this->forge->addUniqueKey('o_id', true);
         // $this->forge->addForeignKey('u_id', 'tb_user', 'u_id', 'RESTRICT', 'RESTRICT');
         // $this->forge->addForeignKey('p_id', 'tb_prodi', 'p_id', 'RESTRICT', 'RESTRICT');
         // $this->forge->addForeignKey('o_id', 'tb_organisasi', 'o_id', 'RESTRICT', 'RESTRICT');

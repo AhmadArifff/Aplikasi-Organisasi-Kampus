@@ -38,7 +38,7 @@
                             <?= csrf_field(); ?>
                             <div class="form-group ">
                                 <label>Nama Prodi</label>
-                                <input id="text" type="text" class="form-control huruf" name="p_nama" placeholder="Masukan Prodi" required>
+                                <input id="text" type="text" class="form-control huruf" name="p_nama" placeholder="Masukan Nama Prodi" required>
                             </div>
 
                             <div class="form-group">

@@ -48,8 +48,8 @@ class Korespondensi extends Migration
         ]);
 
         $this->forge->addPrimaryKey('kp_id', true);
-        $this->forge->addUniqueKey('u_id', true);
-        $this->forge->addUniqueKey('kp_chek_by_u_id', true);
+        // $this->forge->addUniqueKey('u_id', true);
+        // $this->forge->addUniqueKey('kp_chek_by_u_id', true);
         // $this->forge->addForeignKey('u_id', 'tb_user', 'u_id', 'RESTRICT', 'RESTRICT');
         // $this->forge->addForeignKey('kp_chek_by_u_id', 'tb_user', 'u_id', 'RESTRICT', 'RESTRICT');
 

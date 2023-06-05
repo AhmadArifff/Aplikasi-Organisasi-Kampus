@@ -34,7 +34,7 @@
                                 <?php echo session()->getFlashdata('success'); ?>
                             </div>
                         <?php endif; ?>
-                        <form method="post" action="<?= base_url(); ?>/admin/datauser/registeruser/process">
+                        <form method="post" action="">
                             <?= csrf_field(); ?>
                             <div class="form-group">
                                 <label>NPM</label>
@@ -44,7 +44,7 @@
                                             <i class="fas fa-user"></i>
                                         </div>
                                     </div>
-                                    <input id="frist_name" type="text" class="form-control npm" name="u_username" autofocus placeholder="Masukan NPM" required>
+                                    <input id="frist_name" type="text" class="form-control npm" name="u_npm" autofocus placeholder="Masukan NPM" value="<?= $tb_user['u_npm'] ?>" required>
                                 </div>
                             </div>
                             <div class="row">
@@ -56,7 +56,7 @@
                                                 <i class="fas fa-lock"></i>
                                             </div>
                                         </div>
-                                        <input type="password" class="form-control pwstrength" data-indicator="pwindicator" name="u_password" placeholder="Masukan Password" required>
+                                        <input type="password" class="form-control pwstrength" data-indicator="pwindicator" name="u_password" placeholder="Masukkan Password" required>
                                     </div>
                                     <div id="pwindicator" class="pwindicator">
                                         <div class="bar"></div>
@@ -83,40 +83,40 @@
                             <div class="row">
                                 <div class="form-group col-6">
                                     <label>Nama Lengkap</label>
-                                    <input id="text" type="text" class="form-control huruf" name="u_fullname" placeholder="Masukan Nama Lengkap" required>
+                                    <input id="text" type="text" class="form-control huruf" name="u_nama" placeholder="Masukan Nama Lengkap" value="<?= $tb_user['u_nama'] ?>" required>
                                 </div>
                                 <div class="form-group col-6">
                                     <label>Role Akses</label>
                                     <select class="js-example-basic-single" name="u_role" required>
                                         <option value="">--Pilih Role Akses--</option>
-                                        <option value="AdminLK/OK">Admin LK/OK</option>
-                                        <option value="Mahasiswa">Mahasiswa</option>
+                                        <option value="AdminLK/OK" <?= $tb_user['u_role'] == 'AdminLK/OK' ? 'selected' : '' ?>>Admin LK/OK</option>
+                                        <option value="Mahasiswa" <?= $tb_user['u_role'] == 'Mahasiswa' ? 'selected' : '' ?>>Mahasiswa</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-6">
                                     <label>Jenis Kelamin</label>
-                                    <!-- <input id="frist_name" type="radio" class="form-control" name="u_jenis_kelamin" placeholder="Masukan Username">Laki-laki -->
                                     <div class="selectgroup selectgroup-pills">
                                         <label class="selectgroup-item">
-                                            <input type="radio" name="u_jenis_kelamin" value="Laki-laki" class="selectgroup-input" required>
+                                            <input type="radio" name="u_gender" value="Laki-laki" class="selectgroup-input" <?= $tb_user['u_gender'] == 'Laki-laki' ? 'checked' : '' ?> required>
                                             <span class="selectgroup-button selectgroup-button-icon"><i class="fas fa-male"></i></span>
                                         </label>
                                         <label style="margin-right: 10%;">Laki-laki</label>
                                         <label class="selectgroup-item">
-                                            <input type="radio" name="u_jenis_kelamin" value="Perempuan" class="selectgroup-input" required>
+                                            <input type="radio" name="u_gender" value="Perempuan" class="selectgroup-input" <?= $tb_user['u_gender'] == 'Perempuan' ? 'checked' : '' ?> required>
                                             <span class="selectgroup-button selectgroup-button-icon"><i class="fas fa-female"></i></span>
                                         </label>
                                         <label>Perempuan</label>
                                     </div>
                                 </div>
+
                                 <div class="form-group col-6">
                                     <label>Nama Prodi</label>
-                                    <select class="js-example-basic-single" name="u_role" required>
+                                    <select class="js-example-basic-single" name="u_prodi" required>
                                         <option value="">--Pilih Nama Prodi--</option>
                                         <?php foreach ($tb_prodi as $data) { ?>
-                                            <option value="<?php echo $data['p_id']; ?>"><?php echo $data['p_nama']; ?></option>
+                                            <option value="<?php echo $data['p_id']; ?>" <?= $data['p_id'] == $tb_user['u_prodi'] ? 'selected' : '' ?>><?php echo $data['p_nama']; ?></option>
                                         <?php } ?>
                                     </select>
                                 </div>
@@ -124,11 +124,11 @@
                             <div class="row">
                                 <div class="form-group col-6">
                                     <label>Angkatan</label>
-                                    <input id="frist_name" type="text" class="form-control angkatan" name="u_kodepos" placeholder="Masukan Angkatan" required>
+                                    <input id="frist_name" type="text" class="form-control angkatan" name="u_angkatan" placeholder="Masukan Angkatan" value="<?= $tb_user['u_angkatan'] ?>" required>
                                 </div>
                                 <div class="form-group col-6">
                                     <label>Alamat</label>
-                                    <textarea class="form-control" name="" id="" rows="3"></textarea>
+                                    <textarea class="form-control" name="u_alamat" id="" rows="3"><?= $tb_user['u_alamat'] ?></textarea>
                                 </div>
                             </div>
                             <div class="form-group">
