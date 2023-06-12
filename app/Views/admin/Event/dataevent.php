@@ -1,6 +1,6 @@
 <?= $this->extend('admin/layout/default') ?>
 <?= $this->section('title') ?>
-<title>Data Event &mdash; ARISYA</title>
+<title>Data Event &mdash; AOU</title>
 <?= $this->endSection() ?>
 <?= $this->section('content') ?>
 <section class="section">
@@ -73,7 +73,7 @@
                                         <td>
                                             <a href="<?= base_url('AdminLK-OK/dataevent/' . $event['k_id'] . '/edit') ?>" class="btn btn-warning btn-sm"><i class="fas fa-pencil-alt"></i></a>
                                             <a href="#" data-href="<?= base_url('AdminLK-OK/dataevent/' . $event['k_id'] . '/delete') ?>" onclick="confirmToDelete(this)" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></a>
-                                            <a href="<?= base_url(); ?>/AdminLK-OK/viewevent" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i></a>
+                                            <a href="<?= base_url('AdminLK-OK/viewevent/' . $event['k_id']) ?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i></a>
                                         </td>
                                     </tr>
                                 <?php $i++;

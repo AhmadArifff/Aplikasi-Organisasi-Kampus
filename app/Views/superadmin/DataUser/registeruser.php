@@ -1,6 +1,6 @@
 <?= $this->extend('superadmin/layout/default') ?>
 <?= $this->section('title') ?>
-<title>Register Users &mdash; ARISYA</title>
+<title>Register Users &mdash; AOU</title>
 <?= $this->endSection() ?>
 <?= $this->section('content') ?>
 <section class="section">
@@ -140,7 +140,7 @@
                     </div>
                 </div>
                 <div class="simple-footer">
-                    Copyright &copy; Arisya 2023
+                    Copyright &copy; AOU 2023
                 </div>
             </div>
         </div>

@@ -1,0 +1,62 @@
+CRITICAL - 2023-06-10 06:50:47 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php on line 75
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(75): view('superadmin/Datauser/registeredituser', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->edituser('3')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-10 07:08:13 --> The route for "superadmin.listdatauser" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('superadmin.listdatauser')
+ 2 APPPATH\Controllers\UsersControllers.php(235): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\SuperAdminControllers.php(87): App\Controllers\UsersControllers->deleteuser('4')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->deleteuser('4')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-10 16:20:57 --> The route for "SuperAdmin/datafakultas" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('SuperAdmin/datafakultas')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\UsersControllers.php(325): redirect('SuperAdmin/datafakultas')
+ 4 APPPATH\Controllers\SuperAdminControllers.php(103): App\Controllers\UsersControllers->editfakultas('3')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->editfakultas('3')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-10 16:30:38 --> The route for "SuperAdmin/datafakultas" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('SuperAdmin/datafakultas')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\UsersControllers.php(325): redirect('SuperAdmin/datafakultas')
+ 4 APPPATH\Controllers\SuperAdminControllers.php(103): App\Controllers\UsersControllers->editfakultas('3')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->editfakultas('3')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-10 16:31:22 --> The route for "SuperAdmin/datafakultas" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('SuperAdmin/datafakultas')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\UsersControllers.php(325): redirect('SuperAdmin/datafakultas')
+ 4 APPPATH\Controllers\SuperAdminControllers.php(103): App\Controllers\UsersControllers->editfakultas('3')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->editfakultas('3')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-10 16:32:53 --> The route for "SuperAdmin/datauser" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('SuperAdmin/datauser')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\UsersControllers.php(215): redirect('SuperAdmin/datauser')
+ 4 APPPATH\Controllers\SuperAdminControllers.php(74): App\Controllers\UsersControllers->edituser('2')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->edituser('2')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

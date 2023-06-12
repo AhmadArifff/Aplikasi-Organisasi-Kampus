@@ -1,0 +1,133 @@
+CRITICAL - 2023-06-12 08:48:26 --> The route for "SuperAdmin/datauser" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('SuperAdmin/datauser')
+ 2 SYSTEMPATH\Common.php(860): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\UsersControllers.php(215): redirect('SuperAdmin/datauser')
+ 4 APPPATH\Controllers\SuperAdminControllers.php(74): App\Controllers\UsersControllers->edituser('6')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->edituser('6')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-12 09:22:55 --> Undefined array key "u_npm"
+in APPPATH\Views\superadmin\DataUser\registeredituser.php on line 47.
+ 1 APPPATH\Views\superadmin\DataUser\registeredituser.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "u_npm"', 'APPPATH\\Views\\superadmin\\DataUser\\registeredituser.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\DataUser\\registeredituser.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Datauser/registeredituser', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(82): view('superadmin/Datauser/registeredituser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->edituser('2')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-12 09:23:26 --> Undefined variable $tb_prodi
+in APPPATH\Views\superadmin\DataUser\registeredituser.php on line 118.
+ 1 APPPATH\Views\superadmin\DataUser\registeredituser.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_prodi', 'APPPATH\\Views\\superadmin\\DataUser\\registeredituser.php', 118)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\DataUser\\registeredituser.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Datauser/registeredituser', [...], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(82): view('superadmin/Datauser/registeredituser', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->edituser('2')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-12 09:24:03 --> Undefined array key "u_npm"
+in APPPATH\Views\superadmin\DataUser\registeredituser.php on line 47.
+ 1 APPPATH\Views\superadmin\DataUser\registeredituser.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "u_npm"', 'APPPATH\\Views\\superadmin\\DataUser\\registeredituser.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\DataUser\\registeredituser.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Datauser/registeredituser', [...], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(82): view('superadmin/Datauser/registeredituser', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->edituser('2')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-12 09:25:23 --> Undefined variable $tb_prodi
+in APPPATH\Views\superadmin\DataUser\registeredituser.php on line 118.
+ 1 APPPATH\Views\superadmin\DataUser\registeredituser.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_prodi', 'APPPATH\\Views\\superadmin\\DataUser\\registeredituser.php', 118)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\DataUser\\registeredituser.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Datauser/registeredituser', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(82): view('superadmin/Datauser/registeredituser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->edituser('2')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-12 09:42:37 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php on line 136
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(136): view('superadmin/LKOK/DataLKOK/registereditvisi', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->visiedit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-12 09:58:59 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\UsersControllers.php(460): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\SuperAdminControllers.php(135): App\Controllers\UsersControllers->visiedit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->visiedit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-12 10:00:40 --> Undefined array key "id"
+in APPPATH\Controllers\UsersControllers.php on line 457.
+ 1 APPPATH\Controllers\UsersControllers.php(457): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\UsersControllers.php', 457)
+ 2 APPPATH\Controllers\SuperAdminControllers.php(135): App\Controllers\UsersControllers->visiedit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->visiedit('1')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-12 10:33:48 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php on line 199
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(199): view('superadmin/LKOK/DataAnggotaLKOK/registereditanggotalkok', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->editanggotaLKOK('1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-12 10:35:20 --> unlink(Anggota-LKOK/1686540733_12736fcb1d7f402a8042.png): No such file or directory
+in APPPATH\Controllers\UsersControllers.php on line 759.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(Anggota-LKOK/1686540733_12736fcb1d7f402a8042.png): No such file or directory', 'APPPATH\\Controllers\\UsersControllers.php', 759)
+ 2 APPPATH\Controllers\UsersControllers.php(759): unlink('Anggota-LKOK/1686540733_12736fcb1d7f402a8042.png')
+ 3 APPPATH\Controllers\SuperAdminControllers.php(198): App\Controllers\UsersControllers->editanggotaLKOK('1')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->editanggotaLKOK('1')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-12 10:43:32 --> Call to undefined method App\Controllers\UsersControllers::listdataLKOK()
+in APPPATH\Controllers\AdminControllers.php on line 70.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdataLKOK()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-12 10:59:58 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\AdminControllers.php on line 52
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\AdminControllers.php(52): view('admin/LKOK/DataLKOK/registereditvisi', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->visiedit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-12 11:47:06 --> Undefined variable $tb_visi
+in APPPATH\Views\mahasiswa\LKOK\DataLKOK\morelkok.php on line 36.
+ 1 APPPATH\Views\mahasiswa\LKOK\DataLKOK\morelkok.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_visi', 'APPPATH\\Views\\mahasiswa\\LKOK\\DataLKOK\\morelkok.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\mahasiswa\\LKOK\\DataLKOK\\morelkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('mahasiswa/LKOK/DataLKOK/morelkok', [], true)
+ 5 APPPATH\Controllers\MahasiswaControllers.php(65): view('mahasiswa/LKOK/DataLKOK/morelkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\MahasiswaControllers->morelkok('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

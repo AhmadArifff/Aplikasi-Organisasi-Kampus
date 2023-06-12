@@ -1,6 +1,6 @@
 <?= $this->extend('admin/layout/default') ?>
 <?= $this->section('title') ?>
-<title>Data Anggota LK/OK &mdash; ARISYA</title>
+<title>Data Anggota LK/OK &mdash; AOU</title>
 <?= $this->endSection() ?>
 <?= $this->section('content') ?>
 <section class="section">

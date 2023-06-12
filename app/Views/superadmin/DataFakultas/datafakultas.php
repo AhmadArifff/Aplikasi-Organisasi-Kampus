@@ -1,6 +1,6 @@
 <?= $this->extend('superadmin/layout/default') ?>
 <?= $this->section('title') ?>
-<title>Prodi &mdash; ARISYA</title>
+<title>Prodi &mdash; AOU</title>
 <?= $this->endSection() ?>
 <?= $this->section('content') ?>
 <section class="section">

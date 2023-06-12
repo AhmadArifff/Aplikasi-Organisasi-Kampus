@@ -1,6 +1,6 @@
 <?= $this->extend('superadmin/layout/default') ?>
 <?= $this->section('title') ?>
-<title>Data LK/OK &mdash; ARISYA</title>
+<title>Data LK/OK &mdash; AOU</title>
 <?= $this->endSection() ?>
 <?= $this->section('content') ?>
 <section class="section">

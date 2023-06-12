@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
     <?= $this->renderSection('title') ?>
-    <link rel="icon" type="image/x-icon" href="<?= base_url() ?>/assets/img/logo/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="<?= base_url() ?>/assets/img/logo/favicon_.ico">
     <!-- getboostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
@@ -96,8 +96,8 @@
             <div class="main-sidebar sidebar-style-2">
                 <aside id="sidebar-wrapper">
                     <div class="sidebar-brand">
-                        <img src="<?= base_url(); ?>/assets/img/logo/logo.png" class="" alt="" style="margin-top: 10px; width: 60%; aspect-ratio: 3/3; object-fit: contain ; "><br>
-                        <p href="index.html">Aplikasi Organisasi Universitas</p>
+                        <img src="<?= base_url(); ?>/assets/img/logo/campus.png" class="" alt="" style="margin-top: 20px;margin-bottom: 15px; width: 60%; aspect-ratio: 2/2; object-fit: contain ; "><br>
+                        <p href="index.html" class="mt-10">Aplikasi Organisasi Universitas</p>
                     </div>
                     <div class="sidebar-brand sidebar-brand-sm">
                         <a href="index.html">AOU</a>

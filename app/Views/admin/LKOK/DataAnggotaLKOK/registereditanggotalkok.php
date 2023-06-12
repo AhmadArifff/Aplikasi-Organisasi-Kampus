@@ -1,6 +1,6 @@
 <?= $this->extend('admin/layout/default') ?>
 <?= $this->section('title') ?>
-<title>Edit Anggota LK/OK &mdash; ARISYA</title>
+<title>Edit Anggota LK/OK &mdash; AOU</title>
 <?= $this->endSection() ?>
 <?= $this->section('content') ?>
 <section class="section">
@@ -108,7 +108,7 @@
                     </div>
                 </div>
                 <div class="simple-footer">
-                    Copyright &copy; Arisya 2023
+                    Copyright &copy; AOU 2023
                 </div>
             </div>
         </div>

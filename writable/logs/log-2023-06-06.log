@@ -1,0 +1,47 @@
+CRITICAL - 2023-06-06 06:17:33 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 729.
+ 1 SYSTEMPATH\BaseModel.php(729): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\SuperAdminControllers.php(438): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->visiregisterproses()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 10:16:02 --> Undefined variable $tb_visi
+in APPPATH\Views\admin\LKOK\DataLKOK\morelkok.php on line 35.
+ 1 APPPATH\Views\admin\LKOK\DataLKOK\morelkok.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_visi', 'APPPATH\\Views\\admin\\LKOK\\DataLKOK\\morelkok.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\LKOK\\DataLKOK\\morelkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/LKOK/DataLKOK/morelkok', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(103): view('admin/LKOK/DataLKOK/morelkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->morelkok('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 10:32:13 --> Undefined variable $tb_vmsi
+in APPPATH\Views\superadmin\LKOK\DataLKOK\morelkok.php on line 103.
+ 1 APPPATH\Views\superadmin\LKOK\DataLKOK\morelkok.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_vmsi', 'APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\morelkok.php', 103)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\LKOK\\DataLKOK\\morelkok.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/LKOK/DataLKOK/morelkok', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(402): view('superadmin/LKOK/DataLKOK/morelkok', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->morelkok('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-06 10:41:20 --> Undefined variable $NotipEvent
+in APPPATH\Views\superadmin\layout\default.php on line 90.
+ 1 APPPATH\Views\superadmin\layout\default.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $NotipEvent', 'APPPATH\\Views\\superadmin\\layout\\default.php', 90)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\layout\\default.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('superadmin/layout/default', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Event/registerevent', [], true)
+ 6 APPPATH\Controllers\SuperAdminControllers.php(861): view('superadmin/Event/registerevent', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->registerevent()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

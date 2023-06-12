@@ -1,6 +1,6 @@
 <?= $this->extend('superadmin/layout/default') ?>
 <?= $this->section('title') ?>
-<title>Register Event &mdash; ARISYA</title>
+<title>Register Event &mdash; AOU</title>
 <?= $this->endSection() ?>
 <?= $this->section('content') ?>
 <section class="section">
@@ -33,7 +33,7 @@
                                 <?php echo session()->getFlashdata('success'); ?>
                             </div>
                         <?php endif; ?>
-                        <form method="post" action="<?= base_url(); ?>/AdminLK-OK/dataevent/registerevent/process" enctype="multipart/form-data">
+                        <form method="post" action="<?= base_url(); ?>/SuperAdmin/dataevent/registerevent/process" enctype="multipart/form-data">
                             <?= csrf_field(); ?>
                             <div class="row">
                                 <div class="form-group col-6">
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <div class="simple-footer">
-                    Copyright &copy; Arisya 2023
+                    Copyright &copy; AOU 2023
                 </div>
             </div>
         </div>

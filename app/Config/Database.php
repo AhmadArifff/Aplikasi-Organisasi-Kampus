@@ -35,7 +35,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'arisya',
+        'database' => 'organisasi_kampus_widyatama',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

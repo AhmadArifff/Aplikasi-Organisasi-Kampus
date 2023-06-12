@@ -1,0 +1,128 @@
+ERROR - 2023-06-09 10:16:58 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'organisasi_kampus_widyatama' in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'organisasi_kamp...', 3306, '', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\LoginControllers.php(26): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'organisasi_kampus_widyatama' in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\LoginControllers.php(26): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-06-09 10:16:58 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'organisasi_kampus_widyatama'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_user`
+WHERE `u_npm` = :u_npm:', [...], false)
+ 3 APPPATH\Controllers\LoginControllers.php(26): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\LoginControllers->login()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginControllers))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-09 10:19:08 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'organisasi_kampus_widyatama' in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'organisasi_kamp...', 3306, '', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(1360): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(1394): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'organisasi_kampus_widyatama' in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(1360): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(1394): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#11 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#12 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\spark(98): CodeIgniter\CLI\Console->run()
+#15 {main}
+CRITICAL - 2023-06-09 10:48:32 --> Cannot call constructor
+in APPPATH\Controllers\SuperAdminControllers.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\SuperAdminControllers->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-09 11:17:01 --> Undefined variable $menu
+in APPPATH\Controllers\AdminControllers.php on line 71.
+ 1 APPPATH\Controllers\AdminControllers.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menu', 'APPPATH\\Controllers\\AdminControllers.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->listdataLKOK()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-09 20:28:36 --> Undefined variable $tb_user
+in APPPATH\Views\superadmin\DataUser\datauser.php on line 56.
+ 1 APPPATH\Views\superadmin\DataUser\datauser.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tb_user', 'APPPATH\\Views\\superadmin\\DataUser\\datauser.php', 56)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\DataUser\\datauser.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Datauser/datauser', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(60): view('superadmin/Datauser/datauser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->listdatauser()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-09 20:30:54 --> Undefined array key "u_npm"
+in APPPATH\Views\superadmin\DataUser\datauser.php on line 59.
+ 1 APPPATH\Views\superadmin\DataUser\datauser.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "u_npm"', 'APPPATH\\Views\\superadmin\\DataUser\\datauser.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\DataUser\\datauser.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Datauser/datauser', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(60): view('superadmin/Datauser/datauser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->listdatauser()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-09 20:30:55 --> Undefined array key "u_npm"
+in APPPATH\Views\superadmin\DataUser\datauser.php on line 59.
+ 1 APPPATH\Views\superadmin\DataUser\datauser.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "u_npm"', 'APPPATH\\Views\\superadmin\\DataUser\\datauser.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\DataUser\\datauser.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/Datauser/datauser', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(60): view('superadmin/Datauser/datauser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->listdatauser()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
