@@ -1,0 +1,72 @@
+CRITICAL - 2023-06-18 10:18:38 --> Cannot redeclare App\Helpers\login_helper::countdata()
+in APPPATH\Helpers\login_helper.php on line 24.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-18 10:26:19 --> Cannot use object of type stdClass as array
+in APPPATH\Views\superadmin\dashboard.php on line 15.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/dashboard', [], true)
+ 4 APPPATH\Controllers\SuperAdminControllers.php(28): view('superadmin/dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-18 10:29:28 --> Cannot use object of type stdClass as array
+in APPPATH\Views\superadmin\dashboard.php on line 15.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/dashboard', [], true)
+ 4 APPPATH\Controllers\SuperAdminControllers.php(28): view('superadmin/dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-18 10:46:52 --> mysqli_sql_exception: Unknown column 'OR' in 'where clause' in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Helpers\login_helper.php(22): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Views\superadmin\dashboard.php(12): App\Helpers\login_helper->countdata('tb_user', Array)
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Common.php(1134): CodeIgniter\View\View->render('superadmin/dash...', Array, true)
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php(28): view('superadmin/dash...', Array)
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->dashboard()
+#11 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+#12 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-06-18 10:46:52 --> Unknown column 'OR' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `u_role` = \'Mahasiswa\'
+AND `OR` = (\'AdminLK/OK\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `u_role` = \'Mahasiswa\'
+AND `OR` = (\'AdminLK/OK\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `u_role` = \'Mahasiswa\'
+AND `OR` = (\'AdminLK/OK\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tb_user`
+WHERE `u_role` = :u_role:
+AND `OR` = :OR:', [...], false)
+ 5 APPPATH\Helpers\login_helper.php(22): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Views\superadmin\dashboard.php(12): App\Helpers\login_helper->countdata('tb_user', [...])
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\dashboard.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/dashboard', [], true)
+10 APPPATH\Controllers\SuperAdminControllers.php(28): view('superadmin/dashboard', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->dashboard()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
