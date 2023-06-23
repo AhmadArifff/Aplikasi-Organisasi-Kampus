@@ -1,0 +1,187 @@
+ERROR - 2023-06-23 14:11:13 --> mysqli_sql_exception: Unknown column 'OR' in 'where clause' in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Helpers\login_helper.php(38): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\UsersControllers.php(70): App\Helpers\login_helper->countdata('tb_user', Array)
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php(27): App\Controllers\UsersControllers->dashboard()
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->dashboard()
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-06-23 14:11:13 --> Database error: Unknown column 'OR' in 'where clause'
+in APPPATH\Helpers\login_helper.php on line 40.
+ 1 APPPATH\Controllers\UsersControllers.php(70): App\Helpers\login_helper->countdata('tb_user', [...])
+ 2 APPPATH\Controllers\SuperAdminControllers.php(27): App\Controllers\UsersControllers->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->dashboard()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-23 14:13:34 --> mysqli_sql_exception: Unknown column 'OR' in 'where clause' in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Helpers\login_helper.php(38): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\UsersControllers.php(72): App\Helpers\login_helper->countdata('tb_user', Array)
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php(27): App\Controllers\UsersControllers->dashboard()
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->dashboard()
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-06-23 14:13:34 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php on line 28
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(28): view('superadmin/dashboard', null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-23 14:20:53 --> mysqli_sql_exception: Unknown column 'OR' in 'where clause' in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Helpers\LoginHelper.php(42): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\UsersControllers.php(72): App\Helpers\LoginHelper->countdata('tb_user', Array)
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php(27): App\Controllers\UsersControllers->dashboard()
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->dashboard()
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-06-23 14:20:53 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php on line 28
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(28): view('superadmin/dashboard', null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-06-23 14:20:55 --> mysqli_sql_exception: Unknown column 'OR' in 'where clause' in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Helpers\LoginHelper.php(42): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\UsersControllers.php(72): App\Helpers\LoginHelper->countdata('tb_user', Array)
+#6 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php(27): App\Controllers\UsersControllers->dashboard()
+#7 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->dashboard()
+#8 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+#9 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-06-23 14:20:55 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\Aplikasi Organisasi Kampus Finally_\app\Controllers\SuperAdminControllers.php on line 28
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\SuperAdminControllers.php(28): view('superadmin/dashboard', null)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-23 14:23:56 --> Class "App\Helpers\login_helper" not found
+in APPPATH\Views\superadmin\dashboard.php on line 10.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/dashboard', [], true)
+ 4 APPPATH\Controllers\SuperAdminControllers.php(28): view('superadmin/dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-23 14:24:54 --> Undefined variable $totaluser
+in APPPATH\Views\superadmin\dashboard.php on line 24.
+ 1 APPPATH\Views\superadmin\dashboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totaluser', 'APPPATH\\Views\\superadmin\\dashboard.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/dashboard', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(28): view('superadmin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-23 14:26:19 --> Undefined variable $totalprodi
+in APPPATH\Views\superadmin\dashboard.php on line 39.
+ 1 APPPATH\Views\superadmin\dashboard.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalprodi', 'APPPATH\\Views\\superadmin\\dashboard.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/dashboard', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(28): view('superadmin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-23 14:26:47 --> Undefined variable $totalevent
+in APPPATH\Views\superadmin\dashboard.php on line 69.
+ 1 APPPATH\Views\superadmin\dashboard.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalevent', 'APPPATH\\Views\\superadmin\\dashboard.php', 69)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/dashboard', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(28): view('superadmin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-23 14:26:58 --> Undefined variable $totaleventapproved
+in APPPATH\Views\superadmin\dashboard.php on line 84.
+ 1 APPPATH\Views\superadmin\dashboard.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totaleventapproved', 'APPPATH\\Views\\superadmin\\dashboard.php', 84)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\superadmin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('superadmin/dashboard', [], true)
+ 5 APPPATH\Controllers\SuperAdminControllers.php(28): view('superadmin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SuperAdminControllers->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-23 15:54:05 --> Class "App\Helpers\login_helper" not found
+in APPPATH\Views\admin\dashboard.php on line 11.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 4 APPPATH\Controllers\AdminControllers.php(28): view('admin/dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-23 15:54:31 --> Undefined variable $totallkok
+in APPPATH\Views\admin\dashboard.php on line 23.
+ 1 APPPATH\Views\admin\dashboard.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totallkok', 'APPPATH\\Views\\admin\\dashboard.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(28): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-23 15:54:52 --> Undefined variable $totalevent
+in APPPATH\Views\admin\dashboard.php on line 38.
+ 1 APPPATH\Views\admin\dashboard.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalevent', 'APPPATH\\Views\\admin\\dashboard.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\AdminControllers.php(28): view('admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\AdminControllers->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminControllers))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

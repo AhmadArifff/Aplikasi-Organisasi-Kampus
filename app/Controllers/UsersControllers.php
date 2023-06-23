@@ -12,6 +12,8 @@ use App\Models\PengambilanOrganisasiModels;
 use App\Models\VisiModels;
 use App\Models\MisiModels;
 use CodeIgniter\HTTP\IncomingRequest;
+use App\Helpers\LoginHelper;
+use Exception;
 
 /**
  * @property IncomingRequest $request ,$post, $load
@@ -23,25 +25,27 @@ class UsersControllers extends BaseController
     protected $UsersModels;
     protected $ProdiModels;
     protected $OrganisasiModels;
-    protected $AnggotaOrganisasiModels;
     protected $KegiatanModels;
     protected $PengambilanOrganisasiModels;
     protected $VisiModels;
     protected $MisiModels;
+    protected $loginHelper;
+    protected $AnggotaOrganisasiModels;
     public function __construct()
     {
         if (session()->get('u_role') != $this->getUserRole()) {
             echo 'Access denied';
             exit;
         }
+        $this->AnggotaOrganisasiModels = new AnggotaOrganisasiModels();
         $this->UsersModels = new UsersModels();
         $this->ProdiModels = new ProdiModels();
         $this->OrganisasiModels = new OrganisasiModels();
-        $this->AnggotaOrganisasiModels = new AnggotaOrganisasiModels();
         $this->KegiatanModels = new KegiatanModels();
         $this->PengambilanOrganisasiModels = new PengambilanOrganisasiModels();
         $this->VisiModels = new VisiModels();
         $this->MisiModels = new MisiModels();
+        $this->loginHelper = new LoginHelper();
     }
     protected function getUserRole()
     {
@@ -63,19 +67,34 @@ class UsersControllers extends BaseController
     }
     public function dashboard()
     {
-        $menu = [
-            'Dashboard' => 'dashboard',
-            'User' => '',
-            'Fakultas' => '',
-            'LKOK' => '',
-            'Event' => '',
-            'DataLKOK' => '',
-            'DataAnggotaLKOK' => '',
-            'NotipEvent' => $this->KegiatanModels->findAll(),
-            'NotipUser' => $this->UsersModels->findAll(),
-            'Notiprodi' => $this->ProdiModels->findAll(),
-        ];
-        return $menu;
+        try {
+            $user = $this->loginHelper->userlogin();
+            $totalUser = $this->loginHelper->countdata('tb_user', ['u_role' => 'Mahasiswa', 'OR' => ['u_role' => 'AdminLK/OK']]);
+            $totalProdi = $this->loginHelper->countdata('tb_prodi');
+            $totalLkok = $this->loginHelper->countdata('tb_organisasi');
+            $totalEvent = $this->loginHelper->countdata('tb_kegiatan');
+            $totalEventApproved = $this->loginHelper->countdata('tb_kegiatan', ['k_check_u_id' => $user->u_id]);
+            $menu = [
+                'Dashboard' => 'dashboard',
+                'User' => '',
+                'Fakultas' => '',
+                'LKOK' => '',
+                'Event' => '',
+                'DataLKOK' => '',
+                'DataAnggotaLKOK' => '',
+                'NotipEvent' => $this->KegiatanModels->findAll(),
+                'NotipUser' => $this->UsersModels->findAll(),
+                'Notiprodi' => $this->ProdiModels->findAll(),
+                'totalUser' => $totalUser,
+                'totalProdi' => $totalProdi,
+                'totalLkok' => $totalLkok,
+                'totalEvent' => $totalEvent,
+                'totalEventApproved' => $totalEventApproved,
+            ];
+            return $menu;
+        } catch (Exception $e) {
+            echo "Error: " . $e->getMessage();
+        }
     }
     public function Users()
     {

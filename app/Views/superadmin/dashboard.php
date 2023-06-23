@@ -3,18 +3,6 @@
 <title>Dashboard &mdash; AOU</title>
 <?= $this->endSection() ?>
 <?= $this->section('content') ?>
-<?php
-
-use App\Helpers\login_helper;
-
-$helper = new login_helper();
-$user = $helper->userlogin();
-$totaluser = $helper->countdata('tb_user', ['u_role' => 'Mahasiswa', 'OR' => ['u_role' => 'AdminLK/OK']]);
-$totalprodi = $helper->countdata('tb_prodi');
-$totallkok = $helper->countdata('tb_organisasi');
-$totalevent = $helper->countdata('tb_kegiatan');
-$totaleventapproved = $helper->countdata('tb_kegiatan', ['k_check_u_id' => $user->u_id]);
-?>
 
 <section class="section">
     <?= csrf_field(); ?>
@@ -33,7 +21,7 @@ $totaleventapproved = $helper->countdata('tb_kegiatan', ['k_check_u_id' => $user
                             <h4>Total Users</h4>
                         </div>
                         <div class="card-body">
-                            <?= $totaluser ?>
+                            <?= $totalUser ?>
                         </div>
                     </div>
                 </div>
@@ -48,7 +36,7 @@ $totaleventapproved = $helper->countdata('tb_kegiatan', ['k_check_u_id' => $user
                             <h4>Total Prodi</h4>
                         </div>
                         <div class="card-body">
-                            <?= $totalprodi ?>
+                            <?= $totalProdi ?>
                         </div>
                     </div>
                 </div>
@@ -63,7 +51,7 @@ $totaleventapproved = $helper->countdata('tb_kegiatan', ['k_check_u_id' => $user
                             <h4>Total LK/OK</h4>
                         </div>
                         <div class="card-body">
-                            <?= $totallkok ?>
+                            <?= $totalLkok ?>
                         </div>
                     </div>
                 </div>
@@ -78,7 +66,7 @@ $totaleventapproved = $helper->countdata('tb_kegiatan', ['k_check_u_id' => $user
                             <h4>Total Event</h4>
                         </div>
                         <div class="card-body">
-                            <?= $totalevent ?>
+                            <?= $totalEvent ?>
                         </div>
                     </div>
                 </div>
@@ -93,7 +81,7 @@ $totaleventapproved = $helper->countdata('tb_kegiatan', ['k_check_u_id' => $user
                             <h4>Total Event Approved</h4>
                         </div>
                         <div class="card-body">
-                            <?= $totaleventapproved ?>
+                            <?= $totalEventApproved ?>
                         </div>
                     </div>
                 </div>

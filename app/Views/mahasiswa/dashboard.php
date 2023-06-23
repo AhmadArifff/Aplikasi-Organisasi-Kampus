@@ -3,13 +3,6 @@
 <title>Dashboard &mdash; AOU</title>
 <?= $this->endSection() ?>
 <?= $this->section('content') ?>
-<?php
-
-use App\Helpers\login_helper;
-
-$helper = new login_helper();
-$totallkok = $helper->countdata('tb_organisasi');
-?>
 
 <section class="section">
     <?= csrf_field(); ?>
@@ -28,7 +21,7 @@ $totallkok = $helper->countdata('tb_organisasi');
                             <h4>Total Event</h4>
                         </div>
                         <div class="card-body">
-                            <?= $totallkok ?>
+                            <?= $totalLkok ?>
                         </div>
                     </div>
                 </div>

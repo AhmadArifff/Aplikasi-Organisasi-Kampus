@@ -2,17 +2,32 @@
 
 namespace App\Helpers;
 
-class login_helper
+use Exception;
+
+interface LoginHelperInterface
+{
+    public function userlogin();
+    public function countdata($table, $condition = []);
+}
+
+class LoginHelper implements LoginHelperInterface
 {
     private $db;
+
     public function __construct()
     {
         $this->db = \Config\Database::connect();
     }
+
     public function userlogin()
     {
-        return $this->db->table('tb_user')->where('u_id', session('u_id'))->get()->getRow();
+        try {
+            return $this->db->table('tb_user')->where('u_id', session('u_id'))->get()->getRow();
+        } catch (\Exception $e) {
+            throw new Exception("Database error: " . $e->getMessage());
+        }
     }
+
     //Overloading
     public function countdata($table, $condition = [])
     {
@@ -26,6 +41,10 @@ class login_helper
                 }
             }
         }
-        return $query->countAllResults();
+        try {
+            return $query->countAllResults();
+        } catch (\Exception $e) {
+            throw new Exception("Database error: " . $e->getMessage());
+        }
     }
 }

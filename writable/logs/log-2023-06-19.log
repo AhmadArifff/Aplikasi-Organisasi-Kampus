@@ -1,0 +1,6 @@
+CRITICAL - 2023-06-19 19:35:15 --> Cannot redeclare App\Helpers\login_helper::countdata()
+in APPPATH\Helpers\login_helper.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-19 19:35:15 --> Cannot redeclare App\Helpers\login_helper::countdata()
+in APPPATH\Helpers\login_helper.php on line 31.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
